@@ -66,24 +66,24 @@ import { TestimonialService } from '../testimonial/testimonial.service';
 
       <img src="assets/img/scissor-graphs-2011.jpg"/>
 
-    </div>
+
+      <app-cartoon></app-cartoon>
+
+      <app-logo [src]="'assets/img/Baanbrekende wetenschap.svg'"
+                [align]="'right'"></app-logo>
 
 
-    <app-cartoon></app-cartoon>
+      <app-logo [src]="'assets/img/Creatieve wetenschap.svg'"
+                [align]="'left'"></app-logo>
 
-    <app-logo [src]="'assets/img/Baanbrekende wetenschap.svg'"
-              [align]="'right'"></app-logo>
+      <app-logo [src]="'assets/img/Frisse wetenschap.svg'"
+                [align]="'right'"></app-logo>
 
+      <div class="d-flex flex-row justify-content-start align-items-baseline">
+        <h1 class="display-4" #activiteiten>Activiteiten</h1>
+        <button class="btn btn-link" (click)="jump()">(top)</button>
+      </div>
 
-    <app-logo [src]="'assets/img/Creatieve wetenschap.svg'"
-              [align]="'left'"></app-logo>
-
-    <!--<app-logo [src]="'assets/img/Frisse wetenschap.svg'"-->
-    <!--[align]="'right'"></app-logo>-->
-
-    <div class="d-flex flex-row justify-content-start align-items-baseline">
-      <h1 class="display-4" #activiteiten>Activiteiten</h1>
-      <button class="btn btn-link" (click)="jump()">(top)</button>
     </div>
 
     <div class="container">
