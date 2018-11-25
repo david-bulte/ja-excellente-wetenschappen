@@ -5,8 +5,14 @@ import { BehaviorSubject } from 'rxjs';
 @Component({
   selector: 'app-testimonial-form',
   template: `
-    <form class="border-top border-primary" [formGroup]="form" novalidate>
-      <div class="font-weight-bold text-primary mb-2">Geef uw getuigenis</div>
+
+
+    <div class="d-block d-sm-none mb-2">
+      <fa-icon [icon]="'caret-right'"></fa-icon> voeg een getuigenis toe
+    </div>
+    
+    <form class="border-top border-primary pt-2 " [formGroup]="form" novalidate>
+      <div class="font-weight-bold text-primary mb-2 d-none d-sm-block">Geef uw getuigenis</div>
       <div class="form-group">
         <label for="inputEmail">Email address *</label>
         <input type="email" class="form-control"
@@ -45,9 +51,12 @@ import { BehaviorSubject } from 'rxjs';
       height: 250px;
     }
 
-    form {
-      border-top-width: 10px !important;
+    @media (min-width: 576px) {
+      form {
+        border-top-width: 10px !important;
+      }
     }
+
   `],
   changeDetection: ChangeDetectionStrategy.OnPush
 })

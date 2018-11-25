@@ -11,6 +11,10 @@ a.menu-item {
   padding-bottom: 20px !important;
 }
 
+a.menu-item.pb-0 {
+  padding-bottom: 0 !important;
+}
+
 a.menu-item:hover {
   /*padding-bottom: 18px !important;*/
   /*border-bottom-style: solid !important;*/

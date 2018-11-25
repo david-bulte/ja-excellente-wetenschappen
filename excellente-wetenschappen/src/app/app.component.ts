@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
     <!--<button class="btn btn-primary">test</button>-->
 
 
-    <div class="container">
+    <div class="container mb-3">
       <router-outlet></router-outlet>
     </div>
 

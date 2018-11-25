@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCaretRight } from '@fortawesome/free-solid-svg-icons/faCaretRight';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons/faQuoteLeft';
 import { faQuoteRight } from '@fortawesome/free-solid-svg-icons/faQuoteRight';
 
@@ -48,7 +49,7 @@ import { FooterComponent } from './footer/footer.component';
 export class AppModule {
 
   constructor() {
-    library.add(faQuoteRight, faQuoteLeft);
+    library.add(faCaretRight, faQuoteRight, faQuoteLeft);
   }
 
 }

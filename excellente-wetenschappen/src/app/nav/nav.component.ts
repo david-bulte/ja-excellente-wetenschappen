@@ -9,7 +9,7 @@ import { ChangeDetectionStrategy, Component, ElementRef, OnInit } from '@angular
 
       <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between px-md-4">
 
-        <nav class="mr-md-3">
+        <nav class="mr-md-3 justify-content-around w-100 justify-content-sm-center">
           <a class="p-2 text-dark menu-item border-primary border-0" 
              #home
              (mouseenter)="hover(home, true)" (mouseleave)="hover(home, false)"
@@ -26,10 +26,13 @@ import { ChangeDetectionStrategy, Component, ElementRef, OnInit } from '@angular
              #links
              (mouseenter)="hover(links, true)" (mouseleave)="hover(links, false)"
              routerLinkActive="active" [routerLink]="'/links'">Links</a>
-
+          <a href="http://jongeacademie.be/" 
+             class="menu-item pb-0 d-inline d-sm-none float-right">
+            <img src="assets/img/JA_logo.png" width="30" height="30" alt="">
+          </a>
         </nav>
 
-        <a href="http://jongeacademie.be/">
+        <a href="http://jongeacademie.be/" class="d-none d-sm-block">
           <img src="assets/img/JA_logo.png" width="30" height="30" alt="">
         </a>
       </div>

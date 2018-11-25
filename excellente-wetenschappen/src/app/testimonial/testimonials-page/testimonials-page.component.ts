@@ -8,7 +8,14 @@ import { TestimonialService } from '../testimonial.service';
   template: `
     <div>
 
-      <div style="float: right; max-width: 330px; min-width: 330px;" class="pl-3">
+      <div class="d-block d-sm-none d-flex flex-row align-items-center">
+        <span>Heb je zelf iets meegemaakt?</span>
+        <button class="btn btn-link float-right" [routerLink]="'/testimonials/add'">
+          Laat ons iets weten!
+        </button>
+      </div>
+
+      <div style="max-width: 330px; min-width: 330px;" class="pl-3 float-right d-none d-sm-block">
 
         <app-testimonial-form></app-testimonial-form>
 
@@ -18,6 +25,7 @@ import { TestimonialService } from '../testimonial.service';
         [author]="t.author" [created]="t.created"
         [content]="t.content" [showMoreButton]="false"
         *ngFor="let t of testimonials$ | async"></app-testimonial-item>
+
     </div>
   `,
   styles: [`
