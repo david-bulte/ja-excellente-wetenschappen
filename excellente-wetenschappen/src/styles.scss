@@ -1,0 +1,8 @@
+//https://getbootstrap.com/docs/4.0/getting-started/theming/
+
+@import "variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  color: $dark;
+}
