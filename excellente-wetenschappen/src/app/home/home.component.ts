@@ -18,7 +18,10 @@ import { TestimonialService } from '../testimonial/testimonial.service';
       <!--<img src="http://www.igta5.com/images/trailer-2-gtav-logo.jpg" alt="GTA V" />-->
       <app-news class="ml-5"></app-news>
 
-      <h1 class="display-4" #welkom>Welkom</h1>
+      <div class="d-flex flex-row justify-content-start align-items-baseline">
+        <h1 class="display-4" #welkom>Welkom</h1>
+        <button class="btn btn-link" (click)="jump()">(top)</button>
+      </div>
       <p class="lead">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt nunc. Porttitor lacus luctus accumsan
@@ -49,7 +52,10 @@ import { TestimonialService } from '../testimonial/testimonial.service';
 
       <app-testimonial [content]="(testimonial$ | async)?.content"></app-testimonial>
 
-      <h1 class="display-4" #schaar>Schaar</h1>
+      <div class="d-flex flex-row justify-content-start align-items-baseline">
+        <h1 class="display-4" #schaar>Schaar</h1>
+        <button class="btn btn-link" (click)="jump()">(top)</button>
+      </div>
 
       <p>
         "Impliciete bias" betekent dat mensen niet neutraal zijn in hun oordeel en gedrag. Ze hebben daarentegen op
@@ -75,8 +81,9 @@ import { TestimonialService } from '../testimonial/testimonial.service';
     <!--<app-logo [src]="'assets/img/Frisse wetenschap.svg'"-->
     <!--[align]="'right'"></app-logo>-->
 
-    <div class="px-3">
+    <div class="d-flex flex-row justify-content-start align-items-baseline">
       <h1 class="display-4" #activiteiten>Activiteiten</h1>
+      <button class="btn btn-link" (click)="jump()">(top)</button>
     </div>
 
     <div class="container">
@@ -166,7 +173,7 @@ export class HomeComponent implements OnInit {
   }
 
   jump(target) {
-    const top = target.getBoundingClientRect().top;
+    const top = target ? target.getBoundingClientRect().top : 0;
     window.scrollTo({top, behavior: 'smooth'});
   }
 }
