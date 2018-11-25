@@ -20,6 +20,7 @@ import { LinksPageComponent } from './links/links-page/links-page.component';
 import { CharterPageComponent } from './charter/charter-page/charter-page.component';
 import { TestimonialFormComponent } from './testimonial/testimonial-form/testimonial-form.component';
 import { TestimonialItemComponent } from './testimonial/testimonial-item/testimonial-item.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { TestimonialItemComponent } from './testimonial/testimonial-item/testimo
     LinksPageComponent,
     CharterPageComponent,
     TestimonialFormComponent,
-    TestimonialItemComponent
+    TestimonialItemComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
