@@ -50,7 +50,7 @@ import { TestimonialService } from '../testimonial/testimonial.service';
         ut enim. Ut morbi tincidunt augue interdum velit euismod in pellentesque.
       </p>
 
-      <app-testimonial [content]="(testimonial$ | async)?.content"></app-testimonial>
+      <app-testimonial-item [content]="(testimonial$ | async)?.content"></app-testimonial-item>
 
       <div class="d-flex flex-row justify-content-start align-items-baseline">
         <h1 class="display-4" #schaar>Schaar</h1>

@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-testimonial',
+  selector: 'app-testimonial-item',
   template: `
 
 
@@ -27,14 +27,14 @@ import { Component, OnInit, Input } from '@angular/core';
 
   `,
   styles: [
-      `
+    `
       .testimonial__quote {
         font-size: larger;
       }
     `
   ]
 })
-export class TestimonialComponent implements OnInit {
+export class TestimonialItemComponent implements OnInit {
 
   @Input()
   author: string;
