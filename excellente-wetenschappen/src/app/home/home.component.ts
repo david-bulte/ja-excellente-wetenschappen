@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { getDayOfYear } from 'date-fns';
+import { Observable } from 'rxjs';
 import { filter, map } from 'rxjs/operators';
-import { TestimonialService } from '../testimonial/testimonial.service';
+import { Testimonial, TestimonialService } from '../testimonial/testimonial.service';
 
 @Component({
   selector: 'app-home',
@@ -50,7 +51,41 @@ import { TestimonialService } from '../testimonial/testimonial.service';
         ut enim. Ut morbi tincidunt augue interdum velit euismod in pellentesque.
       </p>
 
-      <app-testimonial-item [content]="(testimonial$ | async)?.content"></app-testimonial-item>
+      <app-testimonial-item [content]="(testimonials$ | async)?.first?.content"></app-testimonial-item>
+
+      <div >
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt nunc. Porttitor lacus luctus accumsan
+          tortor
+          posuere ac ut. Morbi blandit cursus risus at ultrices. Magna etiam tempor orci eu lobortis elementum nibh tellus
+          molestie. Sit amet consectetur adipiscing elit pellentesque. Porta nibh venenatis cras sed. Ultricies leo
+          <img src="assets/cartoons/Getuigenis 1.png" class="mr-5 mt-5 mb-5 w-25" style="float: left;" />
+          integer
+          malesuada nunc vel risus. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue. Adipiscing commodo
+          elit
+          at imperdiet dui accumsan. Dui nunc mattis enim ut tellus elementum. Integer enim neque volutpat ac tincidunt
+          vitae semper quis lectus. Feugiat in ante metus dictum at tempor commodo ullamcorper a. Risus sed vulputate odio
+          ut enim. Ut morbi tincidunt augue interdum velit euismod in pellentesque.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt nunc. Porttitor lacus luctus accumsan
+          tortor
+          posuere ac ut. Morbi blandit cursus risus at ultrices. Magna etiam tempor orci eu lobortis elementum nibh tellus
+          molestie. Sit amet consectetur adipiscing elit pellentesque. Porta nibh venenatis cras sed. Ultricies leo
+          integer
+          malesuada nunc vel risus. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue. Adipiscing commodo
+          elit
+          at imperdiet dui accumsan. Dui nunc mattis enim ut tellus elementum. Integer enim neque volutpat ac tincidunt
+          vitae semper quis lectus. Feugiat in ante metus dictum at tempor commodo ullamcorper a. Risus sed vulputate odio
+          ut enim. Ut morbi tincidunt augue interdum velit euismod in pellentesque.
+        </p>
+      </div>
+      
+      <br style="clear: both;"/>
+
+      <app-testimonial-item [content]="(testimonials$ | async)?.second?.content"></app-testimonial-item>
 
       <div class="d-flex flex-row justify-content-start align-items-baseline">
         <h1 class="display-4" #schaar>Schaar</h1>
@@ -65,10 +100,7 @@ import { TestimonialService } from '../testimonial/testimonial.service';
       </p>
 
       <img src="assets/img/scissor-graphs-2011.jpg"/>
-
-
-      <app-cartoon></app-cartoon>
-
+      
       <app-logo [src]="'assets/img/Baanbrekende wetenschap.svg'"
                 [align]="'right'"></app-logo>
 
@@ -116,13 +148,14 @@ import { TestimonialService } from '../testimonial/testimonial.service';
 })
 export class HomeComponent implements OnInit {
 
-  testimonial$ = this.testimonialService.getTestimonials().pipe(
+  testimonials$ = this.testimonialService.getTestimonials().pipe(
     filter(testimonials => testimonials && testimonials.length > 0),
     map(testimonials => {
-      // elke dag een verse quote
+      // elke dag 2 verse quotes
       const date = getDayOfYear(new Date());
-      const idx = date % testimonials.length
-      return testimonials[idx];
+      const idx1 = date % testimonials.length
+      const idx2 = (date+2) % testimonials.length
+      return {first: testimonials[idx1], second: testimonials[idx2]};
     })
   );
 
