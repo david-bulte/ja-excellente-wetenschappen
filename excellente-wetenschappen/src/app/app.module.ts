@@ -17,6 +17,8 @@ import { CartoonComponent } from './cartoon/cartoon.component';
 import { LogoComponent } from './logo/logo.component';
 import { NewsComponent } from './news/news.component';
 import { TestimonialsPageComponent } from './testimonial/testimonials-page/testimonials-page.component';
+import { LinksPageComponent } from './links/links-page/links-page.component';
+import { CharterPageComponent } from './charter/charter-page/charter-page.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { TestimonialsPageComponent } from './testimonial/testimonials-page/testi
     CartoonComponent,
     LogoComponent,
     NewsComponent,
-    TestimonialsPageComponent
+    TestimonialsPageComponent,
+    LinksPageComponent,
+    CharterPageComponent
   ],
   imports: [
     BrowserModule,

@@ -29,7 +29,7 @@ import { ChangeDetectionStrategy, Component, ElementRef, OnInit } from '@angular
 
         </nav>
 
-        <a href="#">
+        <a href="http://jongeacademie.be/">
           <img src="assets/img/JA_logo.png" width="30" height="30" alt="">
         </a>
       </div>

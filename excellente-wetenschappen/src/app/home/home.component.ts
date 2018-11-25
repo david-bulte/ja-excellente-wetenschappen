@@ -89,19 +89,19 @@ import { TestimonialService } from '../testimonial/testimonial.service';
     <div class="container">
 
       <div class="row">
-        <app-news class="col col-6"></app-news>
-        <app-news class="col col-6"></app-news>
-        <app-news class="col col-6"></app-news>
-        <app-news class="col col-6"></app-news>
+        <app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>
+        <app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>
+        <app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>
+        <app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>
       </div>
 
       <h2>voorbij</h2>
 
       <div class="row" style="filter: grayscale(100%)">
-        <app-news class="col col-6"></app-news>
-        <app-news class="col col-6"></app-news>
-        <app-news class="col col-6"></app-news>
-        <app-news class="col col-6"></app-news>
+        <app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>
+        <app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>
+        <app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>
+        <app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>
       </div>
 
       <!--<footer class="pt-4 my-md-5 pt-md-5 border-top">-->
