@@ -1,7 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-import { BehaviorSubject } from 'rxjs';
-import { TestimonialService } from '../testimonial.service';
+import { Testimonial, TestimonialService } from '../testimonial.service';
 
 @Component({
   selector: 'app-testimonials-page',
@@ -17,7 +15,7 @@ import { TestimonialService } from '../testimonial.service';
 
       <div style="max-width: 330px; min-width: 330px;" class="pl-3 float-right d-none d-sm-block">
 
-        <app-testimonial-form></app-testimonial-form>
+        <app-testimonial-form (send)="send($event)"></app-testimonial-form>
 
       </div>
 
@@ -44,4 +42,9 @@ export class TestimonialsPageComponent implements OnInit {
     window.scrollTo(0, 0);
   }
 
+  send(testimonial: Testimonial) {
+    this.testimonialService.send(testimonial).subscribe(res => {
+      console.log("res", res);
+    });
+  }
 }

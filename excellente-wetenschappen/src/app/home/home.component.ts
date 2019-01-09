@@ -105,13 +105,13 @@ import { TestimonialService } from '../testimonial/testimonial.service';
       <img class="w-100" src="assets/img/scissor-graphs-2011.jpg"/>
 
       <app-logo
-        class="d-none d-lg-block"
+        class="d-none d-xl-block"
         [src]="'assets/img/Baanbrekende wetenschap.svg'"
         [align]="'right'"></app-logo>
 
 
       <app-logo
-        class="d-none d-lg-block"
+        class="d-none d-xl-block"
         [src]="'assets/img/Creatieve wetenschap.svg'"
         [align]="'left'"></app-logo>
 

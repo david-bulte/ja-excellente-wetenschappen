@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
   template: `
 
     <app-nav></app-nav>
-
-    <!--<button class="btn btn-primary">test</button>-->
-
 
     <div class="container mb-3">
       <router-outlet></router-outlet>

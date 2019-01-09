@@ -1,5 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireFunctionsModule } from '@angular/fire/functions';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -8,6 +10,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons/faCaretRight';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons/faQuoteLeft';
 import { faQuoteRight } from '@fortawesome/free-solid-svg-icons/faQuoteRight';
+import { environment } from '../environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +24,7 @@ import { CharterPageComponent } from './charter/charter-page/charter-page.compon
 import { TestimonialFormComponent } from './testimonial/testimonial-form/testimonial-form.component';
 import { TestimonialItemComponent } from './testimonial/testimonial-item/testimonial-item.component';
 import { FooterComponent } from './footer/footer.component';
+import { RECAPTCHA_URL, RecaptchaDirective } from './testimonial/recaptcha.directive';
 
 @NgModule({
   declarations: [
@@ -34,7 +38,8 @@ import { FooterComponent } from './footer/footer.component';
     CharterPageComponent,
     TestimonialFormComponent,
     TestimonialItemComponent,
-    FooterComponent
+    FooterComponent,
+    RecaptchaDirective
   ],
   imports: [
     BrowserModule,
@@ -42,8 +47,11 @@ import { FooterComponent } from './footer/footer.component';
     FontAwesomeModule,
     HttpClientModule,
     ReactiveFormsModule
+    // AngularFireModule.initializeApp(environment.firebase),
+    // AngularFireFunctionsModule
   ],
-  providers: [],
+  // providers: [{provide: RECAPTCHA_URL, useValue: 'https://us-central1-excellente-wetenschappen.cloudfunctions.net/checkRecaptcha'}],
+  providers: [{provide: RECAPTCHA_URL, useValue: '/checkRecaptcha'}],
   bootstrap: [AppComponent]
 })
 export class AppModule {
