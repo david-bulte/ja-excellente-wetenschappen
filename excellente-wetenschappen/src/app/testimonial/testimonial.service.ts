@@ -11,7 +11,6 @@ export class TestimonialService {
   private testimonialsSubj = new BehaviorSubject([]);
 
   constructor(private http: HttpClient) {
-    debugger
     this.send({author: 'me', content: 'bla', created: new Date().toDateString()}).subscribe(resp => {
       console.log("resp", resp);
     });

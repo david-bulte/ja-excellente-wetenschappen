@@ -1,27 +1,47 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { CharterPageComponent } from './charter/charter-page/charter-page.component';
-import {HomeComponent} from './home/home.component';
-import { LinksPageComponent } from './links/links-page/links-page.component';
+import { RouterModule, Routes } from '@angular/router';
+import { ActuaPageComponent } from './actua/actua-page.component';
+import { CampagnePageComponent } from './campagne/campagne-page.component';
+import { FactsAndFiguresPageComponent } from './facts-and-figures/facts-and-figures-page.component';
+import { HomePageComponent } from './home/home-page.component';
+import { ImplicitBiasPageComponent } from './implicit-bias/implicit-bias-page.component';
+import { LinksPageComponent } from './links/links-page.component';
+import { BiasPageComponent } from './testimonial/bias-page.component';
 import { TestimonialFormComponent } from './testimonial/testimonial-form/testimonial-form.component';
-import { TestimonialsPageComponent } from './testimonial/testimonials-page/testimonials-page.component';
+import { ToolboxPageComponent } from './toolbox/toolbox-page.component';
 
 const routes: Routes = [
   {
     path: 'home',
-    component: HomeComponent
+    component: HomePageComponent
   },
   {
-    path: 'testimonials',
-    component: TestimonialsPageComponent
+    path: 'implicit-bias',
+    component: ImplicitBiasPageComponent
   },
   {
-    path: 'testimonials/add',
+    path: 'facts-and-figures',
+    component: FactsAndFiguresPageComponent
+  },
+  {
+    path: 'bias-in-de-praktijk',
+    component: BiasPageComponent
+  },
+  {
+    path: 'bias-in-de-praktijk/add',
     component: TestimonialFormComponent
   },
   {
-    path: 'charter',
-    component: CharterPageComponent
+    path: 'toolbox',
+    component: ToolboxPageComponent
+  },
+  {
+    path: 'actua',
+    component: ActuaPageComponent
+  },
+  {
+    path: 'campagne',
+    component: CampagnePageComponent
   },
   {
     path: 'links',

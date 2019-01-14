@@ -1,3 +1,4 @@
+import { transition, trigger, style, animate, state } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { getDayOfYear } from 'date-fns';
 import { filter, map } from 'rxjs/operators';
@@ -50,8 +51,20 @@ import { TestimonialService } from '../testimonial/testimonial.service';
         ut enim. Ut morbi tincidunt augue interdum velit euismod in pellentesque.
       </p>
 
-      <app-testimonial-item [content]="(testimonials$ | async)?.first?.content"></app-testimonial-item>
+      <carousel [interval]="5000">
+        <slide *ngFor="let testimonial of testimonials$ | async;">
 
+          <div class="w-100">
+            <app-testimonial-item [content]="testimonial.content"></app-testimonial-item>
+          </div>
+
+          <!--<div class="carousel-caption">-->
+            <!--<h4>Slide {{index}}</h4>-->
+            <!--<p>{{slide.text}}</p>-->
+          <!--</div>-->
+        </slide>
+      </carousel>
+      
       <div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -153,7 +166,7 @@ import { TestimonialService } from '../testimonial/testimonial.service';
     }
   `]
 })
-export class HomeComponent implements OnInit {
+export class HomePageComponent implements OnInit {
 
   testimonials$ = this.testimonialService.getTestimonials().pipe(
     filter(testimonials => testimonials && testimonials.length > 0),
@@ -162,7 +175,8 @@ export class HomeComponent implements OnInit {
       const date = getDayOfYear(new Date());
       const idx1 = date % testimonials.length
       const idx2 = (date + 2) % testimonials.length
-      return {first: testimonials[idx1], second: testimonials[idx2]};
+      // return {first: testimonials[idx1], second: testimonials[idx2]};
+      return [testimonials[idx1], testimonials[idx2]];
     })
   );
 
@@ -173,7 +187,7 @@ export class HomeComponent implements OnInit {
     this.testimonialService.load();
   }
 
-  jump(target) {
+  jump(target?) {
     const top = target ? target.getBoundingClientRect().top : 0;
     window.scrollTo({top, behavior: 'smooth'});
   }

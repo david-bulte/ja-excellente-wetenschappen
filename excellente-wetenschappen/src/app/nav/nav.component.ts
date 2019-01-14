@@ -15,17 +15,33 @@ import { ChangeDetectionStrategy, Component, ElementRef, OnInit } from '@angular
              (mouseenter)="hover(home, true)" (mouseleave)="hover(home, false)"
              routerLinkActive="active" [routerLink]="'/home'">Home</a>
           <a class="p-2 text-dark menu-item border-primary border-0"
-             #testimonials
-             (mouseenter)="hover(testimonials, true)" (mouseleave)="hover(testimonials, false)"
-             routerLinkActive="active" [routerLink]="'/testimonials'">Getuigenissen</a>
+             #implicitBias
+             (mouseenter)="hover(implicitBias, true)" (mouseleave)="hover(implicitBias, false)"
+             routerLinkActive="active" [routerLink]="'/implicit-bias'">Implicit Bias</a>
           <a class="p-2 text-dark menu-item border-primary border-0"
-             #charter
-             (mouseenter)="hover(charter, true)" (mouseleave)="hover(charter, false)"
-             routerLinkActive="active" [routerLink]="'/charter'">Charter</a>
+             #factsAndFigures
+             (mouseenter)="hover(factsAndFigures, true)" (mouseleave)="hover(factsAndFigures, false)"
+             routerLinkActive="active" [routerLink]="'/facts-and-figures'">Facts And Figures</a>
           <a class="p-2 text-dark menu-item border-primary border-0"
-             #links
-             (mouseenter)="hover(links, true)" (mouseleave)="hover(links, false)"
-             routerLinkActive="active" [routerLink]="'/links'">Links</a>
+             #bias
+             (mouseenter)="hover(bias, true)" (mouseleave)="hover(bias, false)"
+             routerLinkActive="active" [routerLink]="'/bias-in-de-praktijk'">Bias in de praktijk</a>
+          <a class="p-2 text-dark menu-item border-primary border-0"
+             #toolbox
+             (mouseenter)="hover(toolbox, true)" (mouseleave)="hover(toolbox, false)"
+             routerLinkActive="active" [routerLink]="'/toolbox'">Toolbox</a>
+          <a class="p-2 text-dark menu-item border-primary border-0"
+             #actua
+             (mouseenter)="hover(actua, true)" (mouseleave)="hover(actua, false)"
+             routerLinkActive="active" [routerLink]="'/actua'">Actua</a>
+          <a class="p-2 text-dark menu-item border-primary border-0"
+             #campagne
+             (mouseenter)="hover(campagne, true)" (mouseleave)="hover(campagne, false)"
+             routerLinkActive="active" [routerLink]="'/campagne'">Campagne</a>
+          <a class="p-2 text-dark menu-item border-primary border-0"
+            #links
+            (mouseenter)="hover(links, true)" (mouseleave)="hover(links, false)"
+            routerLinkActive="active" [routerLink]="'/links'">Links</a>
           <a href="http://jongeacademie.be/" 
              class="menu-item pb-0 d-inline d-sm-none float-right">
             <img src="assets/img/JA_logo.png" width="30" height="30" alt="">

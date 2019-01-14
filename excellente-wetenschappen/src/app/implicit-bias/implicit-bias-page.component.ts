@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-charter-page',
+  selector: 'app-implicit-bias',
   template: `
     <p>
-      charter-page works!
+      implicit-bias works!
     </p>
   `,
   styles: []
 })
-export class CharterPageComponent implements OnInit {
+export class ImplicitBiasPageComponent implements OnInit {
 
   constructor() { }
 

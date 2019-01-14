@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { Testimonial, TestimonialService } from '../testimonial.service';
+import { Testimonial, TestimonialService } from './testimonial.service';
 
 @Component({
   selector: 'app-testimonials-page',
@@ -30,7 +30,7 @@ import { Testimonial, TestimonialService } from '../testimonial.service';
   `],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class TestimonialsPageComponent implements OnInit {
+export class BiasPageComponent implements OnInit {
 
   testimonials$ = this.testimonialService.getTestimonials();
 
