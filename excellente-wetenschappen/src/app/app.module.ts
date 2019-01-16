@@ -31,6 +31,7 @@ import { TestimonialItemComponent } from './testimonial/testimonial-item/testimo
 import { FooterComponent } from './footer/footer.component';
 import { RECAPTCHA_URL, RecaptchaDirective } from './testimonial/recaptcha.directive';
 import { ToolboxPageComponent } from './toolbox/toolbox-page.component';
+import { InfoBoxComponent } from './components/info-box/info-box.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { ToolboxPageComponent } from './toolbox/toolbox-page.component';
     ActuaPageComponent,
     ToolboxPageComponent,
     FactsAndFiguresPageComponent,
-    ImplicitBiasPageComponent
+    ImplicitBiasPageComponent,
+    InfoBoxComponent
   ],
   imports: [
     BrowserModule,

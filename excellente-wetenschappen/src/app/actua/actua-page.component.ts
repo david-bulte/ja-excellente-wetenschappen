@@ -4,7 +4,10 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-actua',
   template: `
     <p>
-      actua works!
+      Lancering event op 11 februari
+    </p>
+    <p>
+      Women in science event op 13 februari
     </p>
   `,
   styles: []

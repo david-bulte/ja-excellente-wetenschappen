@@ -7,7 +7,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 
     <app-nav></app-nav>
 
-    <div class="container mb-3">
+    <div class="container mb-3 mt-5 bg-white p-0 p-md-4">
       <router-outlet></router-outlet>
     </div>
 
@@ -15,10 +15,13 @@ import { DomSanitizer } from '@angular/platform-browser';
 
   `,
   styles: [
-      `
+      `      
+      .container {
+        min-height: 400px;
+        border-radius: 15px;
+      }
     `
   ]
 })
 export class AppComponent {
-  title = 'excellente-wetenschappen';
 }

@@ -1,4 +1,3 @@
-import { transition, trigger, style, animate, state } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { getDayOfYear } from 'date-fns';
 import { filter, map } from 'rxjs/operators';
@@ -8,155 +7,121 @@ import { TestimonialService } from '../testimonial/testimonial.service';
   selector: 'app-home',
   template: `
 
+    <div class="d-flex flex-column flex-md-row mt-5">
+      <app-info-box [title]="'Implicit Bias'"
+                    [link]="'/implicit-bias'">
+        <div class="info-box__cartoon">
+          <img src="assets/undraw/science.svg">
+        </div>
+        <div class="info-box__description">
+          Wat is Implicit Bias? Hoe herken je Implicit Bias?
+        </div>
+      </app-info-box>
 
-    <div class="container d-flex flex-row justify-content-center">
-      <button class="btn btn-link mr-2" (click)="jump(welkom)">Welkom</button>
-      <button class="btn btn-link mr-2" (click)="jump(schaar)">Schaar</button>
-      <button class="btn btn-link mr-2" (click)="jump(activiteiten)">Activiteiten</button>
-    </div>
+      <app-info-box [title]="'Facts and Figures'"
+                    [link]="'/facts-and-figures'">
+        <div class="info-box__cartoon">
+          <img src="assets/undraw/growing.svg">
+        </div>
+        <div class="info-box__description">
+          De evolutie naar minder gendergelijkheid in academie gaat nog steeds traag. Wat zijn de cijfers?
+        </div>
+      </app-info-box>
 
-    <div class="container">
-      <!--<img src="http://www.igta5.com/images/trailer-2-gtav-logo.jpg" alt="GTA V" />-->
-      <app-news class="ml-5 d-none d-sm-block"></app-news>
+      <app-info-box [title]="'Bias in de praktijk'" 
+                    [link]="'/bias-in-de-praktijk'">
+        <div class="info-box__cartoon">
+          <img src="assets/undraw/programmer_imem.svg">
+        </div>
+        <div class="info-box__description">
+          Lees hier getuigenissen van gendergerelateerde uitdagingen en opportuniteiten. Zelf iets te melden? Dat kan
+          ook hier.
+        </div>
+      </app-info-box>
 
-      <div class="d-flex flex-row justify-content-start align-items-baseline">
-        <h1 class="display-4" #welkom>Welkom</h1>
-        <button class="btn btn-link" (click)="jump()">(top)</button>
-      </div>
-      <p class="lead">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt nunc. Porttitor lacus luctus accumsan
-        tortor
-        posuere ac ut. Morbi blandit cursus risus at ultrices. Magna etiam tempor orci eu lobortis elementum nibh tellus
-        molestie. Sit amet consectetur adipiscing elit pellentesque. Porta nibh venenatis cras sed. Ultricies leo
-        integer
-        malesuada nunc vel risus. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue. Adipiscing commodo
-        elit
-        at imperdiet dui accumsan. Dui nunc mattis enim ut tellus elementum. Integer enim neque volutpat ac tincidunt
-        vitae semper quis lectus. Feugiat in ante metus dictum at tempor commodo ullamcorper a. Risus sed vulputate odio
-        ut enim. Ut morbi tincidunt augue interdum velit euismod in pellentesque.
-      </p>
-
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt nunc. Porttitor lacus luctus accumsan
-        tortor
-        posuere ac ut. Morbi blandit cursus risus at ultrices. Magna etiam tempor orci eu lobortis elementum nibh tellus
-        molestie. Sit amet consectetur adipiscing elit pellentesque. Porta nibh venenatis cras sed. Ultricies leo
-        integer
-        malesuada nunc vel risus. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue. Adipiscing commodo
-        elit
-        at imperdiet dui accumsan. Dui nunc mattis enim ut tellus elementum. Integer enim neque volutpat ac tincidunt
-        vitae semper quis lectus. Feugiat in ante metus dictum at tempor commodo ullamcorper a. Risus sed vulputate odio
-        ut enim. Ut morbi tincidunt augue interdum velit euismod in pellentesque.
-      </p>
-
-      <carousel [interval]="5000">
-        <slide *ngFor="let testimonial of testimonials$ | async;">
-
-          <div class="w-100">
-            <app-testimonial-item [content]="testimonial.content"></app-testimonial-item>
-          </div>
-
-          <!--<div class="carousel-caption">-->
-            <!--<h4>Slide {{index}}</h4>-->
-            <!--<p>{{slide.text}}</p>-->
-          <!--</div>-->
-        </slide>
-      </carousel>
-      
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt nunc. Porttitor lacus luctus accumsan
-          tortor
-          posuere ac ut. Morbi blandit cursus risus at ultrices. Magna etiam tempor orci eu lobortis elementum nibh
-          tellus
-          molestie. Sit amet consectetur adipiscing elit pellentesque. Porta nibh venenatis cras sed. Ultricies leo
-          <img src="assets/cartoons/Getuigenis 1.png" class="mr-5 mt-5 mb-5 w-25" style="float: left;"/>
-          integer
-          malesuada nunc vel risus. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue. Adipiscing commodo
-          elit
-          at imperdiet dui accumsan. Dui nunc mattis enim ut tellus elementum. Integer enim neque volutpat ac tincidunt
-          vitae semper quis lectus. Feugiat in ante metus dictum at tempor commodo ullamcorper a. Risus sed vulputate
-          odio
-          ut enim. Ut morbi tincidunt augue interdum velit euismod in pellentesque.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Sit amet mauris commodo quis imperdiet massa tincidunt nunc. Porttitor lacus luctus accumsan
-          tortor
-          posuere ac ut. Morbi blandit cursus risus at ultrices. Magna etiam tempor orci eu lobortis elementum nibh
-          tellus
-          molestie. Sit amet consectetur adipiscing elit pellentesque. Porta nibh venenatis cras sed. Ultricies leo
-          integer
-          malesuada nunc vel risus. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue. Adipiscing commodo
-          elit
-          at imperdiet dui accumsan. Dui nunc mattis enim ut tellus elementum. Integer enim neque volutpat ac tincidunt
-          vitae semper quis lectus. Feugiat in ante metus dictum at tempor commodo ullamcorper a. Risus sed vulputate
-          odio
-          ut enim. Ut morbi tincidunt augue interdum velit euismod in pellentesque.
-        </p>
-      </div>
-
-      <br style="clear: both;"/>
-
-      <app-testimonial-item [content]="(testimonials$ | async)?.second?.content"></app-testimonial-item>
-
-      <div class="d-flex flex-row justify-content-start align-items-baseline">
-        <h1 class="display-4" #schaar>Schaar</h1>
-        <button class="btn btn-link" (click)="jump()">(top)</button>
-      </div>
-
-      <p>
-        "Impliciete bias" betekent dat mensen niet neutraal zijn in hun oordeel en gedrag. Ze hebben daarentegen op
-        ervaring gebaseerde associaties en voorkeuren (of aversies), zonder zich daarvan bewust te zijn. Het gaat
-        dus niet om een expliciete vooringenomenheid, maar om een bekend psychologisch mechanisme dat ons allemaal
-        beïnvloedt.
-      </p>
-
-      <img class="w-100" src="assets/img/scissor-graphs-2011.jpg"/>
-
-      <app-logo
-        class="d-none d-xl-block"
-        [src]="'assets/img/Baanbrekende wetenschap.svg'"
-        [align]="'right'"></app-logo>
+      <app-info-box [title]="'Toolbox'" 
+                    [link]="'/toolbox'">
+        <div class="info-box__cartoon">
+          <img src="assets/undraw/teaching.svg"></div>
+        <div class="info-box__description">
+          Lees hier een aantal suggesties wat je zelf kan doen om gender bias tegen te gaan.
+        </div>
+      </app-info-box>
 
 
-      <app-logo
-        class="d-none d-xl-block"
-        [src]="'assets/img/Creatieve wetenschap.svg'"
-        [align]="'left'"></app-logo>
+      <!--<carousel [interval]="5000">-->
+      <!--<slide *ngFor="let testimonial of testimonials$ | async;">-->
 
-      <!--<app-logo [src]="'assets/img/Frisse wetenschap.svg'"-->
+      <!--<div class="w-100">-->
+      <!--<app-testimonial-item [content]="testimonial.content"></app-testimonial-item>-->
+      <!--</div>-->
+
+      <!--&lt;!&ndash;<div class="carousel-caption">&ndash;&gt;-->
+      <!--&lt;!&ndash;<h4>Slide {{index}}</h4>&ndash;&gt;-->
+      <!--&lt;!&ndash;<p>{{slide.text}}</p>&ndash;&gt;-->
+      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+      <!--</slide>-->
+      <!--</carousel>-->
+
+
+      <!--<br style="clear: both;"/>-->
+
+      <!--<app-testimonial-item [content]="(testimonials$ | async)?.second?.content"></app-testimonial-item>-->
+
+      <!--<div class="d-flex flex-row justify-content-start align-items-baseline">-->
+      <!--<h1 class="display-4" #schaar>Schaar</h1>-->
+      <!--<button class="btn btn-link" (click)="jump()">(top)</button>-->
+      <!--</div>-->
+
+      <!--<p>-->
+      <!--"Impliciete bias" betekent dat mensen niet neutraal zijn in hun oordeel en gedrag. Ze hebben daarentegen op-->
+      <!--ervaring gebaseerde associaties en voorkeuren (of aversies), zonder zich daarvan bewust te zijn. Het gaat-->
+      <!--dus niet om een expliciete vooringenomenheid, maar om een bekend psychologisch mechanisme dat ons allemaal-->
+      <!--beïnvloedt.-->
+      <!--</p>-->
+
+      <!--<img class="w-100" src="assets/img/scissor-graphs-2011.jpg"/>-->
+
+      <!--<app-logo-->
+      <!--class="d-none d-xl-block"-->
+      <!--[src]="'assets/img/Baanbrekende wetenschap.svg'"-->
       <!--[align]="'right'"></app-logo>-->
 
-      <div class="d-flex flex-row justify-content-start align-items-baseline">
-        <h1 class="display-4" #activiteiten>Activiteiten</h1>
-        <button class="btn btn-link" (click)="jump()">(top)</button>
-      </div>
 
-    </div>
+      <!--<app-logo-->
+      <!--class="d-none d-xl-block"-->
+      <!--[src]="'assets/img/Creatieve wetenschap.svg'"-->
+      <!--[align]="'left'"></app-logo>-->
 
-    <div class="container">
+      <!--&lt;!&ndash;<app-logo [src]="'assets/img/Frisse wetenschap.svg'"&ndash;&gt;-->
+      <!--&lt;!&ndash;[align]="'right'"></app-logo>&ndash;&gt;-->
 
-      <div class="row">
-        <app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>
-        <app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>
-        <app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>
-        <app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>
-      </div>
+      <!--<div class="d-flex flex-row justify-content-start align-items-baseline">-->
+      <!--<h1 class="display-4" #activiteiten>Activiteiten</h1>-->
+      <!--<button class="btn btn-link" (click)="jump()">(top)</button>-->
+      <!--</div>-->
 
-      <h2>voorbij</h2>
+      <!--</div>-->
 
-      <div class="row" style="filter: grayscale(100%)">
-        <app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>
-        <app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>
-        <app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>
-        <app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>
-      </div>
+      <!--<div class="container">-->
 
-    </div>
+      <!--<div class="row">-->
+      <!--<app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>-->
+      <!--<app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>-->
+      <!--<app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>-->
+      <!--<app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>-->
+      <!--</div>-->
+
+      <!--<h2>voorbij</h2>-->
+
+      <!--<div class="row" style="filter: grayscale(100%)">-->
+      <!--<app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>-->
+      <!--<app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>-->
+      <!--<app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>-->
+      <!--<app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>-->
+      <!--</div>-->
+
+      <!--</div>-->
 
   `,
   styles: [`
@@ -164,6 +129,15 @@ import { TestimonialService } from '../testimonial/testimonial.service';
       width: 240px;
       float: right;
     }
+
+    app-info-box {
+      marging-bottom: 30px;
+    }
+    
+    .info-box__cartoon img {
+      max-height: 150px;
+    }
+    
   `]
 })
 export class HomePageComponent implements OnInit {

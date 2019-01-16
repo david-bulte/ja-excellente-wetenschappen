@@ -2,9 +2,11 @@
 
 @import "variables";
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css?family=Lato:400");
 
 body {
   color: $dark;
+  background-color: $light;
 }
 
 html {
@@ -17,6 +19,18 @@ html {
   }
 }
 
+h2 {
+  color: $success;
+  font-size: large;
+}
+
+h3 {
+  color: $success;
+  font-style: italic;
+  font-size: medium;
+}
+
 .container {
   max-width: 960px;
 }
+
