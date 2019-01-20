@@ -47,7 +47,7 @@ import { TestimonialService } from '../testimonial/testimonial.service';
         </div>
       </app-info-box>
 
-
+    </div>
       <!--<carousel [interval]="5000">-->
       <!--<slide *ngFor="let testimonial of testimonials$ | async;">-->
 
@@ -103,24 +103,6 @@ import { TestimonialService } from '../testimonial/testimonial.service';
       <!--</div>-->
 
       <!--<div class="container">-->
-
-      <!--<div class="row">-->
-      <!--<app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>-->
-      <!--<app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>-->
-      <!--<app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>-->
-      <!--<app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>-->
-      <!--</div>-->
-
-      <!--<h2>voorbij</h2>-->
-
-      <!--<div class="row" style="filter: grayscale(100%)">-->
-      <!--<app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>-->
-      <!--<app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>-->
-      <!--<app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>-->
-      <!--<app-news class="col col-lg-4 col-md-6 col-xs-1"></app-news>-->
-      <!--</div>-->
-
-      <!--</div>-->
 
   `,
   styles: [`

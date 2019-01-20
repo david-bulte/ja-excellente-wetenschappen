@@ -22,7 +22,6 @@ import { HomePageComponent } from './home/home-page.component';
 import { ImplicitBiasPageComponent } from './implicit-bias/implicit-bias-page.component';
 import { NavComponent } from './nav/nav.component';
 import { LogoComponent } from './logo/logo.component';
-import { NewsComponent } from './news/news.component';
 import { LinksPageComponent } from './links/links-page.component';
 import { CampagnePageComponent } from './campagne/campagne-page.component';
 import { BiasPageComponent } from './testimonial/bias-page.component';
@@ -32,6 +31,7 @@ import { FooterComponent } from './footer/footer.component';
 import { RECAPTCHA_URL, RecaptchaDirective } from './testimonial/recaptcha.directive';
 import { ToolboxPageComponent } from './toolbox/toolbox-page.component';
 import { InfoBoxComponent } from './components/info-box/info-box.component';
+import { ActuaItemComponent } from './actua/actua-item/actua-item.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +39,6 @@ import { InfoBoxComponent } from './components/info-box/info-box.component';
     NavComponent,
     HomePageComponent,
     LogoComponent,
-    NewsComponent,
     BiasPageComponent,
     LinksPageComponent,
     CampagnePageComponent,
@@ -51,7 +50,8 @@ import { InfoBoxComponent } from './components/info-box/info-box.component';
     ToolboxPageComponent,
     FactsAndFiguresPageComponent,
     ImplicitBiasPageComponent,
-    InfoBoxComponent
+    InfoBoxComponent,
+    ActuaItemComponent
   ],
   imports: [
     BrowserModule,

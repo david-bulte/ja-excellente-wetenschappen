@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Lancering event",
+    "type": "event",
+    "when": "11/02/2019",
+    "where": "",
+    "description": "We gaan er aan beginnen. Het wordt supertof. Kom allemaal af.",
+    "photo": "birthday-party.jpg"
+  },
+  {
+    "title": "Women in science event",
+    "type": "event",
+    "when": "13/03/2019",
+    "where": "KUL",
+    "description": "We gaan er aan beginnen. Het wordt supertof. Kom allemaal af.",
+    "photo": "dinner-party.jpg"
+  },
+  {
+    "title": "Dat kan beter",
+    "type": "lezing",
+    "when": "13/03/2018",
+    "where": "",
+    "description": "We gaan er aan beginnen. Het wordt supertof. Kom allemaal af.",
+    "photo": "dinner-party.jpg"
+  }
+]

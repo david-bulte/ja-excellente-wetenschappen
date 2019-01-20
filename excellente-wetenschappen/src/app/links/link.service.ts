@@ -19,7 +19,7 @@ export class LinkService {
 
     this.http.get<RootConfig[]>('/assets/links.json').subscribe(links => {
       this.configSubj.next(links);
-    })
+    });
   }
 
   getConfigs() {
