@@ -4,16 +4,34 @@
     "type": "event",
     "when": "02/11/2019",
     "where": "",
+    "moreInfo": {
+      "link": "campagne",
+      "target": "_self"
+    },
     "description": "11 februari is het <i>Internationale Dag van Vrouwen en Meisjes in de Wetenschap</i>. De Jonge Academie lanceert dan de campagne Wetenschap = M+V+X.",
     "photo": "Excellente wetenschap.png"
   },
   {
     "title": "Women in science symposium",
-    "type": "event",
+    "type": "symposium",
     "when": "02/13/2019",
-    "where": "Gasthuisberg",
-    "moreInfo": "https://ppw.kuleuven.be/home/Facagenda/women-in-science-symposium",
-    "description": "We gaan er aan beginnen. Het wordt supertof. Kom allemaal af.",
+    "where": "GA3 auditorium - Campus Gasthuisberg (Leuven)",
+    "moreInfo": {
+      "link" : "https://ppw.kuleuven.be/home/Facagenda/women-in-science-symposium",
+      "target": "_blank"
+    },
+    "description": "This symposium, organized by KUL and VIB, intends to shine light on women in science, identify the inequalities and factors that still contribute to the vast under-representation of women in senior-level positions across academia and other occupational sectors.",
     "photo": "women_in_science.jpg"
+  },
+  {
+    "title": "Internationale Vrouwendag",
+    "type": "event",
+    "when": "03/08/2019",
+    "moreInfo": {
+      "link" : "https://nl.wikipedia.org/wiki/Internationale_Vrouwendag",
+      "target": "_blank"
+    },
+    "description": "",
+    "photo": "Vrouwendag.jpg"
   }
 ]

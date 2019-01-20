@@ -47,7 +47,12 @@ export interface ActuaItem {
   when: Date;
   where?: string;
   description: string;
-  moreInfo?: string;
+  moreInfo?: MoreInfo;
   photo: string;
   past?: boolean;
+}
+
+export interface MoreInfo {
+  link: string;
+  target: string;
 }

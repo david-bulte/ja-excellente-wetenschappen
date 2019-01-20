@@ -4,7 +4,7 @@ import { ActuaItem } from '../actua.service';
 @Component({
   selector: 'app-actua-item',
   template: `
-    <div class="actua-type text-uppercase w-100 d-flex justify-content-end text-muted">
+    <div class="actua-type text-uppercase w-100 d-flex justify-content-end text-muted mb-1">
       <div>{{item.type}}</div>
     </div>
     <div class="card-img-top img-container">
@@ -21,7 +21,7 @@ import { ActuaItem } from '../actua.service';
         <span class="font-weight-bold">waar?</span> {{item.where}}
       </p>
       <p class="card-text" *ngIf="item.moreInfo">
-        <a [href]="item.moreInfo" target="_blank" class="float-right">meer info</a>
+        <a [href]="item.moreInfo.link" [target]="item.moreInfo.target" class="float-right">meer info</a>
       </p>
     </div>
   `,

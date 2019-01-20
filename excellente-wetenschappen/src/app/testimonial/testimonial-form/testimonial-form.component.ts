@@ -107,7 +107,7 @@ export class TestimonialFormComponent implements OnInit {
   submit() {
     const {email, content} = this.form.getRawValue();
     this.sent$.next(true);
-    this.send.emit({author: email, content, created: new Date().toDateString()});
+    this.send.emit({author: email, public: false, content, created: new Date().toDateString()});
     setTimeout(() => {
       this.captcha.reset();
       this.form.reset();

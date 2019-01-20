@@ -6,18 +6,18 @@ import { Testimonial, TestimonialService } from './testimonial.service';
   template: `
     <div>
 
-      <div class="d-block d-sm-none d-flex flex-row align-items-center">
-        <span>Heb je zelf iets meegemaakt?</span>
-        <button class="btn btn-link float-right" [routerLink]="'/testimonials/add'">
+      <div class="d-flex flex-row justify-content-end align-items-center w-100">
+        <div>Heb je zelf iets meegemaakt?</div>
+        <button class="btn btn-link float-right" [routerLink]="'/bias-in-de-praktijk/add'">
           Laat ons iets weten!
         </button>
       </div>
 
-      <div style="max-width: 330px; min-width: 330px;" class="pl-3 float-right d-none d-sm-block">
+      <!--<div style="max-width: 330px; min-width: 330px;" class="pl-3 float-right d-none d-sm-block">-->
 
-        <app-testimonial-form (send)="send($event)"></app-testimonial-form>
+        <!--<app-testimonial-form (send)="send($event)"></app-testimonial-form>-->
 
-      </div>
+      <!--</div>-->
 
       <app-testimonial-item
         [author]="t.author" [created]="t.created"

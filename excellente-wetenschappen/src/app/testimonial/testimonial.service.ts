@@ -11,7 +11,7 @@ export class TestimonialService {
   private testimonialsSubj = new BehaviorSubject([]);
 
   constructor(private http: HttpClient) {
-    this.send({author: 'me', content: 'bla', created: new Date().toDateString()}).subscribe(resp => {
+    this.send({author: 'me', content: 'bla', public: true, created: new Date().toDateString()}).subscribe(resp => {
       console.log("resp", resp);
     });
   }
@@ -51,4 +51,5 @@ export interface Testimonial {
   content: string;
   created: string;
   author: string;
+  public: boolean;
 }
