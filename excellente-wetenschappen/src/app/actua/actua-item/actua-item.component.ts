@@ -20,9 +20,17 @@ import { ActuaItem } from '../actua.service';
       <p class="card-text actua-where" *ngIf="item.where">
         <span class="font-weight-bold">waar?</span> {{item.where}}
       </p>
+      <p class="card-text" *ngIf="item.moreInfo">
+        <a [href]="item.moreInfo" target="_blank" class="float-right">meer info</a>
+      </p>
     </div>
   `,
-  styles: []
+  styles: [`    
+    .img-container {
+      max-height: 250px;
+      overflow: hidden;
+    }
+  `]
 })
 export class ActuaItemComponent implements OnInit {
 

@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { compareAsc, isPast } from 'date-fns';
-import { parseDate } from 'ngx-bootstrap';
+import { compareAsc, isPast, parse } from 'date-fns';
 import { BehaviorSubject } from 'rxjs';
 import { map } from 'rxjs/operators';
 
@@ -21,7 +20,7 @@ export class ActuaService {
 
     this.http.get<ActuaItem[]>('/assets/actua.json').pipe(
       map(items => items.map(item => {
-        const when = parseDate(item.when, 'dd/MM/YYYY');
+        const when = parse(item.when);
         const photo = item.photo ? `assets/img/${item.photo}` : defaultPhoto;
         return {...item, when, past: isPast(when), photo};
       })),
@@ -48,6 +47,7 @@ export interface ActuaItem {
   when: Date;
   where?: string;
   description: string;
+  moreInfo?: string;
   photo: string;
   past?: boolean;
 }

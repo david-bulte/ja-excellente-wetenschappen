@@ -1,26 +1,19 @@
 [
   {
-    "title": "Lancering event",
+    "title": "Lancering campagne",
     "type": "event",
-    "when": "11/02/2019",
+    "when": "02/11/2019",
     "where": "",
-    "description": "We gaan er aan beginnen. Het wordt supertof. Kom allemaal af.",
-    "photo": "birthday-party.jpg"
+    "description": "11 februari is het <i>Internationale Dag van Vrouwen en Meisjes in de Wetenschap</i>. De Jonge Academie lanceert dan de campagne Wetenschap = M+V+X.",
+    "photo": "Excellente wetenschap.png"
   },
   {
-    "title": "Women in science event",
+    "title": "Women in science symposium",
     "type": "event",
-    "when": "13/03/2019",
-    "where": "KUL",
+    "when": "02/13/2019",
+    "where": "Gasthuisberg",
+    "moreInfo": "https://ppw.kuleuven.be/home/Facagenda/women-in-science-symposium",
     "description": "We gaan er aan beginnen. Het wordt supertof. Kom allemaal af.",
-    "photo": "dinner-party.jpg"
-  },
-  {
-    "title": "Dat kan beter",
-    "type": "lezing",
-    "when": "13/03/2018",
-    "where": "",
-    "description": "We gaan er aan beginnen. Het wordt supertof. Kom allemaal af.",
-    "photo": "dinner-party.jpg"
+    "photo": "women_in_science.jpg"
   }
 ]
