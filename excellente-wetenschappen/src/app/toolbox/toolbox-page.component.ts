@@ -82,7 +82,7 @@ import { Component, OnInit } from '@angular/core';
     </ul>
 
     <h3>
-      Tips om impliciete bias uit te sluiten in selectie- of bevorderingsprocedures:
+      Tips om implicit bias uit te sluiten in selectie- of bevorderingsprocedures:
     </h3>
 
     <ul>
@@ -130,7 +130,7 @@ import { Component, OnInit } from '@angular/core';
         vooraleer de finale scores van alle commissieleden moeten ingediend en bekeken worden.
       </li>
       <li>
-        Reageer als je impliciete bias herkent. Een aantal voorbeelden hieronder:
+        Reageer als je implicit bias herkent. Een aantal voorbeelden hieronder:
         de onafhankelijkheid van vrouwen wordt vaker in vraag gesteld dan bij mannen.
       </li>
       <li>

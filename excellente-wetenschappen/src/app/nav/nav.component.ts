@@ -34,7 +34,7 @@ import { ChangeDetectionStrategy, Component, ElementRef, OnInit } from '@angular
             <a class="p-2 text-dark menu-item border-primary border-0"
                #factsAndFigures
                (mouseenter)="hover(factsAndFigures, true)" (mouseleave)="hover(factsAndFigures, false)"
-               routerLinkActive="active" [routerLink]="'/facts-and-figures'">Facts And Figures</a>
+               routerLinkActive="active" [routerLink]="'/facts-and-figures'">Facts and Figures</a>
             <a class="p-2 text-dark menu-item border-primary border-0"
                #bias
                (mouseenter)="hover(bias, true)" (mouseleave)="hover(bias, false)"

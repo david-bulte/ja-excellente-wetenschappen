@@ -8,13 +8,13 @@ import { TestimonialService } from '../testimonial/testimonial.service';
   template: `
 
     <div class="d-flex flex-column flex-md-row mt-5">
-      <app-info-box [title]="'Implicit Bias'"
+      <app-info-box [title]="'implicit bias'"
                     [link]="'/implicit-bias'">
         <div class="info-box__cartoon">
           <img src="assets/undraw/science.svg">
         </div>
         <div class="info-box__description">
-          Wat is Implicit Bias? Hoe herken je Implicit Bias?
+          Wat is implicit bias? Hoe herken je implicit bias?
         </div>
       </app-info-box>
 
@@ -24,7 +24,7 @@ import { TestimonialService } from '../testimonial/testimonial.service';
           <img src="assets/undraw/growing.svg">
         </div>
         <div class="info-box__description">
-          De evolutie naar minder gendergelijkheid in academie gaat nog steeds traag. Wat zijn de cijfers?
+          De evolutie naar meer gendergelijkheid in academia gaat nog steeds traag. Wat zijn de cijfers?
         </div>
       </app-info-box>
 
@@ -34,8 +34,7 @@ import { TestimonialService } from '../testimonial/testimonial.service';
           <img src="assets/undraw/programmer_imem.svg">
         </div>
         <div class="info-box__description">
-          Lees hier getuigenissen van gendergerelateerde uitdagingen en opportuniteiten. Zelf iets te melden? Dat kan
-          ook hier.
+          Lees hier getuigenissen over gendergerelateerde uitdagingen en opportuniteiten. Zelf iets te melden? Dat kan!
         </div>
       </app-info-box>
 
@@ -44,7 +43,7 @@ import { TestimonialService } from '../testimonial/testimonial.service';
         <div class="info-box__cartoon">
           <img src="assets/undraw/teaching.svg"></div>
         <div class="info-box__description">
-          Lees hier een aantal suggesties wat je zelf kan doen om gender bias tegen te gaan.
+          Wat kan je zelf doen om gender bias tegen te gaan?
         </div>
       </app-info-box>
 
@@ -74,7 +73,7 @@ import { TestimonialService } from '../testimonial/testimonial.service';
       <!--</div>-->
 
       <!--<p>-->
-      <!--"Impliciete bias" betekent dat mensen niet neutraal zijn in hun oordeel en gedrag. Ze hebben daarentegen op-->
+      <!--"implicit bias" betekent dat mensen niet neutraal zijn in hun oordeel en gedrag. Ze hebben daarentegen op-->
       <!--ervaring gebaseerde associaties en voorkeuren (of aversies), zonder zich daarvan bewust te zijn. Het gaat-->
       <!--dus niet om een expliciete vooringenomenheid, maar om een bekend psychologisch mechanisme dat ons allemaal-->
       <!--beïnvloedt.-->
