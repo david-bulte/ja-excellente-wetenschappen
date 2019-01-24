@@ -20,7 +20,7 @@ import { Component, OnInit } from '@angular/core';
         </p>
       </div>
 
-      <div class="d-flex justify-content-center mb-5 mt-3">
+      <div class="d-none d-md-flex justify-content-center mb-5 mt-3">
         <img class="cartoon" src="assets/cartoons/Meeting.png">
       </div>
 
@@ -42,7 +42,7 @@ import { Component, OnInit } from '@angular/core';
         </p>
       </div>
 
-      <div class="d-flex justify-content-center mb-5 mt-3">
+      <div class="d-none d-md-flex justify-content-center mb-5 mt-3 d-none d-md-block">
         <img class="cartoon" src="assets/cartoons/Professor Smith.png">
       </div>
 
@@ -85,7 +85,7 @@ import { Component, OnInit } from '@angular/core';
 
       </div>
 
-      <div class="d-flex justify-content-center mb-5 mt-3">
+      <div class="d-none d-md-flex justify-content-center mb-5 mt-3 d-none d-md-block">
         <img class="cartoon" src="assets/cartoons/Ideas.png">
       </div>
 
@@ -115,7 +115,7 @@ import { Component, OnInit } from '@angular/core';
         </p>
       </div>
 
-      <div class="d-flex justify-content-center mb-5 mt-3">
+      <div class="d-none d-md-flex justify-content-center mb-5 mt-3 d-none d-md-block">
         <img class="cartoon" src="assets/cartoons/Secretary.png">
       </div>
 

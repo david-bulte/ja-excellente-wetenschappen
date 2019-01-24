@@ -7,7 +7,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 
     <app-nav></app-nav>
 
-    <div class="container mb-3 mt-5 bg-white p-0 p-md-4">
+    <div class="container mb-3 mt-5 bg-white p-4">
       <router-outlet></router-outlet>
     </div>
 
