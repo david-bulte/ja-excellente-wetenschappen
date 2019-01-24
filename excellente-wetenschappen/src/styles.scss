@@ -21,16 +21,20 @@ html {
 
 h2 {
   color: $success;
-  font-size: large;
+  //font-size: large;
 }
 
 h3 {
   color: $success;
   font-style: italic;
-  font-size: medium;
+  //font-size: medium;
 }
 
-.container {
-  max-width: 960px;
-}
+//.container {
+//  max-width: 960px;
+//}
 
+.text-container {
+  width: 600px !important;
+  max-width: 600px !important;
+}

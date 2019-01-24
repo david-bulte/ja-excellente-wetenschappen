@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-charter-page',
   template: `
-    <p>
+    <p class="text-container">
       Ondanks inspanningen op gebied van work-life balance en selectieprocedures, is het merendeel van professoren nog
       een man. Er is genoeg wetenschappelijke literatuur over onbewuste vooroordelen en de gevolgen ervan voor
       genderdiversiteit aan de universiteit. Het is de leden van de Jonge Academie opgevallen dat deze

@@ -1,11 +1,18 @@
-import { ChangeDetectionStrategy, Component, ElementRef, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
   template: `
 
-    <div class="d-flex flex-row justify-content-between align-items-center container">
-        <img class="nav__logo position-absolute" style="top: -11px; left: 50px" 
+    <nav class="navbar navbar-expand-lg navbar-light d-block d-md-none bg-primary text-white">
+      <a class="navbar-brand text-white" [routerLink]="'/home'">excellente wetenschappen</a>
+      <button class="navbar-toggler float-right text-white" type="button" data-toggle="collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+
+    <div class="flex-row justify-content-between align-items-center container d-none d-md-flex">
+        <img class="nav__logo position-absolute" [routerLink]="'/home'" style="top: -11px; left: 50px" 
              src="assets/img/Excellente wetenschap.png">
         <div class="d-flex flex-column flex-grow-1">
           <div class="d-flex flex-row justify-content-end small">

@@ -14,14 +14,7 @@ import { DomSanitizer } from '@angular/platform-browser';
     <app-footer></app-footer>
 
   `,
-  styles: [
-      `      
-      .container {
-        min-height: 400px;
-        border-radius: 15px;
-      }
-    `
-  ]
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
 }

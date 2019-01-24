@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { map, share, shareReplay, tap } from 'rxjs/operators';
-import { ActuaService } from './actua.service';
+import { ActuaItem, ActuaService } from './actua.service';
 
 @Component({
   selector: 'app-actua',
@@ -77,6 +77,7 @@ export class ActuaPageComponent implements OnInit {
 
   ngOnInit() {
     this.service.load();
+
   }
 
 }
