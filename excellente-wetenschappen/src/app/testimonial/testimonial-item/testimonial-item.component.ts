@@ -5,7 +5,7 @@ import { Component, OnInit, Input } from '@angular/core';
   template: `
 
 
-    <blockquote class="blockquote position-relative d-inline">
+    <blockquote class="position-relative d-inline">
 
       <div class="mb-0 font-italic d-inline">
         <fa-icon [icon]="'quote-left'"
@@ -28,9 +28,9 @@ import { Component, OnInit, Input } from '@angular/core';
   `,
   styles: [
     `
-      .testimonial__quote {
-        font-size: larger;
-      }
+      /*.testimonial__quote {*/
+        /*font-size: larger;*/
+      /*}*/
       
       .testimonial__quote__start {
         vertical-align: bottom;

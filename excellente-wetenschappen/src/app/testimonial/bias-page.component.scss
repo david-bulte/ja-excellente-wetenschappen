@@ -1,0 +1,15 @@
+@import '~src/variables';
+@import '~bootstrap/scss/functions';
+
+.bias-page__cta {
+
+  @media (max-width: 769px) {
+    border: 1px solid theme-color(primary);
+    border-radius: 10px;
+  }
+
+  @media (min-width: 768px) {
+    border-bottom: 1px solid #ced4da;
+  }
+
+}
