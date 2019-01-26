@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
           <img src="assets/img/JA_logo.png" width="50" height="50" alt="">
         </a>
 
-        <div class="ml-3">
+        <div class="ml-3 small font-italic">
           Deze site is gemaakt door de Jonge Academie in samenwerking met Nellie Konijnendijk.
         </div>
         

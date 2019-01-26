@@ -6,7 +6,7 @@
 
 body {
   color: $dark;
-  background-color: $light;
+  background-color: $white;
 }
 
 html {
@@ -16,6 +16,10 @@ html {
 @media (min-width: 768px) {
   html {
     //font-size: 16px;
+  }
+
+  body {
+    background-color: $light;
   }
 }
 
@@ -30,23 +34,51 @@ h3 {
   //font-size: medium;
 }
 
-//.container {
-//  max-width: 960px;
-//}
 
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100% !important;
+
+  &-router {
+    min-height: 400px;
+    border-radius: 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px !important;
+    max-width: 720px !important;
+
+    &-router {
+      border-radius: 15px !important;
+    }
+  }
+
+}
+@media (min-width: 992px) {
+  .container {
+    width: 960px !important;
+    max-width: 960px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px !important;
+    max-width: 1140px !important;
+  }
+
+}
 
 .text-container {
   width: 100% !important;
   max-width: 100% !important;
 }
 
-//@media (min-width: 576px) {
-//  .container {
-//    width: 100% !important;
-//    max-width: 100% !important;
-//  }
-//}
-//
 @media (min-width: 768px) {
   .text-container {
     width: 600px !important;

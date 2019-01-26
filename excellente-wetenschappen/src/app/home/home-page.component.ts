@@ -7,9 +7,10 @@ import { TestimonialService } from '../testimonial/testimonial.service';
   selector: 'app-home',
   template: `
 
-    <div class="d-flex flex-column flex-md-row mt-5">
+    <div class="d-flex flex-column flex-md-row mt-0 mt-md-5">
       <app-info-box [title]="'implicit bias'"
-                    [link]="'/implicit-bias'">
+                    [link]="'/implicit-bias'"
+                    class="mb-4 mb-md-0">
         <div class="info-box__cartoon">
           <img src="assets/undraw/science.svg">
         </div>
@@ -19,7 +20,8 @@ import { TestimonialService } from '../testimonial/testimonial.service';
       </app-info-box>
 
       <app-info-box [title]="'Facts and Figures'"
-                    [link]="'/facts-and-figures'">
+                    [link]="'/facts-and-figures'"
+                    class="mb-4 mb-md-0">
         <div class="info-box__cartoon">
           <img src="assets/undraw/growing.svg">
         </div>
@@ -29,7 +31,8 @@ import { TestimonialService } from '../testimonial/testimonial.service';
       </app-info-box>
 
       <app-info-box [title]="'Bias in de praktijk'" 
-                    [link]="'/bias-in-de-praktijk'">
+                    [link]="'/bias-in-de-praktijk'"
+                    class="mb-4 mb-md-0">
         <div class="info-box__cartoon">
           <img src="assets/undraw/programmer_imem.svg">
         </div>
@@ -39,7 +42,8 @@ import { TestimonialService } from '../testimonial/testimonial.service';
       </app-info-box>
 
       <app-info-box [title]="'Toolbox'" 
-                    [link]="'/toolbox'">
+                    [link]="'/toolbox'"
+                    class="mb-4 mb-md-0">
         <div class="info-box__cartoon">
           <img src="assets/undraw/teaching.svg"></div>
         <div class="info-box__description">

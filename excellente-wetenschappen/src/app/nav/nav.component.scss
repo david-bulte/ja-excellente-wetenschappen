@@ -1,61 +1,76 @@
 @import '~src/variables';
 @import '~bootstrap/scss/functions';
 
-.container {
-  max-width: 960px;
-}
-
 a.menu-item {
   display: inline-block;
-  padding-top: 26px !important;
-  padding-bottom: 26px !important;
-  font-size: larger;
+  white-space: nowrap;
+
+  @media (min-width: 768px) {
+    padding-top: 26px !important;
+    padding-bottom: 26px !important;
+    font-size: larger;
+  }
+
+  @media (max-width: 769px) {
+    padding-bottom: 9px !important;
+  }
+
+  &__small {
+    display: inline-block;
+
+    @media (min-width: 768px) {
+      padding-top: 26px !important;
+      padding-bottom: 26px !important;
+    }
+
+    &:hover {
+      color: theme-color(primary) !important;
+      text-decoration: none;
+    }
+
+    &.active {
+      color: theme-color(primary) !important;
+    }
+  }
+
+  &.pb-0 {
+    padding-bottom: 0 !important;
+  }
+
+  &:hover {
+    color: theme-color(primary) !important;
+    text-decoration: none;
+  }
+
+  &.active {
+    border-bottom-style: solid !important;
+
+    @media (max-width: 769px) {
+      padding-bottom: 8px !important;
+    }
+
+    @media (min-width: 768px) {
+      border-bottom-width: 2px !important;
+      padding-bottom: 26px !important;
+    }
+  }
+
+  &._hover_ {
+    /*color: red !important;*/
+  }
 }
 
-a.menu-item__small {
-  display: inline-block;
-  padding-top: 26px !important;
-  padding-bottom: 26px !important;
-}
 
-a.menu-item__small:hover {
-  color: theme-color(primary) !important;
-  text-decoration: none;
-}
 
-a.menu-item__small.active {
-  color: theme-color(primary) !important;
-  //padding-bottom: 26px !important;
-  //border-bottom-style: solid !important;
-  //border-bottom-width: 1px !important;
-  //background: #d3d3d338;
-}
-
-a.menu-item.pb-0 {
-  padding-bottom: 0 !important;
-}
-
-a.menu-item:hover {
-  /*padding-bottom: 18px !important;*/
-  /*border-bottom-style: solid !important;*/
-  /*border-bottom-width: 2px !important;*/
-  //color: theme-color(primary);
-  color: theme-color(primary) !important;
-  text-decoration: none;
-}
-
-a.menu-item.active {
-  padding-bottom: 26px !important;
-  border-bottom-style: solid !important;
-  border-bottom-width: 2px !important;
-  //background: #d3d3d338;
-}
-
-a.menu-item._hover_ {
-  /*color: red !important;*/
-}
 
 .nav__logo {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
+
+  @media (min-width: 768px) {
+      width: 200px;
+      height: 200px;
+  }
+
 }
+
