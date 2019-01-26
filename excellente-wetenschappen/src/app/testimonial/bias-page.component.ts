@@ -1,4 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { getDayOfYear } from "date-fns";
+import { filter, map } from 'rxjs/operators';
 import { Testimonial, TestimonialService } from './testimonial.service';
 
 @Component({
@@ -22,7 +24,7 @@ import { Testimonial, TestimonialService } from './testimonial.service';
             [author]="t.author" [created]="t.created"
             [content]="t.content" [showMoreButton]="false"></app-testimonial-item>
         </ng-container>
-        
+
       </div>
 
     </div>
@@ -32,7 +34,18 @@ import { Testimonial, TestimonialService } from './testimonial.service';
 })
 export class BiasPageComponent implements OnInit {
 
-  testimonials$ = this.testimonialService.getTestimonials();
+  testimonials$ = this.testimonialService.getTestimonials().pipe(
+    filter(testimonials => testimonials && testimonials.length > 0),
+    map(testimonials => {
+      // elke dag 4 verse quotes
+      const date = getDayOfYear(new Date());
+      const idx1 = (date * 4) % testimonials.length
+      const idx2 = (date * 4 + 1) % testimonials.length
+      const idx3 = (date * 4 + 2) % testimonials.length
+      const idx4 = (date * 4 + 3) % testimonials.length
+      return [testimonials[idx1], testimonials[idx2], testimonials[idx3], testimonials[idx4]];
+    })
+  );
 
   constructor(private testimonialService: TestimonialService) {
   }
