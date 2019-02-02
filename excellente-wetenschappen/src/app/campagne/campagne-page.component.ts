@@ -26,21 +26,31 @@ import { Component, OnInit } from '@angular/core';
         <a href="/assets/posters/JA_10GenderPosters.pdf" download>Download de pdf van de campagneposters.</a>
       </p>
 
-      <div class="text-container w-100 d-flex flex-column flex-md-row flex-wrap">
-        <img class="m-1" src="/assets/posters/JA_AlexanderD.jpg" width="180" height="250">
-        <img class="m-1" src="/assets/posters/JA_AlexanderD.jpg" width="180" height="250">
-        <img class="m-1" src="/assets/posters/JA_AlexanderD.jpg" width="180" height="250">
-        <img class="m-1" src="/assets/posters/JA_AlexanderD.jpg" width="180" height="250">
-        <img class="m-1" src="/assets/posters/JA_AlexanderD.jpg" width="180" height="250">
-        <img class="m-1" src="/assets/posters/JA_AlexanderD.jpg" width="180" height="250">
-        <img class="m-1" src="/assets/posters/JA_AlexanderD.jpg" width="180" height="250">
-        <img class="m-1" src="/assets/posters/JA_AlexanderD.jpg" width="180" height="250">
-        <img class="m-1" src="/assets/posters/JA_AlexanderD.jpg" width="180" height="250">
+
+      <div class="text-container d-flex flex-column flex-md-row flex-md-wrap posters">
+        <img class="m-1" src="/assets/posters/JA_AlexanderD.jpg">
+        <img class="m-1" src="/assets/posters/JA_AngeliqueVO.jpg">
+        <img class="m-1" src="/assets/posters/JA_AnnC.jpg">
+        <img class="m-1" src="/assets/posters/JA_BertB.jpg">
+        <img class="m-1" src="/assets/posters/JA_CarolineP.jpg">
+        <img class="m-1" src="/assets/posters/JA_DamyaL.jpg">
+        <img class="m-1" src="/assets/posters/JA_GabrieleB.jpg">
+        <img class="m-1" src="/assets/posters/JA_GuyT.jpg">
+        <img class="m-1" src="/assets/posters/JA_MagalyRG.jpg">
+        <img class="m-1" src="/assets/posters/JA_PhilippeS.jpg">
       </div>
 
     </div>
   `,
-  styles: []
+  styles: [
+    `
+      @media (max-width: 769px) {
+        .posters img {
+          width: 100%;
+        }
+      }
+    `
+  ]
 })
 export class CampagnePageComponent implements OnInit {
 
