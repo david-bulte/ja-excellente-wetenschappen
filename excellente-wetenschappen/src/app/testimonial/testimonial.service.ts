@@ -24,6 +24,10 @@ export class TestimonialService {
     this.fire.doc(`testimonials/${testimonial.$id}`).update(testimonial);
   }
 
+  deleteTestimonial(testimonial: Testimonial): any {
+    this.fire.doc(`testimonials/${testimonial.$id}`).delete();
+  }
+
   getTestimonials(inclPrivate = false) {
     return this.fire.collection<Testimonial>('testimonials').snapshotChanges().pipe(
       map(actions => actions.map(action => {

@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { BehaviorSubject } from 'rxjs';
-import { RecaptchaDirective } from '../recaptcha.directive';
-import { TestimonialService } from '../testimonial.service';
+import { RecaptchaDirective } from './recaptcha.directive';
+import { TestimonialService } from './testimonial.service';
 
 @Component({
   selector: 'app-testimonial-form',
@@ -41,12 +41,12 @@ import { TestimonialService } from '../testimonial.service';
                       [class.is-valid]="!form.get('content').pristine && form.get('content').valid"
                       formControlName="content"
                       id="inputTestimonial" aria-describedby="emailHelp"></textarea>
-            <small id="emailHelp" class="form-text text-muted">Bondigheid!</small>
+            <!--<small id="emailHelp" class="form-text text-muted">Bondigheid!</small>-->
             <small class="invalid-feedback">dit is een verplicht veld!</small>
           </div>
 
           <!--we need captcha-->
-          <button class="btn btn-primary text-white w-100"
+          <button class="btn btn-primary text-white"
                   (click)="submit()"
                   [disabled]="!form.valid">Verstuur
           </button>

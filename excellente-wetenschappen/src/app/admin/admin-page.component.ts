@@ -5,7 +5,7 @@ import { BsModalRef, BsModalService } from 'ngx-bootstrap';
 import { BehaviorSubject, of } from 'rxjs';
 import { filter, switchMap, takeUntil, takeWhile } from 'rxjs/operators';
 import { Testimonial, TestimonialService } from '../testimonial/testimonial.service';
-import { TestimonialFormItemComponent } from './testimonial-form-item/testimonial-form-item.component';
+import { TestimonialFormItemComponent } from './testimonial-form-item.component';
 
 @Component({
   selector: 'app-admin',
@@ -22,22 +22,26 @@ import { TestimonialFormItemComponent } from './testimonial-form-item/testimonia
             <input class="form-control" id="inputPassword" type="password" formControlName="password">
             <button class="btn btn-link mt-2" type="submit">login</button>
           </form>
-          
-          <div class="d-flex flex-row justify-content-end" *ngSwitchDefault>
-            <button class="btn btn-link" (click)="addTestimonial()">new testimonial</button>
-            <button class="btn btn-link" (click)="logout()">logout</button>
+
+          <div *ngSwitchDefault>
+            <div class="d-flex flex-row justify-content-end">
+              <button class="btn btn-link" (click)="createTestimonial()">new testimonial</button>
+              <button class="btn btn-link" (click)="logout()">logout</button>
+            </div>
+            <hr>
           </div>
         </div>
 
 
-
         <app-testimonial-item *ngFor="let t of testimonials$ | async; let index = index"
                               [testimonial]="t" [showMoreButton]="false"
-                              [editable]="true" (saveTestimonial)="saveTestimonial($event)"></app-testimonial-item>
+                              [editable]="true" 
+                              (saveTestimonial)="saveTestimonial($event)"
+                              (deleteTestimonial)="deleteTestimonial($event)"></app-testimonial-item>
 
 
       </div>
-      
+
     </div>
 
   `,
@@ -95,7 +99,11 @@ export class AdminPageComponent implements OnInit {
     this.testimonialService.updateTestimonial(testimonial);
   }
 
-  addTestimonial() {
+  deleteTestimonial(testimonial: Testimonial) {
+    this.testimonialService.deleteTestimonial(testimonial);
+  }
+
+  createTestimonial() {
     this.modalRef = this.modalService.show(TestimonialFormItemComponent);
     this.modalRef.content.save.subscribe($event => {
       this.modalRef.hide();

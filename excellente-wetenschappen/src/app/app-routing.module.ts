@@ -8,7 +8,7 @@ import { HomePageComponent } from './home/home-page.component';
 import { ImplicitBiasPageComponent } from './implicit-bias/implicit-bias-page.component';
 import { LinksPageComponent } from './links/links-page.component';
 import { BiasPageComponent } from './testimonial/bias-page.component';
-import { TestimonialFormComponent } from './testimonial/testimonial-form/testimonial-form.component';
+import { TestimonialFormComponent } from './testimonial/testimonial-form.component';
 import { ToolboxPageComponent } from './toolbox/toolbox-page.component';
 
 const routes: Routes = [

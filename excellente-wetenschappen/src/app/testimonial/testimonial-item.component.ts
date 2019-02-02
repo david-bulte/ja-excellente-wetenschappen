@@ -1,8 +1,8 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap';
 import { BehaviorSubject } from 'rxjs';
-import { TestimonialFormItemComponent } from '../../admin/testimonial-form-item/testimonial-form-item.component';
-import { Testimonial } from '../testimonial.service';
+import { TestimonialFormItemComponent } from '../admin/testimonial-form-item.component';
+import { Testimonial } from './testimonial.service';
 
 @Component({
   selector: 'app-testimonial-item',
@@ -30,7 +30,8 @@ import { Testimonial } from '../testimonial.service';
 
     <div *ngIf="editable">
       <div class="d-flex justify-content-end">
-        <button class="btn btn-link" (click)="showEdit()">Edit</button>
+        <button class="btn btn-link" (click)="deleteTestimonial.emit(testimonial)">delete</button>
+        <button class="btn btn-link" (click)="showEdit()">edit</button>
       </div>
       <hr>
     </div>
@@ -63,6 +64,7 @@ export class TestimonialItemComponent implements OnInit {
   @Input() editable = false;
 
   @Output() saveTestimonial = new EventEmitter<Testimonial>();
+  @Output() deleteTestimonial = new EventEmitter<Testimonial>();
 
   modalRef: BsModalRef;
   editMode$ = new BehaviorSubject(false);

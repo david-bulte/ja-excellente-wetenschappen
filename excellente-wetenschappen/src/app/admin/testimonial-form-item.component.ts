@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Testimonial } from '../../testimonial/testimonial.service';
+import { Testimonial } from '../testimonial/testimonial.service';
 
 @Component({
   selector: 'app-testimonial-form-item',
@@ -76,11 +76,18 @@ export class TestimonialFormItemComponent implements OnInit, OnChanges {
   }
 
   submit() {
-    this.save.emit({
-      $id: this.testimonial.$id,
-      content: this.form.get('content').value,
-      status: this.form.get('status').value,
-    })
+    if (this.testimonial) {
+      this.save.emit({
+        $id: this.testimonial.$id,
+        content: this.form.get('content').value,
+        status: this.form.get('status').value,
+      })
+    } else {
+      this.save.emit({
+        content: this.form.get('content').value,
+        status: this.form.get('status').value,
+      })
+    }
   }
 
 }

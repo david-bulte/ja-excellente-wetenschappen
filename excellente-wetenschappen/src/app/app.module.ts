@@ -32,10 +32,10 @@ import { LogoComponent } from './logo/logo.component';
 import { NavComponent } from './nav/nav.component';
 import { BiasPageComponent } from './testimonial/bias-page.component';
 import { RECAPTCHA_URL, RecaptchaDirective } from './testimonial/recaptcha.directive';
-import { TestimonialFormComponent } from './testimonial/testimonial-form/testimonial-form.component';
-import { TestimonialItemComponent } from './testimonial/testimonial-item/testimonial-item.component';
+import { TestimonialFormComponent } from './testimonial/testimonial-form.component';
+import { TestimonialItemComponent } from './testimonial/testimonial-item.component';
 import { ToolboxPageComponent } from './toolbox/toolbox-page.component';
-import { TestimonialFormItemComponent } from './admin/testimonial-form-item/testimonial-form-item.component';
+import { TestimonialFormItemComponent } from './admin/testimonial-form-item.component';
 
 @NgModule({
   declarations: [
