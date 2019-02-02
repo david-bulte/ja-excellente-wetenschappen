@@ -64,10 +64,16 @@ a.menu-item {
 
 
 .nav__logo {
+
   width: 150px;
   height: 150px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 993px) {
+    width: 120px;
+    height: 120px;
+  }
+
+  @media (min-width: 992px) {
       width: 200px;
       height: 200px;
   }
