@@ -43,9 +43,9 @@ export class TestimonialService {
       }),
       map(testimonials => {
         return testimonials.sort((left, right) => {
+          // todo parseDate
           const l = parseDate(left.created);
           const r = parseDate(right.created);
-          console.log("r.getTime()", r.getTime());
           return (l.getTime() === r.getTime()) ? 0 : l < r ? -1 : 1;
         })
       })
