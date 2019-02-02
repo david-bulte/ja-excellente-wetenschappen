@@ -26,6 +26,13 @@ import { Testimonial } from '../testimonial/testimonial.service';
         </div>
 
         <div class="form-group">
+          <label for="inputStatus">Author</label>
+          <input type="text" class="form-control"
+                 formControlName="author"
+                 id="inputStatus">
+        </div>
+
+        <div class="form-group">
           <label for="inputStatus">Status *</label>
           <input type="text" class="form-control"
                  formControlName="status"
@@ -57,12 +64,14 @@ export class TestimonialFormItemComponent implements OnInit, OnChanges {
   ngOnInit() {
     this.form = this.fb.group({
       content: ['', [Validators.required]],
+      author: [''],
       status: [0, [Validators.required]]
     });
 
     if (this.testimonial) {
       this.form.patchValue({
         content: this.testimonial.content,
+        author: this.testimonial.author,
         status: this.testimonial.status
       }, {emitEvent: false});
     }
@@ -80,11 +89,13 @@ export class TestimonialFormItemComponent implements OnInit, OnChanges {
       this.save.emit({
         $id: this.testimonial.$id,
         content: this.form.get('content').value,
+        author: this.form.get('author').value,
         status: this.form.get('status').value,
       })
     } else {
       this.save.emit({
         content: this.form.get('content').value,
+        author: this.form.get('author').value,
         status: this.form.get('status').value,
       })
     }

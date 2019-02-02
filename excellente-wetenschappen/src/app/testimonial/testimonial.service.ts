@@ -1,6 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
+import { parseDate } from 'ngx-bootstrap';
 import { throwError } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 
@@ -30,10 +31,23 @@ export class TestimonialService {
   getTestimonials(inclPrivate = false) {
     return this.fire.collection<Testimonial>('testimonials').snapshotChanges().pipe(
       map(actions => actions.map(action => {
-        return {...action.payload.doc.data(), $id: action.payload.doc.id};
+        const data = action.payload.doc.data();
+        return {
+          ...data,
+          $id: action.payload.doc.id,
+          created: data.created ? data.created : new Date().toUTCString()
+        };
       })),
       map(testimonials => {
         return inclPrivate ? testimonials : testimonials.filter(testimonial => testimonial.status === 1)
+      }),
+      map(testimonials => {
+        return testimonials.sort((left, right) => {
+          const l = parseDate(left.created);
+          const r = parseDate(right.created);
+          console.log("r.getTime()", r.getTime());
+          return (l.getTime() === r.getTime()) ? 0 : l < r ? -1 : 1;
+        })
       })
     )
   }

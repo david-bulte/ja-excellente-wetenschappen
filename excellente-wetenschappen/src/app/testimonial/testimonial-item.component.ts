@@ -29,9 +29,14 @@ import { Testimonial } from './testimonial.service';
     </blockquote>
 
     <div *ngIf="editable">
-      <div class="d-flex justify-content-end">
-        <button class="btn btn-link" (click)="deleteTestimonial.emit(testimonial)">delete</button>
-        <button class="btn btn-link" (click)="showEdit()">edit</button>
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          {{testimonial.created}} <span *ngIf="testimonial.author">|</span> {{testimonial.author}}
+        </div>
+        <div>
+          <button class="btn btn-link" (click)="deleteTestimonial.emit(testimonial)">delete</button>
+          <button class="btn btn-link" (click)="showEdit()">edit</button>
+        </div>
       </div>
       <hr>
     </div>
