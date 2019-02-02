@@ -268,6 +268,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
 
     .side-menu li:hover {
       cursor: pointer;
+      color: black;
     }
   `]
 })
