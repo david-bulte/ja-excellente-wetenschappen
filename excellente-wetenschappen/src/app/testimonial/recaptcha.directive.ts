@@ -87,6 +87,7 @@ export class RecaptchaDirective implements OnInit, AfterViewInit, ControlValueAc
   @Input() key: string;
   @Input() config: ReCaptchaConfig = {};
   @Input() lang: string;
+  @Input() clientSideValidation = false;
 
   @Output() captchaResponse = new EventEmitter<string>();
   @Output() captchaExpired = new EventEmitter();
@@ -177,7 +178,9 @@ export class RecaptchaDirective implements OnInit, AfterViewInit, ControlValueAc
   }
 
   verifyToken(token: string) {
-    this.control.setAsyncValidators(this.reCaptchaAsyncValidator.validateToken(token));
+    if (this.clientSideValidation) {
+      this.control.setAsyncValidators(this.reCaptchaAsyncValidator.validateToken(token));
+    }
     this.control.updateValueAndValidity();
     this.changeDetector.markForCheck();
   }

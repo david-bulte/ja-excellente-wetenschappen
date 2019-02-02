@@ -1,7 +1,8 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
-import { map, tap } from 'rxjs/operators';
+import { throwError } from 'rxjs';
+import { catchError, map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -9,12 +10,10 @@ import { map, tap } from 'rxjs/operators';
 export class TestimonialService {
 
   constructor(private http: HttpClient, private fire: AngularFirestore) {
-    // this.send({author: 'me', content: 'bla', public: true, created: new Date().toDateString()}).subscribe(resp => {
-    //   console.log("resp", resp);
-    // });
   }
 
   createTestimonial(testimonial: Testimonial) {
+    testimonial = {...testimonial, created: new Date().toUTCString(), author: '', status: 1};
     this.fire.collection('testimonials').add(testimonial).then(done => {
       console.log("done", done);
     });
@@ -37,30 +36,22 @@ export class TestimonialService {
         return inclPrivate ? testimonials : testimonials.filter(testimonial => testimonial.status === 1)
       })
     )
-
-    // const racesCollection: AngularFirestoreCollection<Testimonial>;
-    // return this.fire.collection('testimonials').snapshotChanges().map(actions => {
-    //   return actions.map(a => {
-    //     const data = a.payload.doc.data() as Race;
-    //     data.id = a.payload.doc.id;
-    //     return data;
-    //   });
-    // });
   }
 
-  send(testimonial: Testimonial) {
+  send(testimonial: Testimonial, captcha: string) {
 
-    // let url = 'https://us-central1-excellente-wetenschappen.cloudfunctions.net/sendMail';
-    // // let url = `/sendMail`
-    // let headers = new HttpHeaders({'Content-Type': 'application/json'});
-    //
-    // return this.http.post(url, testimonial, {headers})
-    //   .pipe(
-    //     catchError(err => {
-    //       console.error(err);
-    //       return throwError(err);
-    //     })
-    //   );
+    testimonial = {...testimonial, created: new Date().toUTCString()};
+
+    let url = 'https://us-central1-excellente-wetenschappen.cloudfunctions.net/createTestimonial';
+    let headers = new HttpHeaders({'Content-Type': 'application/json'});
+
+    return this.http.post(url, {testimonial, captcha}, {headers})
+      .pipe(
+        catchError(err => {
+          console.error(err);
+          return throwError(err);
+        })
+      );
   }
 
 }

@@ -1,9 +1,10 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap';
 import { BehaviorSubject, of } from 'rxjs';
-import { filter, switchMap, takeUntil, takeWhile } from 'rxjs/operators';
+import { switchMap } from 'rxjs/operators';
 import { Testimonial, TestimonialService } from '../testimonial/testimonial.service';
 import { TestimonialFormItemComponent } from './testimonial-form-item.component';
 
@@ -58,7 +59,22 @@ export class AdminPageComponent implements OnInit {
   loginForm: FormGroup;
   modalRef: BsModalRef;
 
+  loadAll() {
+    // this.http.get<Testimonial[]>('/assets/testimonials.json')
+    //   .pipe(
+    //     mergeMap(ts => zip(
+    //       fromArray(ts),
+    //       timer(1000, 2000),
+    //       (item, i) => item
+    //       )
+    //     ),
+    //     tap(t => this.testimonialService.createTestimonial(t))
+    //   )
+    //   .subscribe();
+  }
+
   constructor(private testimonialService: TestimonialService,
+              private http: HttpClient,
               private fire: AngularFireAuth,
               private fb: FormBuilder,
               private modalService: BsModalService) {

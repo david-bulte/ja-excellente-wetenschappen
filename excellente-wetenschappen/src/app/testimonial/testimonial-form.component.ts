@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
 import { RecaptchaDirective } from './recaptcha.directive';
 import { TestimonialService } from './testimonial.service';
@@ -21,7 +22,6 @@ import { TestimonialService } from './testimonial.service';
         </div>
 
         <form class="pt-2 " [formGroup]="form" novalidate>
-          <!--<div class="font-weight-bold text-primary mb-2 d-none d-sm-block">Geef uw getuigenis</div>-->
           <div class="form-group">
             <label for="inputEmail">Email address *</label>
             <input type="email" class="form-control"
@@ -45,46 +45,29 @@ import { TestimonialService } from './testimonial.service';
             <small class="invalid-feedback">dit is een verplicht veld!</small>
           </div>
 
-          <!--we need captcha-->
-          <button class="btn btn-primary text-white"
-                  (click)="submit()"
-                  [disabled]="!form.valid">Verstuur
-          </button>
+          <div appRecaptcha key="6LfuVX4UAAAAAAfqqkvCLpoGdP8S0seDkIdj0Sm8"
+               formControlName="captcha" #captcha></div>
 
-          <!--<div appRecaptcha key="6LfuVX4UAAAAAAfqqkvCLpoGdP8S0seDkIdj0Sm8" formControlName="captcha" #captcha></div>-->
-
-          <!--<ng-container [ngSwitch]="sent$ | async">-->
-          <!--<button class="btn btn-primary text-white w-100"-->
-          <!--*ngSwitchDefault-->
-          <!--(click)="submit()"-->
-          <!--[disabled]="!form.valid">Verstuur-->
-          <!--</button>-->
-          <!--<div *ngSwitchCase="true" class="text-success">-->
-          <!--Thanks! We contacteren U zo snel mogelijk.-->
-          <!--</div>-->
-          <!--</ng-container>-->
+          <ng-container [ngSwitch]="sent$ | async">
+            <button class="btn btn-primary text-white"
+                    *ngSwitchDefault
+                    (click)="submit()"
+                    [disabled]="!form.valid">Verstuur
+            </button>
+            <div *ngSwitchCase="true" class="text-success">
+              Thanks! We contacteren U zo snel mogelijk.
+            </div>
+          </ng-container>
         </form>
 
       </div>
 
     </div>
-    <!---->
-    <!--valid = {{form.valid}}-->
-    <!--valid content = {{form.get('content').valid}}-->
-    <!--valid captcha = {{form.get('captcha').valid}}-->
-    <!--valid captcha-value = {{form.get('captcha').value}}-->
   `,
   styles: [`
     #inputTestimonial {
       height: 250px;
     }
-
-    /*@media (min-width: 576px) {*/
-    /*form {*/
-    /*border-top-width: 10px !important;*/
-    /*}*/
-    /*}*/
-
   `],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
@@ -96,33 +79,32 @@ export class TestimonialFormComponent implements OnInit {
   form: FormGroup;
   sent$ = new BehaviorSubject(false);
 
-  constructor(private fb: FormBuilder, private testimonialService: TestimonialService) {
+  constructor(private fb: FormBuilder, private testimonialService: TestimonialService, private router: Router) {
   }
 
   ngOnInit() {
     this.form = this.fb.group({
-      email: new FormControl(),
-      // content: new FormControl(),
-      // email: new FormControl(null, {
-      //   validators: [Validators.required, Validators.email],
-      //   updateOn: 'blur'
-      // }),
+      email: new FormControl(null, {
+        validators: [Validators.required, Validators.email],
+        updateOn: 'blur'
+      }),
       content: ['', [Validators.required]],
       captcha: new FormControl()
     })
   }
 
   submit() {
-    const {email, content} = this.form.getRawValue();
-    this.testimonialService.createTestimonial({status: 1, content});
+    const {email, content, captcha} = this.form.getRawValue();
+    this.testimonialService.send({status: 0, content, author: email}, captcha)
+      .subscribe(() => {
+        this.sent$.next(true);
+        setTimeout(() => {
+          this.captcha.reset();
+          this.form.reset();
+          this.router.navigate(['/bias-in-de-praktijk'])
+        }, 2000);
+      });
 
-    // this.sent$.next(true);
-    // this.send.emit({author: email, public: false, content, created: new Date().toDateString()});
-    // setTimeout(() => {
-    //   this.captcha.reset();
-    //   this.form.reset();
-    //   this.sent$.next(false);
-    // }, 3000);
   }
 
   reset() {

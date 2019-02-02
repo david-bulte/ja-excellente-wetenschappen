@@ -74,8 +74,8 @@ import { TestimonialFormItemComponent } from './admin/testimonial-form-item.comp
     // AngularFireModule.initializeApp(environment.firebase),
     // AngularFireFunctionsModule
   ],
-  // providers: [{provide: RECAPTCHA_URL, useValue: 'https://us-central1-excellente-wetenschappen.cloudfunctions.net/checkRecaptcha'}],
-  providers: [{provide: RECAPTCHA_URL, useValue: '/checkRecaptcha'}],
+  providers: [{provide: RECAPTCHA_URL, useValue: 'https://us-central1-excellente-wetenschappen.cloudfunctions.net/checkRecaptcha'}],
+  // providers: [{provide: RECAPTCHA_URL, useValue: '/firebase-functions/checkRecaptcha'}],
   entryComponents: [TestimonialFormItemComponent],
   bootstrap: [AppComponent]
 })
