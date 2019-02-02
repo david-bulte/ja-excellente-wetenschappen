@@ -5,31 +5,31 @@
       {
         "authors": "LERU (2018)",
         "title": "Implicit bias in academia",
-        "link": "",
+        "link": "https://www.leru.org/files/implicit-bias-in-academia-full-paper.pdf",
         "reference": ""
       },
       {
         "authors": "Kirwan Institute (2015)",
-        "title": "State of the Science: Implicit bias",
-        "link": "",
+        "title": "State of the Science: Implicit Bias Review",
+        "link": "http://kirwaninstitute.osu.edu/wp-content/uploads/2017/11/2017-SOTS-final-draft-02.pdf",
         "reference": ""
       },
       {
         "authors": "Kang J (2011)",
         "title": "Bits of Bias",
-        "link": "",
-        "reference": ""
+        "link": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1968277",
+        "reference": "UCLA School of Law Research Paper No. 11-40."
       },
       {
         "authors": "Miller et al. (2018)",
         "title": "The Development of Children's Gender-Science Stereotypes: A Meta-analysis of 5 Decades\nof U.S. Draw-A-Scientist Studies",
-        "link": "",
-        "reference": ""
+        "link": "https://onlinelibrary.wiley.com/doi/full/10.1111/cdev.13039",
+        "reference": "Child Development. 89(6):1943-1955"
       },
       {
         "authors": "EY Peterson Institute report (2016)",
-        "title": "EY Peterson Institute report (2016). Is Gender Diversity Profitable? Evidence from a Global Survey",
-        "link": "",
+        "title": "Is Gender Diversity Profitable? Evidence from a Global Survey",
+        "link": "https://piie.com/system/files/documents/wp16-3.pdf",
         "reference": ""
       }
     ],
@@ -40,14 +40,14 @@
           {
             "authors": "Gaucher D, Friesen J, Kay AC (2011)",
             "title": "Evidence that gendered wording in job advertisements exists and sustains gender inequality.",
-            "link": "",
-            "reference": ""
+            "link": "https://psycnet.apa.org/record/2011-04642-001",
+            "reference": "Journal of Personality and Social Psychology. 101(1):109-28."
           },
           {
             "authors": "Born MP, Taris TW ( 2010)",
             "title": "The impact of the wording of employment advertisements on students' inclination to apply for a job",
-            "link": "",
-            "reference": ""
+            "link": "https://www.ncbi.nlm.nih.gov/pubmed/21058576",
+            "reference": "Journal of Social Psychology. 150(5):485-502."
           }
         ]
       },
@@ -57,8 +57,8 @@
           {
             "authors": "Leslie SJ, Cimpian A, Meyer M, Freeland E (2015)",
             "title": "Expectations of brilliance underlie gender distributions across academic disciplines",
-            "link": "",
-            "reference": ""
+            "link": "http://science.sciencemag.org/content/347/6219/262/tab-pdf",
+            "reference": "Science. 347(6219):262-5."
           }
         ]
       },
@@ -68,44 +68,38 @@
           {
             "authors": "Moss-Racusin et al. (2012)",
             "title": "Science faculty's subtle gender biases favor male students",
-            "link": "",
-            "reference": ""
+            "link": "https://www.pnas.org/content/109/41/16474",
+            "reference": "Proceedings of the National Academy of Sciences of the United States of America (PNAS). 109(41):16474-16479"
           },
           {
             "authors": "Van den Brink & Benschop (2012)",
             "title": "Gender practices in the construction of academic excellence: Sheep with five legs",
-            "link": "",
-            "reference": ""
+            "link": "https://journals.sagepub.com/doi/abs/10.1177/1350508411414293",
+            "reference": "Organization. 19(4): 507-524"
           },
           {
             "authors": "Isaak C, Lee B, Carnes M (2009)",
             "title": "Interventions that affect gender bias in hiring: a systematic review",
-            "link": "",
-            "reference": ""
+            "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4554714/",
+            "reference": "Academic Medicine. 84(10): 1440–1446."
           },
           {
             "authors": "Wenneras C & Wold A (1997)",
             "title": "Nepotism and sexism in peer-review",
-            "link": "",
-            "reference": ""
+            "link": "https://www.nature.com/articles/387341a0",
+            "reference": "Nature. 387: 341–343"
           },
           {
             "authors": "Ahlqvist V., Andersson J., Söderqvist l. & Tumpone J. (2015)",
-            "title": "A gender-neutral process? A qualitative study of the evaluation of research grant applications v",
-            "link": "",
+            "title": "A gender-neutral process? A qualitative study of the evaluation of research grant applications",
+            "link": "http://www.festa-europa.eu/public/swedish-report-gender-neutral-process-qualitative-study-evaluation-research-grant-application",
             "reference": ""
           },
           {
             "authors": "van der Lee R, Ellemers N (2015)",
             "title": "Gender contributes to personal research funding success in The Netherlands",
-            "link": "",
-            "reference": ""
-          },
-          {
-            "authors": "Wouters et al 2018",
-            "title": "Link vind ik niet",
-            "link": "",
-            "reference": ""
+            "link": "https://www.pnas.org/content/112/40/12349",
+            "reference": "Proceedings of the National Academy of Sciences of the United States of America (PNAS). 112(40): 12349-12353"
           }
         ]
       },
@@ -113,10 +107,10 @@
         "title": "Over geciteerd worden en mogelijkheid tot samenwerking",
         "links": [
           {
-            "authors": "Kaatz 2005",
-            "title": "link vind ik niet",
-            "link": "",
-            "reference": ""
+            "authors": "Kaatz 2015",
+            "title": "A Quantitative Linguistic Analysis of National Institutes of Health R01 Application Critiques from Investigators at One Institution",
+            "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4280285/",
+            "reference": "Academic Medicine. 90(1): 69–75."
           }
         ]
       },
@@ -126,20 +120,20 @@
           {
             "authors": "Schroeder et al (2013)",
             "title": "Fewer invited talks by women in evolutionary biology symposia",
-            "link": "",
-            "reference": ""
+            "link": "https://www.ncbi.nlm.nih.gov/pubmed/23786459",
+            "reference": "Journal of Evolutionary Biology. 26(9):2063-9"
           },
           {
             "authors": "Casadevall A, Handelsman J (2014)",
             "title": "The Presence of Female Conveners Correlates with a Higher Proportion of Female Speakers at Scientific Symposia",
-            "link": "",
-            "reference": ""
+            "link": "https://www.ncbi.nlm.nih.gov/pubmed/24399856",
+            "reference": "MBio. 5(1):e00846-13."
           },
           {
             "authors": "Isbell et al. (2012)",
             "title": "Stag Parties Linger: Continued Gender Bias in a Female-Rich Scientific Discipline",
-            "link": "",
-            "reference": ""
+            "link": "https://www.ncbi.nlm.nih.gov/pubmed/23185407",
+            "reference": "PLoS One. 7(11):e49682"
           }
         ]
       },
@@ -149,8 +143,8 @@
           {
             "authors": "MacNell et al. (2014)",
             "title": "What’s in a Name: Exposing Gender Bias in Student Ratings of Teaching",
-            "link": "",
-            "reference": ""
+            "link": "https://link.springer.com/article/10.1007/s10755-014-9313-4",
+            "reference": "Innovative Higher Education. 40(4): 291–303"
           }
         ]
       }
@@ -164,15 +158,15 @@
         "links": [
           {
             "authors": "",
-            "title": "",
+            "title": "Did this really happen?",
             "link": "https://didthisreallyhappen.net/category/strips/",
-            "reference": ""
+            "reference": "Sexisme in de wetenschap in cartoons."
           },
           {
             "authors": "",
-            "title": "",
+            "title": "Illustrating Casual Sexism in Science",
             "link": "https://eos.org/articles/illustrating-casual-sexism-in-science",
-            "reference": ""
+            "reference": "Over 'Did this really  happen?'"
           }
         ]
       }
@@ -182,8 +176,9 @@
     "title": "Facts and Figures",
     "links": [
       {
-        "title": "Vlaamse Interuniversitaire Raad (VLIR) Gelijkekansenrapport van de Vlaamse universiteiten",
-        "link": "",
+        "authors": "Vlaamse Interuniversitaire Raad",
+        "title": "Gelijkekansenrapport van de Vlaamse universiteiten",
+        "link": "http://www.vlir.be/gelijke-kansen",
         "reference": ""
       }
     ]
@@ -194,18 +189,20 @@
       {
         "authors": "LERU (2018)",
         "title": "Implicit bias in academia",
-        "link": "",
+        "link": "https://www.leru.org/files/implicit-bias-in-academia-full-paper.pdf",
         "reference": ""
       },
       {
-        "title": "Test jezelf met de Harvard implicit bias toolkit",
-        "link": "",
-        "reference": ""
+
+        "title": "Harvard implicit bias toolkit",
+        "link": "https://implicit.harvard.edu/implicit/takeatouchtest.html",
+        "reference": "Test je eigen bias"
       },
       {
-        "title": "Filmpje om leden van een selectiecommissie zich bewust te laten worden van bias voor een selectie begint: Recruitment bias in research institutes.",
-        "link": "",
-        "reference": ""
+        "authors": "Institució CERCA",
+        "title": "Recruitment bias in research institutes",
+        "link": "https://www.rri-tools.eu/-/recruitment-bias-in-research-institutes",
+        "reference": "Bewustmakingsvideo voor leden van selectiecommissies"
       }
     ]
   }

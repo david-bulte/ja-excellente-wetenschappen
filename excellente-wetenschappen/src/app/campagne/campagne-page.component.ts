@@ -3,15 +3,42 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-charter-page',
   template: `
-    <p class="text-container">
-      Ondanks inspanningen op gebied van work-life balance en selectieprocedures, is het merendeel van professoren nog
-      een man. Er is genoeg wetenschappelijke literatuur over onbewuste vooroordelen en de gevolgen ervan voor
-      genderdiversiteit aan de universiteit. Het is de leden van de Jonge Academie opgevallen dat deze
-      mechanismen vaak nog onbekend zijn bij academici. Met deze website wil de Jonge Academie studenten en academici
-      bewust maken van het bestaan van zulke onbewuste vooroordelen, en hun invloed op carrières. Ze is een onderdeel
-      van de bewustzijnscampagne “Wetenschap=m+v+x”. Naast deze website ontwikkelen de leden van de Jonge Academie ook
-      een charter over gendergelijkheid en is er ook een posteractie en een campagne op sociale media.
-    </p>
+
+    <div class="d-flex flex-column align-items-center w-100">
+
+      <p class="text-container">
+        Ondanks inspanningen op het gebied van work-life balance en selectieprocedures, is het merendeel
+        van de professoren anno 2019 nog steeds man. Wetenschappelijke literatuur toont aan dat dit o.a.
+        het gevolg is van onbewuste vooroordelen die de genderdiversiteit aan de Vlaamse universiteiten
+        niet ten goede komen. Met deze website wil de <a href="http://www.jongeacademie.be" target="_blank">
+        Jonge Academie</a> studenten en academici bewust maken
+        van het bestaan van deze onbewuste vooroordelen en de invloed ervan op de (academische) carrière.
+      </p>
+
+      <p class="text-container">
+        Deze website is een onderdeel van de bewustzijnscampagne “Wetenschap=m+v+x” die gelanceerd werd
+        op 11 februari 2019 met onder meer een posteractie en een campagne op sociale media. In
+        samenwerking met de <a href="http://www.vlir.be/" target="_blank">VLIR</a>, werken de leden van
+        de Jonge Academie momenteel aan een charter over gendergelijkheid.
+      </p>
+
+      <p class="text-container">
+        <a href="/assets/posters/JA_10GenderPosters.pdf" download>Download de pdf van de campagneposters.</a>
+      </p>
+
+      <div class="text-container w-100 d-flex flex-column flex-md-row flex-wrap">
+        <img class="m-1" src="/assets/posters/JA_AlexanderD.jpg" width="180" height="250">
+        <img class="m-1" src="/assets/posters/JA_AlexanderD.jpg" width="180" height="250">
+        <img class="m-1" src="/assets/posters/JA_AlexanderD.jpg" width="180" height="250">
+        <img class="m-1" src="/assets/posters/JA_AlexanderD.jpg" width="180" height="250">
+        <img class="m-1" src="/assets/posters/JA_AlexanderD.jpg" width="180" height="250">
+        <img class="m-1" src="/assets/posters/JA_AlexanderD.jpg" width="180" height="250">
+        <img class="m-1" src="/assets/posters/JA_AlexanderD.jpg" width="180" height="250">
+        <img class="m-1" src="/assets/posters/JA_AlexanderD.jpg" width="180" height="250">
+        <img class="m-1" src="/assets/posters/JA_AlexanderD.jpg" width="180" height="250">
+      </div>
+
+    </div>
   `,
   styles: []
 })

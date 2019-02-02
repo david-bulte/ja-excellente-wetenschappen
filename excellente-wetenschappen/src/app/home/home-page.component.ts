@@ -1,7 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { getDayOfYear } from 'date-fns';
-import { filter, map } from 'rxjs/operators';
-import { TestimonialService } from '../testimonial/testimonial.service';
 
 @Component({
   selector: 'app-home',
@@ -127,23 +124,10 @@ import { TestimonialService } from '../testimonial/testimonial.service';
 })
 export class HomePageComponent implements OnInit {
 
-  testimonials$ = this.testimonialService.getTestimonials().pipe(
-    filter(testimonials => testimonials && testimonials.length > 0),
-    map(testimonials => {
-      // elke dag 2 verse quotes
-      const date = getDayOfYear(new Date());
-      const idx1 = date % testimonials.length
-      const idx2 = (date + 2) % testimonials.length
-      // return {first: testimonials[idx1], second: testimonials[idx2]};
-      return [testimonials[idx1], testimonials[idx2]];
-    })
-  );
-
-  constructor(private testimonialService: TestimonialService) {
+  constructor() {
   }
 
   ngOnInit() {
-    this.testimonialService.load();
   }
 
   jump(target?) {

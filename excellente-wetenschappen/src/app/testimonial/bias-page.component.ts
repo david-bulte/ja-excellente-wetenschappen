@@ -21,8 +21,7 @@ import { Testimonial, TestimonialService } from './testimonial.service';
           </div>
 
           <app-testimonial-item
-            [author]="t.author" [created]="t.created"
-            [content]="t.content" [showMoreButton]="false"></app-testimonial-item>
+            [testimonial]="t" [showMoreButton]="false"></app-testimonial-item>
         </ng-container>
 
       </div>
@@ -51,13 +50,12 @@ export class BiasPageComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.testimonialService.load();
     window.scrollTo(0, 0);
   }
 
   send(testimonial: Testimonial) {
-    this.testimonialService.send(testimonial).subscribe(res => {
-      console.log("res", res);
-    });
+    // this.testimonialService.send(testimonial).subscribe(res => {
+    //   console.log("res", res);
+    // });
   }
 }
