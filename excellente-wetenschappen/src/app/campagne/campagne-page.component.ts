@@ -58,6 +58,7 @@ export class CampagnePageComponent implements OnInit {
   }
 
   ngOnInit() {
+    window.scrollTo(0, 0);
   }
 
 }

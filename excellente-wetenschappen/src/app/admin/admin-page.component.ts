@@ -86,6 +86,7 @@ export class AdminPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    window.scrollTo(0, 0);
     this.loginForm = this.fb.group({
       email: ['', Validators.required],
       password: ['', Validators.required]

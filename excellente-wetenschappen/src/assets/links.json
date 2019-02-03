@@ -1,6 +1,6 @@
 [
   {
-    "title": "Algemene informatie over implicit bias",
+    "title": "Wat is implicit bias?",
     "links": [
       {
         "authors": "LERU (2018)",
@@ -18,7 +18,7 @@
         "authors": "Kang J (2011)",
         "title": "Bits of Bias",
         "link": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1968277",
-        "reference": "UCLA School of Law Research Paper No. 11-40."
+        "reference": "UCLA School of Law Research Paper No. 11-40"
       },
       {
         "authors": "Miller et al. (2018)",
@@ -35,19 +35,19 @@
     ],
     "groups": [
       {
-        "title": "Over taalgebruik in vacatures",
+        "title": "Over vacatures",
         "links": [
           {
             "authors": "Gaucher D, Friesen J, Kay AC (2011)",
-            "title": "Evidence that gendered wording in job advertisements exists and sustains gender inequality.",
+            "title": "Evidence that gendered wording in job advertisements exists and sustains gender inequality",
             "link": "https://psycnet.apa.org/record/2011-04642-001",
-            "reference": "Journal of Personality and Social Psychology. 101(1):109-28."
+            "reference": "Journal of Personality and Social Psychology. 101(1):109-28"
           },
           {
             "authors": "Born MP, Taris TW ( 2010)",
             "title": "The impact of the wording of employment advertisements on students' inclination to apply for a job",
             "link": "https://www.ncbi.nlm.nih.gov/pubmed/21058576",
-            "reference": "Journal of Social Psychology. 150(5):485-502."
+            "reference": "Journal of Social Psychology. 150(5):485-502"
           }
         ]
       },
@@ -58,7 +58,7 @@
             "authors": "Leslie SJ, Cimpian A, Meyer M, Freeland E (2015)",
             "title": "Expectations of brilliance underlie gender distributions across academic disciplines",
             "link": "http://science.sciencemag.org/content/347/6219/262/tab-pdf",
-            "reference": "Science. 347(6219):262-5."
+            "reference": "Science. 347(6219):262-5"
           }
         ]
       },
@@ -81,7 +81,7 @@
             "authors": "Isaak C, Lee B, Carnes M (2009)",
             "title": "Interventions that affect gender bias in hiring: a systematic review",
             "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4554714/",
-            "reference": "Academic Medicine. 84(10): 1440–1446."
+            "reference": "Academic Medicine. 84(10): 1440–1446"
           },
           {
             "authors": "Wenneras C & Wold A (1997)",
@@ -110,7 +110,7 @@
             "authors": "Kaatz 2015",
             "title": "A Quantitative Linguistic Analysis of National Institutes of Health R01 Application Critiques from Investigators at One Institution",
             "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4280285/",
-            "reference": "Academic Medicine. 90(1): 69–75."
+            "reference": "Academic Medicine. 90(1): 69–75"
           }
         ]
       },
@@ -127,7 +127,7 @@
             "authors": "Casadevall A, Handelsman J (2014)",
             "title": "The Presence of Female Conveners Correlates with a Higher Proportion of Female Speakers at Scientific Symposia",
             "link": "https://www.ncbi.nlm.nih.gov/pubmed/24399856",
-            "reference": "MBio. 5(1):e00846-13."
+            "reference": "MBio. 5(1):e00846-13"
           },
           {
             "authors": "Isbell et al. (2012)",
@@ -138,15 +138,92 @@
         ]
       },
       {
-        "title": "Over evaluatie van gegeven onderwijs",
+        "title": "Over onderwijsevaluaties",
         "links": [
           {
             "authors": "MacNell et al. (2014)",
             "title": "What’s in a Name: Exposing Gender Bias in Student Ratings of Teaching",
             "link": "https://link.springer.com/article/10.1007/s10755-014-9313-4",
             "reference": "Innovative Higher Education. 40(4): 291–303"
+          },
+          {
+            "authors": "Bachen, C. M., McLoughlin, M. M., & Garcia, S. (1999)",
+            "title": "Assessing the role of gender in college students’ evaluation of faculty",
+            "link": "https://www.tandfonline.com/doi/abs/10.1080/03634529909379169",
+            "reference": "Communication Education, 48, 193-210"
+          },
+          {
+            "authors": "Basow, S. A., & Silberg, N. T. (1987)",
+            "title": "Student evaluations of college professors: Are female and male professors rated differently?",
+            "link": "https://psycnet.apa.org/record/1988-02814-001",
+            "reference": "Journal of Educational Psychology, 79(3), 308-314"
+          },
+          {
+            "authors": "Boring, A. (2017)",
+            "title": "Gender biases in student evaluations of teaching",
+            "link": "http://doi.org/10.1016/j.jpubeco.2016.11.006",
+            "reference": "Journal of Public Economics, 145, 27–41"
+          },
+          {
+            "authors": "Feldman, K. A. (2007)",
+            "title": "Identifying exemplary teachers and teaching: Evidence from student ratings",
+            "link": "https://link.springer.com/chapter/10.1007/1-4020-5742-3_5",
+            "reference": "In R. Perry & J. Smart (Eds.), The scholarship of teaching and learning in higher education: An evidence-based perspective (pp. 93-129). Dordrecht, The Netherlands: Springer"
+          },
+          {
+            "authors": "Goodwin, L. D., & Stevens, E. A. (1993)",
+            "title": "The influence of gender on university faculty members’ perceptions of “good” teaching",
+            "link": "https://www.jstor.org/stable/2960028?seq=1#page_scan_tab_contents",
+            "reference": "Journal of Higher Education, 64(2), 166-185"
+          },
+          {
+            "authors": "Hancock, G. R., Shannon, D. M., & Trentham, L. I. (1992)",
+            "title": "Student and teacher gender in ratings of university faculty: Results from five colleges of study",
+            "link": "https://link.springer.com/article/10.1007%2FBF00125150",
+            "reference": "Journal of Personnel Evaluation in Education, 6, 235-248"
+          },
+          {
+            "authors": "Mitchell, K. M. W., & Martin, J. (2018)",
+            "title": "Gender effects on student evaluations of faculty",
+            "link": "http://doi.org/10.1017/S104909651800001X",
+            "reference": "PS - Political Science and Politics, 51(3), 648–652"
+          },
+          {
+            "authors": "Sandler, B. R. (1991)",
+            "title": "Women faculty at work in the classroom, or, why it still hurts to be a woman in labor",
+            "link": "https://www.tandfonline.com/doi/abs/10.1080/03634529109378821",
+            "reference": "Communication Education, 40, 6-15"
+          },
+          {
+            "authors": "Tatro, C. N. (1995)",
+            "title": "Gender effects on student evaluations of faculty",
+            "link": "https://psycnet.apa.org/record/1995-45371-001",
+            "reference": "Communication Education, 40, 6-15"
           }
         ]
+      }
+    ]
+  },
+  {
+    "title": "Bias ten opzichte van onderzoek naar gender bias",
+    "links": [
+      {
+        "authors": "Moss-Racusin, C. A., Molenda, A. K., & Cramer, C. R. (2015)",
+        "title": "Can evidence impact attitudes? Public reactions to evidence of gender bias in STEM fields",
+        "link": "http://pwq.sagepub.com/content/39/2/194",
+        "reference": "Psychology of Women Quarterly, 39, 194-209"
+      },
+      {
+        "authors": "Handley, I. A., Brown, E. R., Moss-Racusin, C. A., & Smith, J. L. (2015)",
+        "title": "Quality of evidence revealing gender bias in science in the eye of the beholder",
+        "link": "http://www.pnas.org/content/early/2015/10/06/1510649112.short",
+        "reference": "PNAS, 112.43, 13201-13206"
+      },
+      {
+        "authors": "Van den Brink, Marieke (2015)",
+        "title": "The Politics of knowledge: the responses to feminist research from academic leaders",
+        "link": "https://www.emeraldinsight.com/doi/abs/10.1108/EDI-01-2015-0004",
+        "reference": " Equality, Diversity and Inclusion: An International Journal, 34.6, 483-495"
       }
     ]
   },
@@ -160,7 +237,7 @@
             "authors": "",
             "title": "Did this really happen?",
             "link": "https://didthisreallyhappen.net/category/strips/",
-            "reference": "Sexisme in de wetenschap in cartoons."
+            "reference": "Sexisme in de wetenschap in cartoons"
           },
           {
             "authors": "",
@@ -193,7 +270,6 @@
         "reference": ""
       },
       {
-
         "title": "Harvard implicit bias toolkit",
         "link": "https://implicit.harvard.edu/implicit/takeatouchtest.html",
         "reference": "Test je eigen bias"

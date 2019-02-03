@@ -266,6 +266,7 @@ export class ToolboxPageComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
+    window.scrollTo(0, 0);
   }
 
   ngAfterViewInit(): void {

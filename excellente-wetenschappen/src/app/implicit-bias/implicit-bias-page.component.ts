@@ -80,6 +80,10 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
           maar ook in het toekennen van fondsen en het uitnodigen van sprekers voor congressen kunnen er maatregelen
           genomen worden om te voorkomen dat beslissingen onbedoeld beïnvloedt worden door <i>implicit bias</i>.
         </p>
+        
+        <p>
+          <a [routerLink]="'/toolbox'">Bezoek de toolbox pagina voor tips over wat jij kan doen.</a>
+        </p>
       </div>
 
       <div class="text-container" #minder>
@@ -100,9 +104,10 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
 
         <p>
           Taalgebruik in vacatures kan mannelijk of vrouwelijk gekleurd zijn. In beroepen waar het gender
-          onevenwicht groot is, is het taalgebruik in de vacatures vaker gendergekleurd
-          (Gaucher, Friesen, & Kay, 2011). Het gebruik van genderneutraal taalgebruik heeft een positief
-          effect op de kans dat vrouwen zich kandidaat stellen voor een functie (Born & Taris, 2010) en
+          onevenwicht groot is, is het taalgebruik in de vacatures vaker 
+          <a href="https://psycnet.apa.org/record/2011-04642-001" target="_blank">gendergekleurd</a>. 
+          Het gebruik van genderneutraal taalgebruik heeft een 
+          <a href="https://www.ncbi.nlm.nih.gov/pubmed/21058576" target="_blank">positief effect</a> op de kans dat vrouwen zich kandidaat stellen voor een functie en
           kan helpen gender onevenwichten aan te pakken.
         </p>
 
@@ -118,9 +123,9 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         </h3>
 
         <p>
-          Aanbevelingsbrieven voor mannelijke kandidaten zijn gemiddeld langer en verwijzen vaker naar talenten en
-          excellentie, terwijl die voor vrouwelijke kandidaten het vaker hebben over onderwijscapaciteiten (Leslie et
-          al., 2015). Aanbevelingsbrieven voor kandidaten, zowel mannelijke als vrouwelijke, zouden een diversiteit van
+          <a href="http://science.sciencemag.org/content/347/6219/262/tab-pdf" target="_blank">Aanbevelingsbrieven</a> voor mannelijke kandidaten zijn gemiddeld langer en verwijzen vaker naar talenten en
+          excellentie, terwijl die voor vrouwelijke kandidaten het vaker hebben over onderwijscapaciteiten. 
+          Aanbevelingsbrieven voor kandidaten, zowel mannelijke als vrouwelijke, zouden een diversiteit van
           talenten moeten benadrukken.
         </p>
 
@@ -129,13 +134,12 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         </h3>
 
         <p>
-          Uit een Amerikaanse dubbel-blind gerandomiseerde studie blijkt dat identieke cv’s voor een functie
+          Uit een Amerikaanse dubbel-blind <a href="https://www.pnas.org/content/109/41/16474" target="_blank">gerandomiseerde studie</a> blijkt dat identieke cv’s voor een functie
           van labomanager die rondgestuurd werden met een vrouwennaam of een mannennaam verschillend beoordeeld
-          werden. De mannelijke namen scoorden significant beter (Moss-Racusin, Dovidio, Brescoll, Graham, &
-          Handelsman, 2012). Nederlands onderzoek laat zien dat <i>implicit bias</i> effect heeft op de procedures
-          omtrent aanwervingen en aanstellingen binnen de wetenschap en een negatief effect hebben op de
-          kansen van vrouwelijke kandidaten (Van den Brink & Benschop, 2012). Uit een Amerikaans onderzoek
-          (Isaac, Lee, & Carnes, 2009) blijkt dat dat een minimum van 25% vrouwelijke kandidaten, de bias
+          werden. De mannelijke namen scoorden significant beter. Nederlands onderzoek laat zien dat <i>implicit bias</i> effect heeft op de procedures
+          omtrent aanwervingen en aanstellingen binnen de wetenschap en een 
+          <a href="https://journals.sagepub.com/doi/abs/10.1177/1350508411414293" target="_blank">negatief effect</a> hebben op de
+          kansen van vrouwelijke kandidaten. Uit een <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4554714/" target="_blank">Amerikaans onderzoek</a> blijkt dat dat een minimum van 25% vrouwelijke kandidaten, de bias
           tegen vrouwelijke kandidaten drastisch kan verminderen.
         </p>
       </div>
@@ -150,10 +154,9 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         </h3>
 
         <p>
-          Onderzoek toont aan dat cv’s met de naam van een man een hoger startsalaris en meer
-          carrière-mentoring werd aangeboden vergeleken met dezelfde cv’s met de naam van een vrouw
-          (Moss-Racusin et al., 2012). De bias was zelfs sterker bij vrouwelijke dan bij mannelijke
-          evaluatoren (Moss-Racusin et al., 2012). Dit geeft aan dat alleen het aantal vrouwen in
+          <a href="https://www.pnas.org/content/109/41/16474" target="_blank">Onderzoek</a> toont aan dat cv’s met de naam van een man een hoger startsalaris en meer
+          carrière-mentoring werd aangeboden vergeleken met dezelfde cv’s met de naam van een vrouw. De bias was zelfs sterker bij vrouwelijke dan bij mannelijke
+          evaluatoren. Dit geeft aan dat alleen het aantal vrouwen in
           evaluatiecommissies verhogen niet zinvol is. Leden moeten actief geïnformeerd en getraind
           worden om <i>implicit bias</i> te herkennen.
         </p>
@@ -163,11 +166,11 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         </h3>
 
         <p>
-          Een vroege studie van Wennerås & Wold (1997) toont aan dat vrouwelijke wetenschappers in Zweden
+          Een <a href="https://www.nature.com/articles/387341a0" target="_blank">vroege studie</a> toont aan dat vrouwelijke wetenschappers in Zweden
           ruim twee keer meer moeten publiceren dan hun mannelijke collega’s om dezelfde score te
-          krijgen voor een fellowship bij de Medical Research Council. Gelijkaardige resultaten zijn
-          later herhaaldelijk teruggevonden bij andere funding agencies (Ahlqvist, Andersson, Soderqvist,
-          & Tumpone, 2015; van der Lee & Ellemers, 2015; Wouters et al., 2018). Uit deze studies blijkt
+          krijgen voor een fellowship bij de Medical Research Council. <a href="http://www.festa-europa.eu/public/swedish-report-gender-neutral-process-qualitative-study-evaluation-research-grant-application" target="_blank">Gelijkaardige</a> 
+          <a href="https://www.pnas.org/content/112/40/12349" target="_blank"> resultaten</a> zijn
+          later herhaaldelijk teruggevonden bij andere funding agencies. Uit deze studies blijkt
           dat vrouwen vergelijkbare scores krijgen voor hun onderzoeksvoorstel maar een lagere score krijgen
           als kandidaat.
         </p>
@@ -177,9 +180,9 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         </h3>
 
         <p>
-          In een artikel uit 2015 werd aangetoond dat proefpersonen identieke wetenschappelijke papers positiever
+          In <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4280285/" target="_blank">een artikel</a> uit 2015 werd aangetoond dat proefpersonen identieke wetenschappelijke papers positiever
           beoordelen als de auteur een man is, en dat men sneller bereid was samen te werken met auteurs van
-          wetenschappelijke papers geschreven door mannen (Kaatz et al., 2015).
+          wetenschappelijke papers geschreven door mannen.
         </p>
 
         <h3>
@@ -187,11 +190,12 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         </h3>
 
         <p>
-          Bij een Europese organisatie van biologen werd vastgesteld dat vrouwen ondervertegenwoordigd waren
-          op de sprekerslijsten (Schroeder et al., 2013). Verschillende studies tonen aan dat het verhogen
+          Bij <a href="https://www.ncbi.nlm.nih.gov/pubmed/23786459" target="_blank">een Europese organisatie van biologen</a> werd vastgesteld dat vrouwen ondervertegenwoordigd waren
+          op de sprekerslijsten. 
+          <a href="https://www.ncbi.nlm.nih.gov/pubmed/24399856" target="_blank">Verschillende </a> 
+          <a href="https://www.ncbi.nlm.nih.gov/pubmed/23185407" target="_blank">studies</a> tonen aan dat het verhogen
           van het aantal vrouwen in de organisatie of symposiumcommissie het aantal vrouwelijke sprekers
-          verhoogt en het aantal panels met enkel mannen verlaagt (Casadevall & Handelsman, 2014; Isbell,
-          Young, & Harcourt, 2012).
+          verhoogt en het aantal panels met enkel mannen verlaagt.
         </p>
 
         <h3>
@@ -199,15 +203,20 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         </h3>
 
         <p>
-          Verschillende onderzoeken tonen aan dat studenten vrouwelijke docenten lager evalueren op
-          onderwijsevaluaties dan mannelijke docenten (Basow & Silberg, 1987; Boring, 2017; Mitchell &
-          Martin, 2018; Sandler, 1991). In een klein online experiment werd aangetoond dat studenten
+          <a href="https://psycnet.apa.org/record/1988-02814-001" target="_blank">Verschillende </a> 
+          <a href="http://doi.org/10.1016/j.jpubeco.2016.11.006" target="_blank">onderzoeken </a>
+          <a href="http://doi.org/10.1017/S104909651800001X" target="_blank">tonen </a><a href="https://www.tandfonline.com/doi/abs/10.1080/03634529109378821" target="_blank">aan</a> dat studenten vrouwelijke docenten lager evalueren op
+          onderwijsevaluaties dan mannelijke docenten. In een klein  <a href="https://link.springer.com/article/10.1007/s10755-014-9313-4" target="_blank">
+          online experiment</a> werd aangetoond dat studenten
           docenten hoger evalueren wanneer ze denken dat de docent een man is dan wanneer ze denken dat
-          de docent een vrouw is, ongeacht de prestatie van de docent (McNell, 2014). Toch is gender bias
-          in onderwijsevaluaties een complex verhaal. Sommige onderzoekers stellen vast dat vrouwelijke
+          de docent een vrouw is, ongeacht de prestatie van de docent. Toch is gender bias
+          in onderwijsevaluaties een complex verhaal. <a href="https://www.tandfonline.com/doi/abs/10.1080/03634529909379169" target="_blank">Sommige</a>
+          <a href="https://link.springer.com/chapter/10.1007/1-4020-5742-3_5" target="_blank"> onderzoekers </a>
+          <a href="https://psycnet.apa.org/record/1995-45371-001" target="_blank">stellen vast</a> dat vrouwelijke
           lesgevers lager worden gescoord dan hun mannelijke collega’s, anderen vinden dan weer dat
-          vrouwelijke lesgevers hoger scoren (Bachen, McLouglin & Garcia, 1999; Feldman, 2007; Tatro, 1995).
-          Nog anderen vinden geen verschillen (Goodwin & Stevens, 1993; Hancock, Shannon & Trentham, 1992).
+          vrouwelijke lesgevers hoger scoren.
+          <a href="https://www.jstor.org/stable/2960028?seq=1#page_scan_tab_contents" target="_blank">Nog</a>
+            <a href="https://link.springer.com/article/10.1007%2FBF00125150" target="_blank"> anderen</a> vinden geen verschillen.
           Onderwijs is iets heel persoonlijks. De leermethoden, aanpak en persoonlijkheden binnen de
           lespraktijk zorgen voor complexe interacties die niet makkelijk te analyseren zijn. Waar
           we ons wel bewust van dienen te zijn is dat mannelijke en vrouwelijke studenten mannelijke
@@ -229,21 +238,21 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         </h2>
 
         <p>
-          Onderzoek toont aan dat gender bias ook een rol speelt in het beoordelen van onderzoek,
+          <a href="http://pwq.sagepub.com/content/39/2/194" target="_blank">Onderzoek toont aan</a> dat gender bias ook een rol speelt in het beoordelen van onderzoek,
           inclusief onderzoek naar gender bias. Zo zouden mannen negatiever staan ten opzichte van
           resultaten uit onderzoek naar gender bias in STEM-domeinen (science, technology, engineering,
-          mathematics) dan vrouwen (Moss-Racusin et al., 2015). Dit zou in het bijzonder gelden voor
+          mathematics) dan vrouwen. Dit zou <a href="http://www.pnas.org/content/early/2015/10/06/1510649112.short" target="_blank">in het bijzonder gelden</a> voor
           mannelijke STEM-onderzoekers: zij zouden onderzoeksresultaten die gender bias in
-          STEM-domeinen bevestigen minder makkelijk aanvaarden dan vrouwen (Handley et al., 2015).
-          Ook in Nederland is weerstand ten opzichte van genderbiasonderzoek onderzocht. Marieke
-          Van den Brink (2015) onderscheidt drie types reacties bij academische beleidsmakers:
+          STEM-domeinen bevestigen minder makkelijk aanvaarden dan vrouwen.
+          Ook in Nederland is weerstand ten opzichte van genderbiasonderzoek onderzocht. <a href="https://www.emeraldinsight.com/doi/abs/10.1108/EDI-01-2015-0004" target="_blank">Marieke
+          Van den Brink</a> onderscheidt drie types reacties bij academische beleidsmakers:
           weerstand ten opzichte van de gebruikte methodes en epistemologie (bijv. ten opzichte van
           kwalitatief onderzoek of onderzoek vanuit feministische hoek), weerstand ten opzichte van
           de inhoud en resultaten van het onderzoek, en engagement om gender bias tegen te gaan.
         </p>
 
         <p>
-          Voor meer informatie zie het rapport van LERU (hier een link naar het rapport zetten?)
+          <a href="https://www.leru.org/files/implicit-bias-in-academia-full-paper.pdf" target="_blank">Voor meer informatie zie het rapport van LERU </a>
         </p>
       </div>
 
@@ -271,6 +280,7 @@ export class ImplicitBiasPageComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
+    window.scrollTo(0, 0);
   }
 
   ngAfterViewInit(): void {

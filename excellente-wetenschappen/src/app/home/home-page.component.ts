@@ -49,62 +49,6 @@ import { Component, OnInit } from '@angular/core';
       </app-info-box>
 
     </div>
-      <!--<carousel [interval]="5000">-->
-      <!--<slide *ngFor="let testimonial of testimonials$ | async;">-->
-
-      <!--<div class="w-100">-->
-      <!--<app-testimonial-item [content]="testimonial.content"></app-testimonial-item>-->
-      <!--</div>-->
-
-      <!--&lt;!&ndash;<div class="carousel-caption">&ndash;&gt;-->
-      <!--&lt;!&ndash;<h4>Slide {{index}}</h4>&ndash;&gt;-->
-      <!--&lt;!&ndash;<p>{{slide.text}}</p>&ndash;&gt;-->
-      <!--&lt;!&ndash;</div>&ndash;&gt;-->
-      <!--</slide>-->
-      <!--</carousel>-->
-
-
-      <!--<br style="clear: both;"/>-->
-
-      <!--<app-testimonial-item [content]="(testimonials$ | async)?.second?.content"></app-testimonial-item>-->
-
-      <!--<div class="d-flex flex-row justify-content-start align-items-baseline">-->
-      <!--<h1 class="display-4" #schaar>Schaar</h1>-->
-      <!--<button class="btn btn-link" (click)="jump()">(top)</button>-->
-      <!--</div>-->
-
-      <!--<p>-->
-      <!--"implicit bias" betekent dat mensen niet neutraal zijn in hun oordeel en gedrag. Ze hebben daarentegen op-->
-      <!--ervaring gebaseerde associaties en voorkeuren (of aversies), zonder zich daarvan bewust te zijn. Het gaat-->
-      <!--dus niet om een expliciete vooringenomenheid, maar om een bekend psychologisch mechanisme dat ons allemaal-->
-      <!--beïnvloedt.-->
-      <!--</p>-->
-
-      <!--<img class="w-100" src="assets/img/scissor-graphs-2011.jpg"/>-->
-
-      <!--<app-logo-->
-      <!--class="d-none d-xl-block"-->
-      <!--[src]="'assets/img/Baanbrekende wetenschap.svg'"-->
-      <!--[align]="'right'"></app-logo>-->
-
-
-      <!--<app-logo-->
-      <!--class="d-none d-xl-block"-->
-      <!--[src]="'assets/img/Creatieve wetenschap.svg'"-->
-      <!--[align]="'left'"></app-logo>-->
-
-      <!--&lt;!&ndash;<app-logo [src]="'assets/img/Frisse wetenschap.svg'"&ndash;&gt;-->
-      <!--&lt;!&ndash;[align]="'right'"></app-logo>&ndash;&gt;-->
-
-      <!--<div class="d-flex flex-row justify-content-start align-items-baseline">-->
-      <!--<h1 class="display-4" #activiteiten>Activiteiten</h1>-->
-      <!--<button class="btn btn-link" (click)="jump()">(top)</button>-->
-      <!--</div>-->
-
-      <!--</div>-->
-
-      <!--<div class="container">-->
-
   `,
   styles: [`
     div app-news {
@@ -128,6 +72,7 @@ export class HomePageComponent implements OnInit {
   }
 
   ngOnInit() {
+    window.scrollTo(0, 0);
   }
 
   jump(target?) {

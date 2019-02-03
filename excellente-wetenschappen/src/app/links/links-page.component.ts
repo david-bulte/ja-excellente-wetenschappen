@@ -16,7 +16,7 @@ import { LinkService } from './link.service';
             <li *ngFor="let linkConfig of rootConfig.links">
               <span class="font-italic link-page__authors" *ngIf="linkConfig.authors">{{linkConfig.authors}}. </span>
               <a href="{{linkConfig.link}}" target="_blank">{{linkConfig.title}}.</a>
-              <span class="link-page__reference" *ngIf="linkConfig.reference"> {{linkConfig.reference}}</span>
+              <span class="link-page__reference" *ngIf="linkConfig.reference"> {{linkConfig.reference}}.</span>
             </li>
           </ul>
 
@@ -26,8 +26,8 @@ import { LinkService } from './link.service';
             <ul class="">
               <li *ngFor="let linkConfig of groupConfig.links">
                 <span class="font-italic link-page__authors" *ngIf="linkConfig.authors">{{linkConfig.authors}}. </span>
-                <a href="{{linkConfig.link}}" target="_blank">{{linkConfig.title}}</a>
-                <span class="link-page__reference" *ngIf="linkConfig.reference"> {{linkConfig.reference}}</span>
+                <a href="{{linkConfig.link}}" target="_blank">{{linkConfig.title}}.</a>
+                <span class="link-page__reference" *ngIf="linkConfig.reference"> {{linkConfig.reference}}.</span>
               </li>
             </ul>
 
@@ -48,6 +48,7 @@ export class LinksPageComponent implements OnInit {
   }
 
   ngOnInit() {
+    window.scrollTo(0, 0);
     this.service.load();
   }
 
