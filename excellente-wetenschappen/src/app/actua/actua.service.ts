@@ -11,6 +11,7 @@ const defaultPhoto = 'assets/img/Baanbrekende wetenschap.svg';
 })
 export class ActuaService {
 
+  loaded$ = new BehaviorSubject(false);
   private itemsSubj = new BehaviorSubject<ActuaItem[]>([]);
 
   load() {
@@ -30,6 +31,7 @@ export class ActuaService {
       })
     ).subscribe(items => {
       this.itemsSubj.next(items);
+      this.loaded$.next(true);
     })
   }
 
