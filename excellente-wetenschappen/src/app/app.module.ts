@@ -13,11 +13,12 @@ import { faCaretLeft } from '@fortawesome/free-solid-svg-icons/faCaretLeft';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons/faCaretRight';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons/faQuoteLeft';
 import { faQuoteRight } from '@fortawesome/free-solid-svg-icons/faQuoteRight';
-import { CarouselModule, ModalModule } from 'ngx-bootstrap';
+import { ModalModule } from 'ngx-bootstrap';
 import { environment } from '../environments/environment';
 import { ActuaItemComponent } from './actua/actua-item/actua-item.component';
 import { ActuaPageComponent } from './actua/actua-page.component';
 import { AdminPageComponent } from './admin/admin-page.component';
+import { TestimonialFormItemComponent } from './admin/testimonial-form-item.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -35,7 +36,6 @@ import { RECAPTCHA_URL, RecaptchaDirective } from './testimonial/recaptcha.direc
 import { TestimonialFormComponent } from './testimonial/testimonial-form.component';
 import { TestimonialItemComponent } from './testimonial/testimonial-item.component';
 import { ToolboxPageComponent } from './toolbox/toolbox-page.component';
-import { TestimonialFormItemComponent } from './admin/testimonial-form-item.component';
 
 @NgModule({
   declarations: [
@@ -66,16 +66,12 @@ import { TestimonialFormItemComponent } from './admin/testimonial-form-item.comp
     HttpClientModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    CarouselModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireAuthModule,
     ModalModule.forRoot()
-    // AngularFireModule.initializeApp(environment.firebase),
-    // AngularFireFunctionsModule
   ],
   providers: [{provide: RECAPTCHA_URL, useValue: 'https://us-central1-excellente-wetenschappen.cloudfunctions.net/checkRecaptcha'}],
-  // providers: [{provide: RECAPTCHA_URL, useValue: '/firebase-functions/checkRecaptcha'}],
   entryComponents: [TestimonialFormItemComponent],
   bootstrap: [AppComponent]
 })
