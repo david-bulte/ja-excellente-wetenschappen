@@ -27,7 +27,7 @@ import { Component, OnInit } from '@angular/core';
       </p>
 
 
-      <div class="text-container d-flex flex-column flex-md-row flex-md-wrap posters">
+      <div class="text-container d-flex flex-column flex-sm-row flex-sm-wrap posters">
         <img class="m-1" src="/assets/posters/JA_AlexanderD.jpg">
         <img class="m-1" src="/assets/posters/JA_AngeliqueVO.jpg">
         <img class="m-1" src="/assets/posters/JA_AnnC.jpg">
@@ -44,7 +44,7 @@ import { Component, OnInit } from '@angular/core';
   `,
   styles: [
     `
-      @media (max-width: 769px) {
+      @media (max-width: 577px) {
         .posters img {
           width: 100%;
         }
