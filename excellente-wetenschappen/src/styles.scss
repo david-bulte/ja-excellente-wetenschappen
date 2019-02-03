@@ -100,3 +100,21 @@ h3 {
   }
 
 }
+
+.side-menu {
+  left: 0;
+  top: 0;
+  width: 150px;
+  font-size: smaller;
+}
+
+.side-menu li {
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+.side-menu li:hover {
+  cursor: pointer;
+  color: black;
+}
+

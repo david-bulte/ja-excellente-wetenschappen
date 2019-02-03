@@ -8,25 +8,25 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
 
       <div class="position-absolute side-menu d-none d-lg-block" #sticky>
         <ul class="list-inline text-muted">
-          <li (click)="jump('wat')">Wat is implicit bias?</li>
-          <li (click)="jump('waar')">Waar komt implicit bias vandaan?</li>
+          <li (click)="jump('wat')">Wat is <i>implicit bias</i>?</li>
+          <li (click)="jump('waar')">Waar komt <i>implicit bias</i> vandaan?</li>
           <li (click)="jump('doen')">Wat kunnen we er aan doen?</li>
-          <li (click)="jump('minder')">Minder vrouwelijke professoren door implicit bias</li>
+          <li (click)="jump('minder')">Minder vrouwelijke professoren door <i>implicit bias</i></li>
           <li (click)="jump('bias')">Bias ten opzichte van onderzoek naar gender bias</li>
         </ul>
       </div>
 
       <div class="text-container" #wat>
         <h2>
-          Wat is Implicit bias?
+          Wat is <i>implicit bias</i>?
         </h2>
 
         <p>
-          Implicit bias (impliciete vooroordelen) is een term die gebruikt wordt voor onbewuste vooroordelen die mensen
+          <i>Implicit bias</i> (impliciete vooroordelen) is een term die gebruikt wordt voor onbewuste vooroordelen die mensen
           met zich meedragen. Iedereen heeft associaties en voorkeuren (of aversies), zonder zich daarvan bewust te
-          zijn. Implicit bias is geen expliciete vooringenomenheid, maar een psychologisch mechanisme dat mensen snel in
+          zijn. <i>implicit bias</i> is geen expliciete vooringenomenheid, maar een psychologisch mechanisme dat mensen snel in
           categorieën indeelt en sterk beïnvloed wordt door onze ervaringen, omgeving, scholing en beelden uit onze
-          maatschappij. Implicit bias treft iedereen en is niet te voorkomen.
+          maatschappij. <i>implicit bias</i> treft iedereen en is niet te voorkomen.
         </p>
       </div>
 
@@ -47,7 +47,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
 
       <div class="text-container" #waar>
         <h2>
-          Waar komt implicit bias vandaan?:
+          Waar komt <i>implicit bias</i> vandaan?:
         </h2>
 
         <p>
@@ -78,18 +78,18 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
           onze associaties. Tegelijkertijd kunnen we onze associaties bijstellen op basis van nieuwe ervaringen door
           hier extra aandacht aan te geven. In processen die carrières beïnvloeden zoals aanstellingen en bevorderingen,
           maar ook in het toekennen van fondsen en het uitnodigen van sprekers voor congressen kunnen er maatregelen
-          genomen worden om te voorkomen dat beslissingen onbedoeld beïnvloedt worden door implicit bias.
+          genomen worden om te voorkomen dat beslissingen onbedoeld beïnvloedt worden door <i>implicit bias</i>.
         </p>
       </div>
 
       <div class="text-container" #minder>
         <h2>
-          Minder vrouwelijke professoren door implicit bias
+          Minder vrouwelijke professoren door <i>implicit bias</i>
         </h2>
 
         <p>
-          Hoewel vrouwen niet de enigen zijn die nadeel ondervinden van implicit bias, toont wetenschappelijk
-          onderzoek aan dat implicit bias belangrijke struikelblokken creëert in de academische loopbaan van
+          Hoewel vrouwen niet de enigen zijn die nadeel ondervinden van <i>implicit bias</i>, toont wetenschappelijk
+          onderzoek aan dat <i>implicit bias</i> belangrijke struikelblokken creëert in de academische loopbaan van
           vrouwen. Al deze drempels kunnen samen een groot effect hebben op de carrière van jonge academici.
           Een aantal voorbeelden van deze struikelblokken:
         </p>
@@ -132,7 +132,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
           Uit een Amerikaanse dubbel-blind gerandomiseerde studie blijkt dat identieke cv’s voor een functie
           van labomanager die rondgestuurd werden met een vrouwennaam of een mannennaam verschillend beoordeeld
           werden. De mannelijke namen scoorden significant beter (Moss-Racusin, Dovidio, Brescoll, Graham, &
-          Handelsman, 2012). Nederlands onderzoek laat zien dat implicit bias effect heeft op de procedures
+          Handelsman, 2012). Nederlands onderzoek laat zien dat <i>implicit bias</i> effect heeft op de procedures
           omtrent aanwervingen en aanstellingen binnen de wetenschap en een negatief effect hebben op de
           kansen van vrouwelijke kandidaten (Van den Brink & Benschop, 2012). Uit een Amerikaans onderzoek
           (Isaac, Lee, & Carnes, 2009) blijkt dat dat een minimum van 25% vrouwelijke kandidaten, de bias
@@ -155,7 +155,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
           (Moss-Racusin et al., 2012). De bias was zelfs sterker bij vrouwelijke dan bij mannelijke
           evaluatoren (Moss-Racusin et al., 2012). Dit geeft aan dat alleen het aantal vrouwen in
           evaluatiecommissies verhogen niet zinvol is. Leden moeten actief geïnformeerd en getraind
-          worden om implicit bias te herkennen.
+          worden om <i>implicit bias</i> te herkennen.
         </p>
 
         <h3>
@@ -252,23 +252,6 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
   styles: [`
     img.cartoon {
       height: 220px;
-    }
-
-    .side-menu {
-      left: 0;
-      top: 0;
-      width: 150px;
-      font-size: smaller;
-    }
-
-    .side-menu li {
-      line-height: 20px;
-      margin-bottom: 5px;
-    }
-
-    .side-menu li:hover {
-      cursor: pointer;
-      color: black;
     }
   `]
 })
