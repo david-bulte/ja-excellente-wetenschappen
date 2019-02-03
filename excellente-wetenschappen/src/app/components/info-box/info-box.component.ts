@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'app-info-box',
   template: `
-    <div class="d-flex flex-column p-2 align-items-center" [routerLink]="link">
+    <div class="d-flex flex-column p-2 align-items-center mb-5" [routerLink]="link">
       <ng-content select=".info-box__cartoon"></ng-content>
       <h4 class="text-success text-lowercase">
         {{title}}
@@ -18,6 +18,7 @@ import { Component, Input, OnInit } from '@angular/core';
       :host:hover {
         cursor: pointer;
       }
+      
     `
   ]
 })

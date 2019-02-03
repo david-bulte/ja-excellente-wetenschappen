@@ -72,7 +72,7 @@ import { SlideInOutAnimation } from '../animations';
              (mouseenter)="hover(links, true)" (mouseleave)="hover(links, false)"
              routerLinkActive="active" [routerLink]="'/links'">Links</a>
           <a href="http://jongeacademie.be/" target="_blank"
-             class="menu-item__small text-dark">
+             class="mr-3 menu-item__small text-dark">
             Over JA
           </a>
         </div>

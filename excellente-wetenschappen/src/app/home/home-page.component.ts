@@ -4,7 +4,9 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-home',
   template: `
 
-    <div class="d-flex flex-column flex-md-row mt-0 mt-md-5">
+    <div class="d-flex flex-column flex-lg-row mt-0 mt-md-5 
+        justify-content-between justify-content-lg-around justify-content-xl-between 
+        align-items-center align-items-lg-start">
       <app-info-box [title]="'implicit bias'"
                     [link]="'/implicit-bias'"
                     class="mb-4 mb-md-0">
@@ -56,10 +58,6 @@ import { Component, OnInit } from '@angular/core';
       float: right;
     }
 
-    app-info-box {
-      marging-bottom: 30px;
-    }
-    
     .info-box__cartoon img {
       max-height: 150px;
     }

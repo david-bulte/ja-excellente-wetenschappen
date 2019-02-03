@@ -17,8 +17,10 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         </ul>
       </div>
 
-      <div class="text-container mb-3">
-        <img src="assets/img/Infographic_Gender_bias_toolbox.png" class="w-100">
+      <!--<div class="text-container mb-3">-->
+      <div class="text-container mb-3 d-flex text-container mb-3 justify-content-center align-items-center">
+        <img src="assets/img/Infographic_Gender_bias_toolbox.png" class="w-75">
+        <!--<img src="assets/img/Infographic_Gender_bias_toolbox.png" class="w-100">-->
       </div>
 
       <div class="text-container" #begrijp>
