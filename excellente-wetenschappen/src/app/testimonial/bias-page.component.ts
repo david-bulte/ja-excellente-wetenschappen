@@ -1,7 +1,8 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnDestroy, OnInit } from '@angular/core';
 import { getDayOfYear } from "date-fns";
-import { filter, map } from 'rxjs/operators';
-import { Testimonial, TestimonialService } from './testimonial.service';
+import { BehaviorSubject, combineLatest, Subject } from 'rxjs';
+import { filter, map, takeUntil, tap } from 'rxjs/operators';
+import { TestimonialService } from './testimonial.service';
 
 @Component({
   selector: 'app-testimonials-page',
@@ -26,36 +27,58 @@ import { Testimonial, TestimonialService } from './testimonial.service';
 
       </div>
 
+      <button class="btn btn-link" *ngIf="hasMore$ | async" (click)="showMore()">toon meer</button>
+
     </div>
   `,
   styleUrls: ['./bias-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class BiasPageComponent implements OnInit {
+export class BiasPageComponent implements OnInit, OnDestroy {
 
-  testimonials$ = this.testimonialService.getTestimonials().pipe(
-    filter(testimonials => testimonials && testimonials.length > 0),
-    map(testimonials => {
-      // elke dag 4 verse quotes
-      const date = getDayOfYear(new Date());
-      const idx1 = (date * 4) % testimonials.length
-      const idx2 = (date * 4 + 1) % testimonials.length
-      const idx3 = (date * 4 + 2) % testimonials.length
-      const idx4 = (date * 4 + 3) % testimonials.length
-      return [testimonials[idx1], testimonials[idx2], testimonials[idx3], testimonials[idx4]];
-    })
-  );
+  private destroy$ = new Subject();
+  hasMore$ = new BehaviorSubject(false);
+  private date$ = new BehaviorSubject(getDayOfYear(new Date()));
+  private size$ = new BehaviorSubject(4);
+  testimonials$ = new BehaviorSubject([]);
 
   constructor(private testimonialService: TestimonialService) {
   }
 
   ngOnInit() {
+    combineLatest(this.testimonialService.getTestimonials(), this.date$)
+      .pipe(
+        tap(([testimonials]) => {
+          this.size$.next(testimonials.length)
+        }),
+        filter((testimonials) => testimonials && testimonials.length > 0),
+        map(([testimonials, date]) => {
+          let remaining = this.size$.getValue() - this.testimonials$.getValue().length;
+          if (remaining > 4) {
+            remaining = 4;
+          }
+          const result = [];
+          for (let i = 0; i < remaining; i++) {
+            const idx = (date * 4 + i) % testimonials.length
+            result.push(testimonials[idx])
+          }
+          return result;
+        }),
+        tap(() => {
+          this.hasMore$.next(this.size$.getValue() > this.testimonials$.getValue().length)
+        }),
+        takeUntil(this.destroy$)
+      ).subscribe(testimonials => this.testimonials$.next(this.testimonials$.getValue().concat(testimonials)));
+
     window.scrollTo(0, 0);
   }
 
-  send(testimonial: Testimonial) {
-    // this.testimonialService.send(testimonial).subscribe(res => {
-    //   console.log("res", res);
-    // });
+  showMore() {
+    this.date$.next(this.date$.getValue() + 1);
   }
+
+  ngOnDestroy(): void {
+    this.destroy$.next();
+  }
+
 }
