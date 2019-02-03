@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-footer',
   template: `
-    <footer class="pt-4 pb-4 pt-md-5 border-top bg-light text-primary m-0">
+    <footer class="pt-4 pb-4 pt-md-5 border-top bg-light text-success m-0">
       <div class="container d-flex flex-row justify-content-start align-items-center">
 
         <a href="http://jongeacademie.be/">

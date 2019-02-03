@@ -15,6 +15,10 @@ import { TestimonialFormItemComponent } from './testimonial-form-item.component'
     <div class="d-flex justify-content-center w-100">
       <div class="text-container d-flex flex-column">
 
+        <div class="text-danger" *ngIf="errorMsg$ | async">
+          {{errorMsg$ | async}}
+        </div>
+        
         <div [ngSwitch]="loggedIn$ | async">
           <form class="form-group" [formGroup]="loginForm" (ngSubmit)="login()" *ngSwitchCase="false">
             <label for="inputEmail">Email address</label>
@@ -50,6 +54,7 @@ import { TestimonialFormItemComponent } from './testimonial-form-item.component'
 })
 export class AdminPageComponent implements OnInit {
 
+  errorMsg$ = new BehaviorSubject(null);
   loggedIn$ = new BehaviorSubject(false);
   testimonials$ = this.loggedIn$.pipe(
     switchMap(loggedIn => {
@@ -88,6 +93,7 @@ export class AdminPageComponent implements OnInit {
   }
 
   login() {
+    this.errorMsg$.next(null);
     const email = this.loginForm.get('email').value;
     const password = this.loginForm.get('password').value;
     this.fire.auth.signInWithEmailAndPassword(email, password)
@@ -95,8 +101,9 @@ export class AdminPageComponent implements OnInit {
         console.log("done", done);
         this.loggedIn$.next(true);
       })
-      .catch(function (error) {
-        console.log("error", error);
+      .catch(error => {
+        console.error("error", error);
+        this.errorMsg$.next('Er ging iets fout bij het inloggen - is gebruiker/wachtwoord gekend?')
       });
   }
 

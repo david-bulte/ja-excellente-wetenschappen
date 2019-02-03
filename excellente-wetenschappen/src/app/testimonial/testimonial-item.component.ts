@@ -31,7 +31,9 @@ import { Testimonial } from './testimonial.service';
     <div *ngIf="editable">
       <div class="d-flex justify-content-between align-items-center">
         <div>
-          {{testimonial.created}} <span *ngIf="testimonial.author">|</span> {{testimonial.author}}
+          {{testimonial.created}}
+          | {{testimonial.status === 1 ? 'publiek' : 'niet gepubliceerd'}}
+          <span *ngIf="testimonial.author">|</span> {{testimonial.author}}
         </div>
         <div>
           <button class="btn btn-link" (click)="deleteTestimonial.emit(testimonial)">delete</button>
