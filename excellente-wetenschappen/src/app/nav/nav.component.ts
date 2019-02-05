@@ -44,7 +44,7 @@ import { SlideInOutAnimation } from '../animations';
       <a class="p-2 text-dark menu-item" *ngIf="showMore$ | async"
          #links
          (mouseenter)="hover(links, true)" (mouseleave)="hover(links, false)"
-         routerLinkActive="active" [routerLink]="'/links'">Links</a>
+         routerLinkActive="active" [routerLink]="'/links'">Referenties</a>
       <a href="p-2 http://jongeacademie.be/" target="_blank"
          class="p-2 menu-item text-dark" *ngIf="showMore$ | async">
         Over JA
@@ -70,7 +70,7 @@ import { SlideInOutAnimation } from '../animations';
           <a class="p-2 mr-3 text-dark menu-item__small border-primary border-0"
              #links
              (mouseenter)="hover(links, true)" (mouseleave)="hover(links, false)"
-             routerLinkActive="active" [routerLink]="'/links'">Links</a>
+             routerLinkActive="active" [routerLink]="'/links'">Referenties</a>
           <a href="http://jongeacademie.be/" target="_blank"
              class="mr-3 menu-item__small text-dark">
             Over JA

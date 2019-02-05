@@ -19,19 +19,18 @@ html {
   }
 
   body {
-    background-color: $light;
+    background-color: $body-bg !important;
   }
 }
 
 h2 {
-  color: $success;
+  color: theme-color("success");
   //font-size: large;
 }
 
 h3 {
-  color: $success;
+  color: theme-color("success");
   font-style: italic;
-  //font-size: medium;
 }
 
 
@@ -110,7 +109,7 @@ h3 {
 
 .side-menu li {
   line-height: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .side-menu li:hover {

@@ -17,25 +17,25 @@ import { TestimonialService } from './testimonial.service';
               text-container border-md-bottom mb-3 p-2 w-100" style="border-bottom: 1px solid #ced4da;">
           <a [routerLink]="['/bias-in-de-praktijk']" class="text-nowrap">
             <fa-icon [icon]="'caret-left'"></fa-icon>
-            terug naar de getuigenissen
+            terug naar de verhalen
           </a>
         </div>
 
         <form class="pt-2 " [formGroup]="form" novalidate>
           <div class="form-group">
-            <label for="inputEmail">Email address *</label>
+            <label for="inputEmail">Emailadres *</label>
             <input type="email" class="form-control"
                    [class.is-invalid]="!form.get('email').pristine && !form.get('email').valid"
                    [class.is-valid]="!form.get('email').pristine && form.get('email').valid"
                    formControlName="email"
                    id="inputEmail" aria-describedby="emailHelp">
-            <small id="emailHelp" class="form-text text-muted">No worries, dit dient enkel om U te contacteren</small>
-            <small class="invalid-feedback" *ngIf="!!form.get('email').errors?.email">is het formaat juist?</small>
-            <small class="invalid-feedback" *ngIf="!!form.get('email').errors?.required">dit is een verplicht veld!
+            <small id="emailHelp" class="form-text text-muted">Uw verhaal wordt anoniem gepubliceerd.</small>
+            <small class="invalid-feedback" *ngIf="!!form.get('email').errors?.email">Is het formaat juist?</small>
+            <small class="invalid-feedback" *ngIf="!!form.get('email').errors?.required">Dit is een verplicht veld!
             </small>
           </div>
           <div class="form-group">
-            <label for="inputTestimonial">Uw getuigenis *</label>
+            <label for="inputTestimonial">Uw verhaal *</label>
             <textarea type="text" class="form-control"
                       [class.is-invalid]="!form.get('content').pristine && !form.get('content').valid"
                       [class.is-valid]="!form.get('content').pristine && form.get('content').valid"

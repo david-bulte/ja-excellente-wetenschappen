@@ -19,10 +19,10 @@ import { Testimonial } from './testimonial.service';
       </div>
       <div class="d-flex flex-row justify-content-end">
         <button class="btn btn-link small" [routerLink]="'/testimonials'"
-                *ngIf="showMoreButton">geef een getuigenis
+                *ngIf="showMoreButton">vertel uw verhaal
         </button>
         <button class="btn btn-link small" [routerLink]="'/testimonials'"
-                *ngIf="showMoreButton">meer getuigenissen
+                *ngIf="showMoreButton">meer verhalen
         </button>
       </div>
 

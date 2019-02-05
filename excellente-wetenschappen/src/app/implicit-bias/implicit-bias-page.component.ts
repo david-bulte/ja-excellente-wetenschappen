@@ -26,7 +26,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
           met zich meedragen. Iedereen heeft associaties en voorkeuren (of aversies), zonder zich daarvan bewust te
           zijn. <i>implicit bias</i> is geen expliciete vooringenomenheid, maar een psychologisch mechanisme dat mensen snel in
           categorieën indeelt en sterk beïnvloed wordt door onze ervaringen, omgeving, scholing en beelden uit onze
-          maatschappij. <i>implicit bias</i> treft iedereen en is niet te voorkomen.
+          maatschappij. <i>Implicit bias</i> treft iedereen en is niet te voorkomen.
         </p>
       </div>
 
@@ -78,7 +78,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
           onze associaties. Tegelijkertijd kunnen we onze associaties bijstellen op basis van nieuwe ervaringen door
           hier extra aandacht aan te geven. In processen die carrières beïnvloeden zoals aanstellingen en bevorderingen,
           maar ook in het toekennen van fondsen en het uitnodigen van sprekers voor congressen kunnen er maatregelen
-          genomen worden om te voorkomen dat beslissingen onbedoeld beïnvloedt worden door <i>implicit bias</i>.
+          genomen worden om te voorkomen dat beslissingen onbedoeld beïnvloed worden door <i>implicit bias</i>.
         </p>
         
         <p>
@@ -103,12 +103,11 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         </h3>
 
         <p>
-          Taalgebruik in vacatures kan mannelijk of vrouwelijk gekleurd zijn. In beroepen waar het gender
-          onevenwicht groot is, is het taalgebruik in de vacatures vaker 
+          Taalgebruik in vacatures kan mannelijk of vrouwelijk gekleurd zijn. In beroepen waar het genderonevenwicht groot is, is het taalgebruik in de vacatures vaker 
           <a href="https://psycnet.apa.org/record/2011-04642-001" target="_blank">gendergekleurd</a>. 
           Het gebruik van genderneutraal taalgebruik heeft een 
           <a href="https://www.ncbi.nlm.nih.gov/pubmed/21058576" target="_blank">positief effect</a> op de kans dat vrouwen zich kandidaat stellen voor een functie en
-          kan helpen gender onevenwichten aan te pakken.
+          kan helpen genderonevenwichten aan te pakken.
         </p>
 
       </div>
@@ -139,7 +138,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
           werden. De mannelijke namen scoorden significant beter. Nederlands onderzoek laat zien dat <i>implicit bias</i> effect heeft op de procedures
           omtrent aanwervingen en aanstellingen binnen de wetenschap en een 
           <a href="https://journals.sagepub.com/doi/abs/10.1177/1350508411414293" target="_blank">negatief effect</a> hebben op de
-          kansen van vrouwelijke kandidaten. Uit een <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4554714/" target="_blank">Amerikaans onderzoek</a> blijkt dat dat een minimum van 25% vrouwelijke kandidaten, de bias
+          kansen van vrouwelijke kandidaten. Uit een <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4554714/" target="_blank">Amerikaans onderzoek</a> blijkt dat een minimum van 25% vrouwelijke kandidaten, de bias
           tegen vrouwelijke kandidaten drastisch kan verminderen.
         </p>
       </div>

@@ -28,6 +28,7 @@ import { ActuaItem } from '../actua.service';
   styles: [`    
     .img-container {
       max-height: 250px;
+      min-height: 250px;
       overflow: hidden;
     }
   `]

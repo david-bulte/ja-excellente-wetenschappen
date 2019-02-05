@@ -33,5 +33,27 @@
     },
     "description": "",
     "photo": "Vrouwendag.jpg"
+  },
+  {
+    "title": "Woman In Science Day",
+    "type": "event",
+    "when": "02/11/2019",
+    "moreInfo": {
+      "link" : "https://www.facebook.com/events/218085845791642/",
+      "target": "_blank"
+    },
+    "description": "On the occasion of the International Day of Women and Girls in Science, the faculty of bio-engineering of UGent is organizing a half-day symposium to encourage and support young women in academia to reach their full potential as scientific researchers and innovators by showcasing female role models and helping young scientists develop a network.",
+    "photo": "woman-in-science.jpg"
+  },
+  {
+    "title": "Op weg naar gelijkheid in academia?",
+    "type": "event",
+    "when": "03/06/2019",
+    "moreInfo": {
+      "link" : "https://www.vub.ac.be/events/2019/op-weg-naar-gelijkheid-in-academia",
+      "target": "_blank"
+    },
+    "description": "De Vrije Universiteit Brussel, RHEA Expertisecentrum Gender, Diversiteit en Intersectionaliteit en v.z.w. Interuniversitair Centrum voor Onderwijsrecht (ICOR) nodigen u hartelijk uit voor een inspirerend seminarie over gendergelijkheid in de academische wereld.",
+    "photo": "academia.png"
   }
 ]

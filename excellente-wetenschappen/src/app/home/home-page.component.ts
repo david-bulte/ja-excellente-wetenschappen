@@ -36,7 +36,7 @@ import { Component, OnInit } from '@angular/core';
           <img src="assets/undraw/programmer_imem.svg">
         </div>
         <div class="info-box__description">
-          Lees hier getuigenissen over gendergerelateerde uitdagingen en opportuniteiten. Zelf iets te melden? Dat kan!
+          Lees hier verhalen over gendergerelateerde uitdagingen en opportuniteiten. Zelf iets te melden? Dat kan!
         </div>
       </app-info-box>
 
