@@ -8,15 +8,26 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
 
       <div class="position-absolute side-menu d-none d-lg-block" #sticky>
         <ul class="list-inline text-muted">
-          <li (click)="jump('wat')">Wat is <i>implicit bias</i>?</li>
-          <li (click)="jump('waar')">Waar komt <i>implicit bias</i> vandaan?</li>
-          <li (click)="jump('doen')">Wat kunnen we er aan doen?</li>
-          <li (click)="jump('minder')">Minder vrouwelijke professoren door <i>implicit bias</i></li>
-          <li (click)="jump('bias')">Bias ten opzichte van onderzoek naar gender bias</li>
+          <li>
+            <button class="btn btn-link text-muted" [ngx-scroll-to]="'#wat'">Wat is <i>implicit bias</i>?</button>
+          </li>
+          <li>
+            <button class="btn btn-link text-muted" [ngx-scroll-to]="'#waar'">Waar komt <i>implicit bias</i> vandaan?</button>
+          </li>
+          <li>
+            <button class="btn btn-link text-muted" [ngx-scroll-to]="'#doen'">Wat kunnen we er aan doen?</button>
+          </li>
+          <li>
+            <button class="btn btn-link text-muted" [ngx-scroll-to]="'#minder'">Minder vrouwelijke professoren door <i>implicit bias</i></button>
+          </li>
+          <li>
+            <button class="btn btn-link text-muted" [ngx-scroll-to]="'#bias'">Bias ten opzichte van onderzoek naar gender bias</button>
+          </li>
         </ul>
+
       </div>
 
-      <div class="text-container" #wat>
+      <div class="text-container" id="wat">
         <h2>
           Wat is <i>implicit bias</i>?
         </h2>
@@ -45,7 +56,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         </div>
       </div>
 
-      <div class="text-container" #waar>
+      <div class="text-container" id="waar">
         <h2>
           Waar komt <i>implicit bias</i> vandaan?:
         </h2>
@@ -68,7 +79,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         <img class="cartoon" src="assets/cartoons/Professor Smith.png">
       </div>
 
-      <div class="text-container" #doen>
+      <div class="text-container" id="doen">
         <h2>
           Wat kunnen we er aan doen?
         </h2>
@@ -86,7 +97,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         </p>
       </div>
 
-      <div class="text-container" #minder>
+      <div class="text-container" id="minder">
         <h2>
           Minder vrouwelijke professoren door <i>implicit bias</i>
         </h2>
@@ -231,7 +242,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
 
       </div>
       
-      <div class="text-container" #bias>
+      <div class="text-container" id="bias">
         <h2>
           Bias ten opzichte van onderzoek naar gender bias:
         </h2>
@@ -266,14 +277,8 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
 export class ImplicitBiasPageComponent implements OnInit, AfterViewInit {
 
   @ViewChild('sticky') stickyMenu: ElementRef;
-  @ViewChild('wat') wat: ElementRef;
-  @ViewChild('waar') waar: ElementRef;
-  @ViewChild('doen') doen: ElementRef;
-  @ViewChild('minder') minder: ElementRef;
-  @ViewChild('bias') bias: ElementRef;
   private sticked = false;
   private menuPosition;
-  private anchorPositions;
 
   constructor() {
   }
@@ -284,13 +289,6 @@ export class ImplicitBiasPageComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.menuPosition = getOffset(this.stickyMenu.nativeElement);
-    this.anchorPositions = {
-      wat: getOffset(this.wat.nativeElement),
-      waar: getOffset(this.waar.nativeElement),
-      doen: getOffset(this.doen.nativeElement),
-      minder: getOffset(this.minder.nativeElement),
-      bias: getOffset(this.bias.nativeElement)
-    };
   }
 
   @HostListener('window:scroll', ['$event'])
@@ -311,13 +309,6 @@ export class ImplicitBiasPageComponent implements OnInit, AfterViewInit {
       el.classList.add('position-relative');
       el.classList.remove('position-fixed');
     }
-  }
-
-  jump(target) {
-    // const {top} = getOffset(target);
-    // window.scrollTo({top, behavior: 'smooth'});
-    const {top} = this.anchorPositions[target];
-    window.scrollTo({top, behavior: 'smooth'});
   }
 
 }

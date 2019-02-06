@@ -12,7 +12,7 @@ import { LinkService } from './link.service';
           <h2>{{rootConfig.title}}</h2>
 
           <!--<ul class="list-inline" *ngIf="rootConfig.links">-->
-          <ul class="" *ngIf="rootConfig.links">
+          <ul class="pl-4" *ngIf="rootConfig.links">
             <li *ngFor="let linkConfig of rootConfig.links">
               <span class="font-italic link-page__authors" *ngIf="linkConfig.authors">{{linkConfig.authors}}. </span>
               <a href="{{linkConfig.link}}" target="_blank">{{linkConfig.title}}.</a>
@@ -23,7 +23,7 @@ import { LinkService } from './link.service';
           <ng-container *ngFor="let groupConfig of rootConfig.groups">
             <h3>{{groupConfig.title}}</h3>
 
-            <ul class="">
+            <ul class="pl-4">
               <li *ngFor="let linkConfig of groupConfig.links">
                 <span class="font-italic link-page__authors" *ngIf="linkConfig.authors">{{linkConfig.authors}}. </span>
                 <a href="{{linkConfig.link}}" target="_blank">{{linkConfig.title}}.</a>

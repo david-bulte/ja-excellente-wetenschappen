@@ -25,6 +25,8 @@ html {
 
 h2 {
   color: theme-color("success");
+  //margin-top: 50px;
+  //margin-bottom: 20px;
   //font-size: large;
 }
 
@@ -115,5 +117,35 @@ h3 {
 .side-menu li:hover {
   cursor: pointer;
   color: black;
+}
+
+.side-menu {
+  left: 0;
+  top: 0;
+  width: 150px;
+  font-size: smaller;
+}
+
+.side-menu li {
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.side-menu li:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.side-menu button {
+  font-size: smaller;
+  white-space: normal;
+  text-align: start;
+  text-decoration: none;
+}
+
+.side-menu button:hover {
+  cursor: pointer;
+  color: black !important;
+  text-decoration: none;
 }
 

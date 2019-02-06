@@ -8,27 +8,56 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
 
       <div class="position-absolute side-menu d-none d-lg-block" #sticky>
         <ul class="list-inline text-muted">
-          <li (click)="jump('begrijp')">Begrijp bias door erover te lezen</li>
-          <li (click)="jump('rekening')">Houd rekening met <i>implicit bias</i> tijdens beoordelingen</li>
-          <li (click)="jump('leguit')">Leg anderen uit dat <i>implicit bias</i> bestaat</li>
-          <li (click)="jump('talenten')">Kom als vrouw uit voor je talenten</li>
-          <li (click)="jump('zichtbaar')">Stimuleer succesvolle vrouwen om zichtbaar te zijn</li>
-          <li (click)="jump('ondersteun')">Ondersteun een gezonde work-life balans</li>
+          <li>
+            <button class="btn btn-link text-muted" [ngx-scroll-to]="'#begrijp'">Begrijp bias door erover te lezen
+            </button>
+          </li>
+          <li>
+            <button class="btn btn-link text-muted" [ngx-scroll-to]="'#rekening'">Houd rekening met <i>implicit bias</i>
+              tijdens beoordelingen
+            </button>
+          </li>
+          <li>
+            <button class="btn btn-link text-muted" [ngx-scroll-to]="'#leguit'">Leg anderen uit dat <i>implicit bias</i>
+              bestaat
+            </button>
+          </li>
+          <li>
+            <button class="btn btn-link text-muted" [ngx-scroll-to]="'#talenten'">Kom als vrouw uit voor je talenten
+            </button>
+          </li>
+          <li>
+            <button class="btn btn-link text-muted" [ngx-scroll-to]="'#zichtbaar'">Stimuleer succesvolle vrouwen om
+              zichtbaar te zijn
+            </button>
+          </li>
+          <li>
+            <button class="btn btn-link text-muted" [ngx-scroll-to]="'#ondersteun'">Ondersteun een gezonde work-life
+              balans
+            </button>
+          </li>
         </ul>
       </div>
 
       <!--<div class="text-container mb-3">-->
-      <div class="text-container mb-3 d-flex text-container mb-3 justify-content-center align-items-center">
-        <img src="assets/img/Infographic_Gender_bias_toolbox.png" class="w-75">
+      <div class="text-container mb-3 d-flex flex-row mb-3 align-items-center flex-wrap toolbox-images 
+      justify-content-center justify-content-md-start">
+        <!--<img src="assets/img/Infographic_Gender_bias_toolbox.png" class="w-75">-->
         <!--<img src="assets/img/Infographic_Gender_bias_toolbox.png" class="w-100">-->
+        <div><a [ngx-scroll-to]="'#begrijp'"><img src="assets/toolbox/1-lezen.png"></a></div>
+        <div><a [ngx-scroll-to]="'#rekening'"><img src="assets/toolbox/2-beoordelingen.png"></a></div>
+        <div><a [ngx-scroll-to]="'#leguit'"><img src="assets/toolbox/3-leg uit.png"></a></div>
+        <div><a [ngx-scroll-to]="'#talenten'"><img src="assets/toolbox/4-kom uit voor je talenten.png"></a></div>
+        <div><a [ngx-scroll-to]="'#zichtbaar'"><img src="assets/toolbox/5-zichtbaarheid.png"></a></div>
+        <div><a [ngx-scroll-to]="'#ondersteun'"><img src="assets/toolbox/6-work-life.png"></a></div>
       </div>
 
-      <div class="text-container" #begrijp>
+      <div class="text-container" id="begrijp">
         <h2>
           Begrijp bias door erover te lezen
         </h2>
 
-        <ul>
+        <ul class="pl-4">
           <li>
             Check je eigen bias: <a href="https://implicit.harvard.edu/implicit/takeatest.html" target="_blank">
             Harvard toolkit implicit bias</a>
@@ -40,7 +69,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         </ul>
       </div>
 
-      <div class="text-container" #rekening>
+      <div class="text-container" id="rekening">
         <h2>
           Houd rekening met <i>implicit bias</i> tijdens beoordelingen
         </h2>
@@ -49,7 +78,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
           1. Vooraf
         </h3>
 
-        <ul>
+        <ul class="pl-4">
           <li>Bij vacatures, zorg voor een voldoende wijde verspreiding van de vacature waardoor verschillende netwerken
             worden aangesproken.
           </li>
@@ -72,7 +101,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
           2. Selectiecriteria
         </h3>
 
-        <ul>
+        <ul class="pl-4">
           <li>Maak selectiecriteria duidelijk en verwijder ‘standaardzinnen’ waardoor weinig relevante criteria mee
             geëvalueerd zouden worden.
           </li>
@@ -88,7 +117,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
           3. Beoordelen van dossiers
         </h3>
 
-        <ul>
+        <ul class="pl-4">
           <li>Werk met een evaluatietabel waarbij de namen van de kandidaten in de kolommen worden vermeld en elk
             criterium dat meetelt in de beoordeling in een rij wordt geplaatst. Dit helpt de commissieleden om alle
             dossiers op eenzelfde manier te analyseren.
@@ -109,7 +138,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
           4. Interviews
         </h3>
 
-        <ul>
+        <ul class="pl-4">
           <li>Zorg ervoor dat alle gesprekken met kandidaten op eenzelfde manier verlopen. Werk met een interviewschema
             en
             stel aan alle kandidaten dezelfde vragen.
@@ -130,7 +159,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
           5. Feedback
         </h3>
 
-        <ul>
+        <ul class="pl-4">
           <li>Geef eerlijke feedback aan iedereen die is geëvalueerd. Zo krijgt elke kandidaat inzicht in zijn/haar
             dossier en beoordeling en hangt dit niet af van informele netwerken.
           </li>
@@ -143,13 +172,14 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
 
       </div>
 
-      <div class="text-container" #leguit>
+      <div class="text-container" id="leguit">
         <h2>
           Leg anderen uit dat <i>implicit bias</i> bestaat
         </h2>
 
-        <ul>
-          <li>Reageer als je <i>implicit bias</i> herkent op de werkvloer. Houd er wel rekening mee dat dit doorgaans onbewust
+        <ul class="pl-4">
+          <li>Reageer als je <i>implicit bias</i> herkent op de werkvloer. Houd er wel rekening mee dat dit doorgaans
+            onbewust
             en
             onbedoeld gebeurt.
           </li>
@@ -172,12 +202,12 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
 
       </div>
 
-      <div class="text-container" #talenten>
+      <div class="text-container" id="talenten">
         <h2>
           Kom als vrouw uit voor je talenten
         </h2>
 
-        <ul>
+        <ul class="pl-4">
           <li>Vaak hebben vrouwen (maar ook mannen) last van het <b>imposter syndrome of oplichterssyndroom</b>. Ook al
             hebben ze duidelijk bewijs geleverd van hun competentie, toch blijven mensen met dit syndroom ervan
             overtuigd
@@ -195,12 +225,12 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
 
       </div>
 
-      <div class="text-container" #zichtbaar>
+      <div class="text-container" id="zichtbaar">
         <h2>
           Stimuleer succesvolle vrouwen om zichtbaar te zijn
         </h2>
 
-        <ul>
+        <ul class="pl-4">
           <li>Nodig vrouwelijke sprekers binnen je vakgebied uit als keynote bij het organiseren van symposia,
             conferenties of debatten.
           </li>
@@ -228,12 +258,12 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
 
       </div>
 
-      <div class="text-container" #ondersteun>
+      <div class="text-container" id="ondersteun">
         <h2>
           Ondersteun een gezonde work-life balans
         </h2>
 
-        <ul>
+        <ul class="pl-4">
           <li>Plan vergaderingen binnen de reguliere kantooruren.</li>
           <li>Faciliteer ouderschapsverlof voor m+v+x.</li>
           <li>Faciliteer thuiswerken/telewerken (indien mogelijk).</li>
@@ -249,17 +279,11 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
 
     </div>
   `,
-  styles: []
+  styleUrls: ['toolbox-page.component.scss']
 })
 export class ToolboxPageComponent implements OnInit, AfterViewInit {
 
   @ViewChild('sticky') stickyMenu: ElementRef;
-  @ViewChild('begrijp') begrijp: ElementRef;
-  @ViewChild('rekening') rekening: ElementRef;
-  @ViewChild('leguit') leguit: ElementRef;
-  @ViewChild('talenten') talenten: ElementRef;
-  @ViewChild('zichtbaar') zichtbaar: ElementRef;
-  @ViewChild('ondersteun') ondersteun: ElementRef;
   private sticked = false;
   private menuPosition;
   private anchorPositions;
@@ -273,14 +297,6 @@ export class ToolboxPageComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.menuPosition = getOffset(this.stickyMenu.nativeElement);
-    this.anchorPositions = {
-      begrijp: getOffset(this.begrijp.nativeElement),
-      rekening: getOffset(this.rekening.nativeElement),
-      leguit: getOffset(this.leguit.nativeElement),
-      talenten: getOffset(this.talenten.nativeElement),
-      zichtbaar: getOffset(this.zichtbaar.nativeElement),
-      ondersteun: getOffset(this.ondersteun.nativeElement)
-    };
   }
 
   @HostListener('window:scroll', ['$event'])
@@ -301,13 +317,6 @@ export class ToolboxPageComponent implements OnInit, AfterViewInit {
       el.classList.add('position-relative');
       el.classList.remove('position-fixed');
     }
-  }
-
-  jump(target) {
-    // const {top} = getOffset(target);
-    // window.scrollTo({top, behavior: 'smooth'});
-    const {top} = this.anchorPositions[target];
-    window.scrollTo({top, behavior: 'smooth'});
   }
 
 }

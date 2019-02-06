@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ActuaPageComponent } from './actua/actua-page.component';
 import { AdminPageComponent } from './admin/admin-page.component';
 import { CampagnePageComponent } from './campagne/campagne-page.component';
+import { ContactPageComponent } from './contact/contact-page.component';
 import { FactsAndFiguresPageComponent } from './facts-and-figures/facts-and-figures-page.component';
 import { HomePageComponent } from './home/home-page.component';
 import { ImplicitBiasPageComponent } from './implicit-bias/implicit-bias-page.component';
@@ -39,6 +40,10 @@ const routes: Routes = [
   {
     path: 'actua',
     component: ActuaPageComponent
+  },
+  {
+    path: 'contact',
+    component: ContactPageComponent
   },
   {
     path: 'admin',

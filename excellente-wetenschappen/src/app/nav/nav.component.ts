@@ -45,10 +45,10 @@ import { SlideInOutAnimation } from '../animations';
          #links
          (mouseenter)="hover(links, true)" (mouseleave)="hover(links, false)"
          routerLinkActive="active" [routerLink]="'/links'">Referenties</a>
-      <a href="p-2 http://jongeacademie.be/" target="_blank"
-         class="p-2 menu-item text-dark" *ngIf="showMore$ | async">
-        Over JA
-      </a>
+      <a class="p-2 text-dark menu-item" *ngIf="showMore$ | async"
+         #contact
+         (mouseenter)="hover(contact, true)" (mouseleave)="hover(contact, false)"
+         routerLinkActive="active" [routerLink]="'/contact'">Contact</a>
       <a class="p-2 text-muted font-italic"
          #moreLess
          (mouseenter)="hover(moreLess, true)" (mouseleave)="hover(moreLess, false)"
@@ -71,10 +71,10 @@ import { SlideInOutAnimation } from '../animations';
              #links
              (mouseenter)="hover(links, true)" (mouseleave)="hover(links, false)"
              routerLinkActive="active" [routerLink]="'/links'">Referenties</a>
-          <a href="http://jongeacademie.be/" target="_blank"
-             class="mr-3 menu-item__small text-dark">
-            Over JA
-          </a>
+          <a class="p-2 mr-3 text-dark menu-item__small border-primary border-0"
+             #contact
+             (mouseenter)="hover(contact, true)" (mouseleave)="hover(contact, false)"
+             routerLinkActive="active" [routerLink]="'/contact'">Contact</a>
         </div>
         <div class="d-flex flex-row justify-content-end">
           <a class="p-2 text-dark menu-item border-primary border-0"

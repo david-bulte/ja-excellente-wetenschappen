@@ -54,12 +54,13 @@ export class BiasPageComponent implements OnInit, OnDestroy {
         filter((testimonials) => testimonials && testimonials.length > 0),
         map(([testimonials, date]) => {
           let remaining = this.size$.getValue() - this.testimonials$.getValue().length;
-          if (remaining > 4) {
-            remaining = 4;
+          let nbr = 3;
+          if (remaining > nbr) {
+            remaining = nbr;
           }
           const result = [];
           for (let i = 0; i < remaining; i++) {
-            const idx = (date * 4 + i) % testimonials.length
+            const idx = (date * nbr + i) % testimonials.length
             result.push(testimonials[idx])
           }
           return result;

@@ -13,6 +13,7 @@ import { faCaretLeft } from '@fortawesome/free-solid-svg-icons/faCaretLeft';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons/faCaretRight';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons/faQuoteLeft';
 import { faQuoteRight } from '@fortawesome/free-solid-svg-icons/faQuoteRight';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { ModalModule } from 'ngx-bootstrap';
 import { environment } from '../environments/environment';
 import { ActuaItemComponent } from './actua/actua-item/actua-item.component';
@@ -36,6 +37,7 @@ import { RECAPTCHA_URL, RecaptchaDirective } from './testimonial/recaptcha.direc
 import { TestimonialFormComponent } from './testimonial/testimonial-form.component';
 import { TestimonialItemComponent } from './testimonial/testimonial-item.component';
 import { ToolboxPageComponent } from './toolbox/toolbox-page.component';
+import { ContactPageComponent } from './contact/contact-page.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +59,8 @@ import { ToolboxPageComponent } from './toolbox/toolbox-page.component';
     InfoBoxComponent,
     ActuaItemComponent,
     AdminPageComponent,
-    TestimonialFormItemComponent
+    TestimonialFormItemComponent,
+    ContactPageComponent
   ],
   imports: [
     BrowserModule,
@@ -69,7 +72,8 @@ import { ToolboxPageComponent } from './toolbox/toolbox-page.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireAuthModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    ScrollToModule.forRoot()
   ],
   providers: [{provide: RECAPTCHA_URL, useValue: 'https://us-central1-excellente-wetenschappen.cloudfunctions.net/checkRecaptcha'}],
   entryComponents: [TestimonialFormItemComponent],

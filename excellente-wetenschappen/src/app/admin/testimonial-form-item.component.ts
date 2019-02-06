@@ -90,13 +90,13 @@ export class TestimonialFormItemComponent implements OnInit, OnChanges {
         $id: this.testimonial.$id,
         content: this.form.get('content').value,
         author: this.form.get('author').value,
-        status: this.form.get('status').value,
+        status: +this.form.get('status').value,
       })
     } else {
       this.save.emit({
         content: this.form.get('content').value,
         author: this.form.get('author').value,
-        status: this.form.get('status').value,
+        status: +this.form.get('status').value,
       })
     }
   }

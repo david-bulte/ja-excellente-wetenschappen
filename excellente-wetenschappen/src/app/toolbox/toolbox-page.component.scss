@@ -1,0 +1,18 @@
+.toolbox-images img {
+
+  filter: grayscale(0.1);
+
+  @media (min-width: 768px) {
+    width: 200px;
+  }
+
+  @media (max-width: 769px) {
+    width: 150px;
+  }
+
+  &:hover {
+    filter: grayscale(0);
+  }
+}
+
+
