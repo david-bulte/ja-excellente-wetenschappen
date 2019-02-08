@@ -18,7 +18,7 @@ import { Component, OnInit } from '@angular/core';
       <p class="text-container">
         Deze website is een onderdeel van de bewustzijnscampagne “Wetenschap=m+v+x” die gelanceerd werd
         op 11 februari 2019 met onder meer een posteractie en een campagne op sociale media. In
-        samenwerking met de <a href="http://www.vlir.be/" target="_blank">VLIR</a>, werken de leden van
+        samenwerking met de <a href="http://www.vlir.be/" target="_blank">VLIR</a> werken de leden van
         de Jonge Academie momenteel aan een charter over gendergelijkheid.
       </p>
 

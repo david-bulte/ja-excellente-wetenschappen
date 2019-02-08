@@ -15,6 +15,12 @@
         "reference": ""
       },
       {
+        "authors": "",
+        "title": "Athena's Angels, Nederlandse website over de uitdagingen die vrouwen tegenkomen in een wetenschappelijke loopbaan",
+        "link": "https://www.athenasangels.nl",
+        "reference": ""
+      },
+      {
         "authors": "Kang J (2011)",
         "title": "Bits of Bias",
         "link": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1968277",
@@ -55,10 +61,28 @@
         "title": "Over aanbevelingsbrieven",
         "links": [
           {
+            "authors": "Trix, F & Psenka, C (2003)",
+            "title": "Exploring the color of glass: letters of recommendation for female and male medical faculty",
+            "link": "https://journals.sagepub.com/doi/abs/10.1177/0957926503014002277",
+            "reference": "Discourse & Society, 14(2), 191-220"
+          },
+          {
             "authors": "Leslie SJ, Cimpian A, Meyer M, Freeland E (2015)",
             "title": "Expectations of brilliance underlie gender distributions across academic disciplines",
             "link": "http://science.sciencemag.org/content/347/6219/262/tab-pdf",
             "reference": "Science. 347(6219):262-5"
+          },
+          {
+            "authors": "Morgan, Elder & King (2013)",
+            "title": "The emergence and reduction of bias in letters of recommendation",
+            "link": "https://onlinelibrary.wiley.com/doi/full/10.1111/jasp.12179",
+            "reference": "journal of applied Social psychology, 43(11),2297-2306"
+          },
+          {
+            "authors": "Bian, Lin,Leslie, Sarah-Jane,Cimpian, Andrei (2018)",
+            "title": "Evidence of bias against girls and women in contexts that emphasize intellectual ability",
+            "link": "https://psycnet.apa.org/record/2018-62311-015",
+            "reference": "American Psychologist, Vol 73(9), 1139-1153"
           }
         ]
       },

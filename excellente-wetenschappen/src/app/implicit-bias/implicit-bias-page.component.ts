@@ -58,7 +58,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
 
       <div class="text-container" id="waar">
         <h2>
-          Waar komt <i>implicit bias</i> vandaan?:
+          Waar komt <i>implicit bias</i> vandaan?
         </h2>
 
         <p>
@@ -160,7 +160,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
 
       <div class="text-container">
         <h3>
-          Loon en loopbaanondersteuning:
+          Loon en loopbaanondersteuning
         </h3>
 
         <p>
@@ -172,7 +172,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         </p>
 
         <h3>
-          Verkrijgen van funding en fellowships:
+          Verkrijgen van funding en fellowships
         </h3>
 
         <p>
@@ -186,7 +186,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         </p>
 
         <h3>
-          Geciteerd worden en mogelijkheid tot samenwerking:
+          Geciteerd worden en mogelijkheid tot samenwerking
         </h3>
 
         <p>
@@ -196,7 +196,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         </p>
 
         <h3>
-          Uitgenodigd worden als spreker voor congressen:
+          Uitgenodigd worden als spreker voor congressen
         </h3>
 
         <p>
@@ -209,7 +209,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         </p>
 
         <h3>
-          Onderwijsevaluaties:
+          Onderwijsevaluaties
         </h3>
 
         <p>
@@ -244,7 +244,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
       
       <div class="text-container" id="bias">
         <h2>
-          Bias ten opzichte van onderzoek naar gender bias:
+          Bias ten opzichte van onderzoek naar gender bias
         </h2>
 
         <p>
