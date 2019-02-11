@@ -63,7 +63,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
             Harvard toolkit implicit bias.</a>
           </li>
           <li>
-            <a [routerLink]="'/links'">Lees over <i>implicit bias.</i></a>
+            <a [routerLink]="'/implicit-bias'">Lees over <i>implicit bias.</i></a>
           </li>
           <li>Volg een gender bias training.</li>
         </ul>
@@ -86,7 +86,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
           </li>
           <li>Informeer commissieleden over <i>implicit bias</i>. Informeer commissieleden over implicit bias. Dit kan door een korte uitleg van de voorzitter van de selectiecommissie of door het bekijken van een instructievideo, zoals deze <a
               href="https://www.youtube.com/watch?v=g978T58gELo&index=2&list=PLIRaTLZqki-CuOpGbTSp_CUgJvyBM_Btj&t=0s"
-              target="_blank">Recruitment bias in Research institutes</a>, maar echt begrip van implicit bias vraagt goede trainingen voor de commissieleden.
+              target="_blank">Recruitment bias in Research institutes</a>, maar echt begrip van <i>implicit bias</i> vraagt goede trainingen voor de commissieleden.
           </li>
           <li>Let op taalgebruik. Taal in vacatures en referentiebrieven bevat vaak woorden die we onbewust met een specifiek gender associëren. 
             Via deze ‘gender bias calculator’, kan je een tekst scannen op woorden die als expliciet mannelijk of vrouwelijk worden gepercipieerd:
@@ -150,7 +150,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
           <li>Eindevaluaties waarbij de kandidaten vergeleken worden, verlopen best per criterium.</li>
           <li>Neem geen finale beslissingen op de dag van de gesprekken zelf, maar laat er een paar dagen tijd overgaan, vooraleer de finale scores van alle commissieleden moeten ingediend en bekeken worden.
           </li>
-          <li>Reageer als je impliciete bias herkent.</li>
+          <li>Reageer als je <i>implicit bias</i> herkent.</li>
         </ul>
 
         <h3>
@@ -189,7 +189,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
           </li>
           <li>
             <a [routerLink]="'/campagne'">Download en print een van onze posters</a>, hang ze uit, en ondersteun zo mee de campagne ‘wetenschap =
-            m+v+x’.
+            M+V+X’.
           </li>
           <li>Deel informatie op sociale media met de hashtag #wetenschapismvx.</li>
           <li>Organiseer een debat over gender bias in je vakgroep of nodig een expert over om hierover te spreken
@@ -255,7 +255,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
 
         <ul class="pl-4">
           <li>Plan vergaderingen binnen de reguliere kantooruren.</li>
-          <li>Faciliteer ouderschapsverlof voor m+v+x.</li>
+          <li>Faciliteer ouderschapsverlof voor M+V+X.</li>
           <li>Faciliteer thuiswerken/telewerken (indien mogelijk).</li>
           <li>Houd in selectie- en bevorderingsprocedures rekening met de effectief gepresteerde onderzoekstijd van
             kandidaten die niet voltijds werken, of werkonderbrekingen gehad hebben.

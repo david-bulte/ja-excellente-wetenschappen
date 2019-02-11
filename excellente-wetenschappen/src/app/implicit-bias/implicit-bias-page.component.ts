@@ -37,7 +37,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
           met zich meedragen. Iedereen heeft associaties en voorkeuren (of aversies), zonder zich daarvan bewust te
           zijn. <i>implicit bias</i> is geen expliciete vooringenomenheid, maar een psychologisch mechanisme dat mensen snel in
           categorieën indeelt en sterk beïnvloed wordt door onze ervaringen, omgeving, scholing en beelden uit onze
-          maatschappij. <i>Implicit bias</i> treft iedereen en is niet te voorkomen.
+          maatschappij. <i>Implicit bias</i> treft iedereen en is moeilijk te vermijden.
         </p>
       </div>
 
@@ -101,7 +101,12 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         <h2>
           Minder vrouwelijke professoren door <i>implicit bias</i>
         </h2>
+       
+        <p>
+          De meest alledaagse vorm waarin <i>implicit bias</i> zich toont, zijn subtiele verbale of gedragsmatige tussenkomsten. Denk maar aan vrouwelijke professoren die op een receptie de vraag krijgen van welke prof zij de echtgenote zijn, doctoraatsstudentes die na een lezing te eerder opmerkingen krijgen over hun stijl of uiterlijk dan over de inhoud of vrouwen die veel vaker dan mannen vragen krijgen over work-life balance. Deze uitingen zijn bijna altijd onbewust en bijna nooit slecht bedoeld.
 
+          Maar ze vormen wel hét psychologische mechanisme dat abstracte stereotypen vertaalt naar alledaagse situaties. Ze geven impliciet het signaal ‘jij hoort er niet bij’. Vrouwen maken zich ook soms die stereotiepen eigen ("self-stereotyping") waardoor <i>gender bias</i> zich ook in hoofden van vrouwen nestelt.
+        </p>
         <p>
           Hoewel vrouwen niet de enigen zijn die nadeel ondervinden van <i>implicit bias</i>, toont wetenschappelijk
           onderzoek aan dat <i>implicit bias</i> belangrijke struikelblokken creëert in de academische loopbaan van
@@ -133,10 +138,13 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         </h3>
 
         <p>
-          <a href="http://science.sciencemag.org/content/347/6219/262/tab-pdf" target="_blank">Aanbevelingsbrieven</a> voor mannelijke kandidaten zijn gemiddeld langer en verwijzen vaker naar talenten en
-          excellentie, terwijl die voor vrouwelijke kandidaten het vaker hebben over onderwijscapaciteiten. 
-          Aanbevelingsbrieven voor kandidaten, zowel mannelijke als vrouwelijke, zouden een diversiteit van
-          talenten moeten benadrukken.
+          <a href="https://journals.sagepub.com/doi/abs/10.1177/0957926503014002277" target="_blank">Aanbevelingsbrieven voor mannelijke kandidaten</a> zijn gemiddeld langer en verwijzen vaker naar talenten en excellentie, 
+          terwijl die voor vrouwelijke kandidaten het vaker hebben over onderwijservaring en er vaker negatieve taal in gebruikt wordt (Trix and Psenka, 2003). 
+          Aanbevelingsbrieven voor kandidaten, zowel mannelijke als vrouwelijke, zouden een diversiteit van talenten moeten benadrukken.
+          <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jasp.12179" target="_blank">Uit het werk van Morgan et al. </a> blijkt dat aanbevelingsbrieven inderdaad vaak <i>gender bias</i> bevatten, 
+          maar dat het overlopen van de brieven met de kandidaat helpt om deze bias tegen te gaan.
+          
+
         </p>
 
         <h3>

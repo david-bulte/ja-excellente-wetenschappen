@@ -14,7 +14,7 @@ import { Component, OnInit } from '@angular/core';
           <img src="assets/undraw/science.svg">
         </div>
         <div class="info-box__description">
-          Wat is implicit bias? Hoe herken je implicit bias?
+          Wat is <i>implicit bias</i>? Hoe herken je <i>implicit bias</i>?
         </div>
       </app-info-box>
 

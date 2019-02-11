@@ -9,10 +9,10 @@
       "target": "_self"
     },
     "description": "11 februari is het <i>Internationale Dag van Vrouwen en Meisjes in de Wetenschap</i>. De Jonge Academie lanceert dan de campagne Wetenschap = M+V+X.",
-    "photo": "camp.jpg"
+    "photo": "camp.png"
   },
   {
-    "title": "Women in science symposium",
+    "title": "Women in Science Symposium",
     "type": "symposium",
     "when": "02/13/2019",
     "where": "GA3 auditorium - Campus Gasthuisberg (Leuven)",
@@ -35,7 +35,7 @@
     "photo": "Vrouwendag.jpg"
   },
   {
-    "title": "Woman In Science Day",
+    "title": "Women in Science Day",
     "type": "event",
     "when": "02/11/2019",
     "moreInfo": {

@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { compareAsc, isPast, parse } from 'date-fns';
+import { addDays, compareAsc, isPast, parse, startOfDay } from 'date-fns';
 import { BehaviorSubject } from 'rxjs';
 import { map } from 'rxjs/operators';
 
@@ -21,7 +21,7 @@ export class ActuaService {
 
     this.http.get<ActuaItem[]>('/assets/actua.json').pipe(
       map(items => items.map(item => {
-        const when = parse(item.when);
+        const when = startOfDay(addDays(parse(item.when), 1));
         const photo = item.photo ? `assets/img/${item.photo}` : defaultPhoto;
         return {...item, when, past: isPast(when), photo};
       })),

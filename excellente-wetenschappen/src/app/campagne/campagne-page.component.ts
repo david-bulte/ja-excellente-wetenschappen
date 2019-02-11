@@ -6,27 +6,49 @@ import { Component, OnInit } from '@angular/core';
 
     <div class="d-flex flex-column align-items-center w-100">
 
-      <p class="text-container">
-        Ondanks inspanningen op het gebied van work-life balance en selectieprocedures, is het merendeel
-        van de professoren anno 2019 nog steeds man. Wetenschappelijke literatuur toont aan dat dit o.a.
-        het gevolg is van onbewuste vooroordelen die de genderdiversiteit aan de Vlaamse universiteiten
-        niet ten goede komen. Met deze website wil de <a href="http://www.jongeacademie.be" target="_blank">
-        Jonge Academie</a> studenten en academici bewust maken
-        van het bestaan van deze onbewuste vooroordelen en de invloed ervan op de (academische) carrière.
-      </p>
+      <div class="text-container">
+        <p>
+          Deze website maakt deel uit van de campagne "Wetenschap=M+V+X" die de <a [routerLink]="'/contact'">Jonge Academie</a> lanceerde op 11 februari 2019:
+          de <a href="http://www.un.org/en/events/women-and-girls-in-science-day/" target="_blank">(UNESCO) International Day for Women and Girls in Science</a>. 
+        </p>
+      
+        <p>
+          Ondanks inspanningen op het gebied van work-life balance en selectieprocedures, is het merendeel
+          van de professoren anno 2019 nog steeds man. Wetenschappelijke literatuur toont aan dat dit o.a.
+          het gevolg is van onbewuste vooroordelen (<i>implicit bias</i>) en de uitingen ervan. 
+          Met deze website wil de <a [routerLink]="'/contact'">
+          Jonge Academie</a> academici en studenten bewust maken
+          van het bestaan van deze onbewuste vooroordelen en de invloed ervan op de (academische) carrière.
+        </p>
 
-      <p class="text-container">
-        Deze website is een onderdeel van de bewustzijnscampagne “Wetenschap=m+v+x” die gelanceerd werd
-        op 11 februari 2019 met onder meer een posteractie en een campagne op sociale media. In
-        samenwerking met de <a href="http://www.vlir.be/" target="_blank">VLIR</a> werken de leden van
-        de Jonge Academie momenteel aan een charter over gendergelijkheid.
-      </p>
+        <h3>Cartoons</h3>
 
-      <p class="text-container">
-        <a href="/assets/posters/JA_10GenderPosters.pdf" download>Download de pdf van de campagneposters.</a>
-      </p>
+        <p>
+          We werken samen met cartooniste Ayla Debraekeleer (doctoraatsstudente structurele biologie) die de verhalen uit de praktijk vertaalt in pittige cartoons. Je vindt ze terug op sociale media, deze website en op een <a href="/assets/posters/JA_PostkaartGender-didyousee.pdf" download>postkaart</a>.
+        </p>
 
+        <h3>Een nieuw gendercharter</h3>
+        <p>
+          De <a [routerLink]="'/contact'">Jonge Academie</a> en de <a href="http://www.vlir.be/" target="_blank">Vlaamse Interuniversitaire Raad (VLIR)</a> engageren zich om samen het genderactieplan voor de Vlaamse universiteiten uit 2013 te actualiseren en te vertalen naar concrete actiepunten in de hoop gendergelijkheid onder het academisch personeel in een stroomversnelling te brengen. Een gezamenlijke taskforce van <a [routerLink]="'/contact'">Jonge Academie</a> en <a href="http://www.vlir.be/" target="_blank">VLIR</a> bereidt dit charter voor en toetst het af met de universiteiten, met het oog om tegen juni een hernieuwd charter ter ondertekening voor te leggen.
+        </p>
 
+        <h3>Publieksevent</h3>
+        <p>
+          Om de campagne inhoudelijk te besluiten, werken we aan een publieksevent eind juni of begin juli. Meer informatie volgt later!
+        </p>
+
+        <h3>Maja #6</h3>
+        <p>
+          Het jaarlijkse Magazine van de Jonge Academie (Maja) is aan zijn zesde editie toe in 2019. De redactie werkt aan een themanummer <i>gender in academia</i>. Het zal verspreid worden begin academiejaar 2019-2020.
+        </p>
+
+        <h3>Campagnebeelden op posters, postkaarten en infoschermen</h3>
+        <p>
+          Tien gezichten en hun slogans richten de aandacht van studenten en academici op het genderthema. In alle universiteiten zijn deze campagnebeelden verspreid -- zowel op <a href="/assets/posters/JA_10GenderPosters.pdf" download>posters</a> als op de <a href="/assets/posters/campagne.zip" download>universitaire infoschermen</a>. 
+          Daarnaast verspreiden we ook een <a href="/assets/posters/JA_PostkaartGender-didyousee.pdf" download>postkaart</a> met een cartoon en een samenvatting van de <a [routerLink]="'/toolbox'">toolbox</a> op de achterkant.
+        </p>
+      </div>
+      
       <div class="text-container d-flex flex-column flex-sm-row flex-sm-wrap posters">
         <img class="m-1" src="/assets/posters/JA_AlexanderD.jpg">
         <img class="m-1" src="/assets/posters/JA_AngeliqueVO.jpg">

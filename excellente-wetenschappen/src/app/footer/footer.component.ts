@@ -6,12 +6,12 @@ import { Component, OnInit } from '@angular/core';
     <footer class="pt-4 pb-4 pt-md-5 border-top bg-light text-success m-0">
       <div class="container d-flex flex-row justify-content-start align-items-center">
 
-        <a href="http://jongeacademie.be/">
+        <a [routerLink]="'/contact'">
           <img src="assets/img/JA_logo.png" width="50" alt="">
         </a>
 
         <div class="ml-3 small font-italic">
-          Wetenschap is m+v+x is een campagne van de Jonge Academie.
+          Wetenschap is M+V+X is een campagne van de Jonge Academie.
         </div>
         
       </div>
