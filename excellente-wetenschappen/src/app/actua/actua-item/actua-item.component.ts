@@ -27,10 +27,10 @@ import { ActuaItem } from '../actua.service';
   `,
   styles: [`    
     .img-container {
-      max-height: 160px;
-      min-height: 160px;
-      /*max-height: 250px;*/
-      /*min-height: 250px;*/
+      /*max-height: 160px;*/
+      /*min-height: 160px;*/
+      max-height: 250px;
+      min-height: 250px;
       overflow: hidden;
     }
   `]
