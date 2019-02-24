@@ -24,7 +24,7 @@ import { Component, OnInit } from '@angular/core';
         <h3>Cartoons</h3>
 
         <p>
-          We werken samen met cartooniste Ayla Debraekeleer (doctoraatsstudente structurele biologie) die de verhalen uit de praktijk vertaalt in pittige cartoons. Je vindt ze terug op sociale media, deze website en op een <a href="/assets/posters/JA_PostkaartGender-didyousee.pdf" download>postkaart</a>.
+          We werken samen met cartooniste Ayla Debraekeleer (doctoraatsstudente structurele biologie) die de verhalen uit de praktijk vertaalt in pittige cartoons. Je vindt ze terug op sociale media, deze website en op een <a href="/assets/cartoons/JA_PostkaartGender.pdf" download>postkaart</a>.
         </p>
 
         <h3>Een nieuw gendercharter</h3>
@@ -45,7 +45,7 @@ import { Component, OnInit } from '@angular/core';
         <h3>Campagnebeelden op posters, postkaarten en infoschermen</h3>
         <p>
           Tien gezichten en hun slogans richten de aandacht van studenten en academici op het genderthema. In alle universiteiten zijn deze campagnebeelden verspreid -- zowel op <a href="/assets/posters/JA_10GenderPosters.pdf" download>posters</a> als op de <a href="/assets/posters/campagne.zip" download>universitaire infoschermen</a>. 
-          Daarnaast verspreiden we ook een <a href="/assets/posters/JA_PostkaartGender-didyousee.pdf" download>postkaart</a> met een cartoon en een samenvatting van de <a [routerLink]="'/toolbox'">toolbox</a> op de achterkant.
+          Daarnaast verspreiden we ook een <a href="/assets/cartoons/JA_PostkaartGender.pdf" download>postkaart</a> met een cartoon en een samenvatting van de <a [routerLink]="'/toolbox'">toolbox</a> op de achterkant.
         </p>
       </div>
       
