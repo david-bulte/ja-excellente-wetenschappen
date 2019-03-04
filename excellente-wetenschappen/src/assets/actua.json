@@ -69,6 +69,17 @@
     "photo": "academia.png"
   },
   {
+    "title": "VUB Walkout Against Sexism and Discrimination",
+    "type": "walkout",
+    "when": "03/08/2019",
+    "moreInfo": {
+      "link" : "http://www.vub.ac.be/en/events/2019/vub-walkout-against-sexism-and-discrimination",
+      "target": "_blank"
+    },
+    "description": "Even today we have to face too many differences between men and women on the work floor. That’s why we will stop work at 15:00 pm on Friday 8th March. Participate in the walkout. Say no to sexism & discrimination.",
+    "photo": "Marcom_Studentenopdakopnio_3200x1500.jpg"
+  },
+  {
     "title": "What do gender diversity and identity really mean? ",
     "type": "event",
     "when": "03/09/2019",

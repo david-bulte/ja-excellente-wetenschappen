@@ -20,6 +20,12 @@ import { Component, OnInit } from '@angular/core';
           Jonge Academie</a> academici en studenten bewust maken
           van het bestaan van deze onbewuste vooroordelen en de invloed ervan op de (academische) carrière.
         </p>
+        
+        <p>
+          De lancering van de campagne kon rekenen op heel wat media-aandacht. 
+          We haalden onder meer het VRT radio- en televisiejournaal, VTM, Knack, DeMorgen, ATV... 
+          <a href="http://jongeacademie.be/gendercampagne-in-de-media/" target="_blank">Een overzicht</a>.
+        </p>
 
         <h3>Cartoons</h3>
 
