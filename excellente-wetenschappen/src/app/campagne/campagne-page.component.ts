@@ -33,14 +33,14 @@ import { Component, OnInit } from '@angular/core';
           We werken samen met cartooniste Ayla Debraekeleer (doctoraatsstudente structurele biologie) die de verhalen uit de praktijk vertaalt in pittige cartoons. Je vindt ze terug op sociale media, deze website en op een <a href="/assets/cartoons/JA_PostkaartGender.pdf" download>postkaart</a>.
         </p>
 
-        <h3>Een nieuw gendercharter</h3>
+        <h3>Een nieuwe blik op het genderactieplan van 2013</h3>
         <p>
-          De <a [routerLink]="'/contact'">Jonge Academie</a> en de <a href="http://www.vlir.be/" target="_blank">Vlaamse Interuniversitaire Raad (VLIR)</a> engageren zich om samen het genderactieplan voor de Vlaamse universiteiten uit 2013 te actualiseren en te vertalen naar concrete actiepunten in de hoop gendergelijkheid onder het academisch personeel in een stroomversnelling te brengen. Een gezamenlijke taskforce van <a [routerLink]="'/contact'">Jonge Academie</a> en <a href="http://www.vlir.be/" target="_blank">VLIR</a> bereidt dit charter voor en toetst het af met de universiteiten, met het oog om tegen juni een hernieuwd charter ter ondertekening voor te leggen.
+          De <a [routerLink]="'/contact'">Jonge Academie</a> en de <a href="http://www.vlir.be/" target="_blank">Vlaamse Interuniversitaire Raad (VLIR)</a> engageren zich om samen het genderactieplan voor de Vlaamse universiteiten uit 2013 aan een kritische blik te onderwerpen en te vertalen naar concrete actiepunten, zodat gendergelijkheid onder het academisch personeel onder de aandacht en op de agenda blijft. Een gezamenlijke taskforce van <a [routerLink]="'/contact'">Jonge Academie</a> en <a href="http://www.vlir.be/" target="_blank">VLIR</a> gaat in maart aan de slag, met de bedoeling een gedragen document te kunnen voorleggen bij afronding van de campagne in juni 2019.
         </p>
 
         <h3>Publieksevent</h3>
         <p>
-          Om de campagne inhoudelijk te besluiten, werken we aan een publieksevent eind juni of begin juli. Meer informatie volgt later!
+          Om de campagne inhoudelijk te besluiten, werken we aan een publieksevent dat zal plaats vinden op 26 juni van 10:30 tot 12:00 in het Paleis der Academiën te Brussel. Meer info volgt.
         </p>
 
         <h3>Maja #6</h3>
