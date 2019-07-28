@@ -89,5 +89,16 @@
     },
     "description": "Mariame Keita (Pax Christi Ambassador for Peace) selected a number of powerful Femtalks and creative interludes for #Gender.",
     "photo": "gender.jpg"
+  },
+  {
+    "title": "Slotevent Wetenschap = M+V+X",
+    "type": "event",
+    "when": "06/26/2019",
+    "moreInfo": {
+      "link" : "http://jongeacademie.be/detail-evenement/slotevent-wetenschap-mvx/",
+      "target": "_blank"
+    },
+    "description": "Met 'Wetenschap = M+V+X' zette de Jonge Academie genderdiversiteit & implicit bias in de aandacht. Op 26 juni besluiten we de campagne met een publieksevent. We blikken terug op de afgelopen maanden én kijken vooruit naar de toekomst.",
+    "photo": "Excellente wetenschap.png"
   }
 ]

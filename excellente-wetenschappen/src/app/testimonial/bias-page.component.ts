@@ -13,13 +13,13 @@ import { TestimonialService } from './testimonial.service';
 
         <ng-container *ngFor="let t of testimonials$ | async; let index = index">
 
-          <div class="d-flex flex-column justify-content-end align-items-center 
-              flex-md-row text-container border-md-bottom mb-3 p-2 p-md-0 bias-page__cta" *ngIf="index === 0">
-            <div class="text-nowrap">Heb je zelf iets meegemaakt?</div>
-            <button class="btn btn-link float-right text-nowrap" [routerLink]="'/bias-in-de-praktijk/add'">
-              Laat ons iets weten!
-            </button>
-          </div>
+<!--          <div class="d-flex flex-column justify-content-end align-items-center -->
+<!--              flex-md-row text-container border-md-bottom mb-3 p-2 p-md-0 bias-page__cta" *ngIf="index === 0">-->
+<!--            <div class="text-nowrap">Heb je zelf iets meegemaakt?</div>-->
+<!--            <button class="btn btn-link float-right text-nowrap" [routerLink]="'/bias-in-de-praktijk/add'">-->
+<!--              Laat ons iets weten!-->
+<!--            </button>-->
+<!--          </div>-->
 
           <app-testimonial-item
             [testimonial]="t" [showMoreButton]="false"></app-testimonial-item>

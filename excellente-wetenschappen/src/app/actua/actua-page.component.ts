@@ -6,6 +6,8 @@ import { ActuaItem, ActuaService } from './actua.service';
   selector: 'app-actua',
   template: `
 
+    De campagne is afgelopen.
+    
     <ng-container *ngIf="(present$ | async)?.length > 0; else noItems">
 
       <div class="card-deck" *ngFor="let group of present$ | async">
@@ -17,14 +19,14 @@ import { ActuaItem, ActuaService } from './actua.service';
     </ng-container>
 
     <ng-template #noItems>
-      <ng-container [ngSwitch]="loaded$">
-        <div *ngSwitchDefault>
-            loading...
-        </div>
-        <div *ngSwitchCase="true">
-          Er is momenteel niets gepland.
-        </div>
-      </ng-container>
+<!--      <ng-container [ngSwitch]="loaded$">-->
+<!--        <div *ngSwitchDefault>-->
+<!--            loading...-->
+<!--        </div>-->
+<!--        <div *ngSwitchCase="true">-->
+<!--          Er is momenteel niets gepland.-->
+<!--        </div>-->
+<!--      </ng-container>-->
     </ng-template>
 
     <div class="past-container mt-3" *ngIf="(past$ | async)?.length > 0">
