@@ -1,26 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-covid-home',
   template: `
 
     <div class="d-flex flex-column flex-lg-row mt-0 mt-md-5
         justify-content-between justify-content-lg-around justify-content-xl-between
         align-items-center align-items-lg-start">
-      <app-info-box [title]="'implicit bias'"
-                    [link]="'../implicit-bias'"
-                    class="mb-4 mb-md-0">
-        <div class="info-box__cartoon">
-          <img src="assets/undraw/science.svg">
-        </div>
-        <div class="info-box__description">
-          Wat is <i>implicit bias</i>? Hoe herken je <i>implicit bias</i>?
-        </div>
-      </app-info-box>
+
+      <div class="col-4 mb-4 p-3 info-box-info align-self-stretch">
+        bla bla bla
+      </div>
 
       <app-info-box [title]="'Facts and Figures'"
                     [link]="'../facts-and-figures'"
-                    class="mb-4 mb-md-0">
+                    class="col-4 mb-4 mb-md-0">
         <div class="info-box__cartoon">
           <img src="assets/undraw/growing.svg">
         </div>
@@ -29,20 +23,9 @@ import { Component, OnInit } from '@angular/core';
         </div>
       </app-info-box>
 
-      <app-info-box [title]="'Bias in de praktijk'"
-                    [link]="'../bias-in-de-praktijk'"
-                    class="mb-4 mb-md-0">
-        <div class="info-box__cartoon">
-          <img src="assets/undraw/programmer_imem.svg">
-        </div>
-        <div class="info-box__description">
-          Lees hier verhalen over gendergerelateerde uitdagingen en opportuniteiten. Zelf iets te melden? Dat kan!
-        </div>
-      </app-info-box>
-
       <app-info-box [title]="'Toolbox'"
                     [link]="'../toolbox'"
-                    class="mb-4 mb-md-0">
+                    class="col-4 mb-4 mb-md-0">
         <div class="info-box__cartoon">
           <img src="assets/undraw/teaching.svg"></div>
         <div class="info-box__description">
@@ -62,9 +45,14 @@ import { Component, OnInit } from '@angular/core';
       max-height: 150px;
     }
 
+    .info-box-info {
+      background-color: #f2f2f2 ;
+      border-radius: 15px;
+    }
+
   `]
 })
-export class HomePageComponent implements OnInit {
+export class CovidHomePageComponent implements OnInit {
 
   constructor() {
   }

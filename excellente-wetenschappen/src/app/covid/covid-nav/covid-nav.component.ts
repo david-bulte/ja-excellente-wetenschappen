@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { SlideInOutAnimation } from '../animations';
+import { SlideInOutAnimation } from '../../animations';
 
 @Component({
-  selector: 'app-nav',
+  selector: 'app-covid-nav',
   template: `
 
     <!--small screen-->
@@ -18,29 +18,13 @@ import { SlideInOutAnimation } from '../animations';
          (mouseenter)="hover(home, true)" (mouseleave)="hover(home, false)"
          routerLinkActive="active" [routerLink]="'home'">Home</a>
       <a class="p-2 text-dark menu-item"
-         #implicitBias
-         (mouseenter)="hover(implicitBias, true)" (mouseleave)="hover(implicitBias, false)"
-         routerLinkActive="active" [routerLink]="'implicit-bias'">Implicit Bias</a>
-      <a class="p-2 text-dark menu-item"
          #factsAndFigures
          (mouseenter)="hover(factsAndFigures, true)" (mouseleave)="hover(factsAndFigures, false)"
          routerLinkActive="active" [routerLink]="'facts-and-figures'">Facts and Figures</a>
       <a class="p-2 text-dark menu-item"
-         #bias
-         (mouseenter)="hover(bias, true)" (mouseleave)="hover(bias, false)"
-         routerLinkActive="active" [routerLink]="'bias-in-de-praktijk'">Bias in de praktijk</a>
-      <a class="p-2 text-dark menu-item"
          #toolbox
          (mouseenter)="hover(toolbox, true)" (mouseleave)="hover(toolbox, false)"
          routerLinkActive="active" [routerLink]="'toolbox'">Toolbox</a>
-      <a class="p-2 text-dark menu-item" *ngIf="showMore$ | async"
-         #campagne
-         (mouseenter)="hover(campagne, true)" (mouseleave)="hover(campagne, false)"
-         routerLinkActive="active" [routerLink]="'campagne'">Campagne</a>
-      <a class="p-2 text-dark menu-item" *ngIf="showMore$ | async"
-         #charter
-         (mouseenter)="hover(campagne, true)" (mouseleave)="hover(campagne, false)"
-         routerLinkActive="active" [routerLink]="'charter'">Charter</a>
       <a class="p-2 text-dark menu-item" *ngIf="showMore$ | async"
          #links
          (mouseenter)="hover(links, true)" (mouseleave)="hover(links, false)"
@@ -64,10 +48,6 @@ import { SlideInOutAnimation } from '../animations';
       <div class="d-flex flex-column flex-grow-1">
         <div class="d-flex flex-row justify-content-end small">
           <a class="p-2 mr-3 text-dark menu-item__small border-primary border-0"
-             #campagne
-             (mouseenter)="hover(campagne, true)" (mouseleave)="hover(campagne, false)"
-             routerLinkActive="active" [routerLink]="'campagne'">Campagne</a>
-          <a class="p-2 mr-3 text-dark menu-item__small border-primary border-0"
              #links
              (mouseenter)="hover(links, true)" (mouseleave)="hover(links, false)"
              routerLinkActive="active" [routerLink]="'links'">Referenties</a>
@@ -82,25 +62,13 @@ import { SlideInOutAnimation } from '../animations';
              (mouseenter)="hover(home, true)" (mouseleave)="hover(home, false)"
              routerLinkActive="active" [routerLink]="'home'">Home</a>
           <a class="p-2 text-dark menu-item border-primary border-0"
-             #implicitBias
-             (mouseenter)="hover(implicitBias, true)" (mouseleave)="hover(implicitBias, false)"
-             routerLinkActive="active" [routerLink]="'implicit-bias'">Implicit Bias</a>
-          <a class="p-2 text-dark menu-item border-primary border-0"
              #factsAndFigures
              (mouseenter)="hover(factsAndFigures, true)" (mouseleave)="hover(factsAndFigures, false)"
              routerLinkActive="active" [routerLink]="'facts-and-figures'">Facts and Figures</a>
           <a class="p-2 text-dark menu-item border-primary border-0"
-             #bias
-             (mouseenter)="hover(bias, true)" (mouseleave)="hover(bias, false)"
-             routerLinkActive="active" [routerLink]="'bias-in-de-praktijk'">Bias in de praktijk</a>
-          <a class="p-2 text-dark menu-item border-primary border-0"
              #toolbox
              (mouseenter)="hover(toolbox, true)" (mouseleave)="hover(toolbox, false)"
              routerLinkActive="active" [routerLink]="'toolbox'">Toolbox</a>
-          <a class="p-2 text-dark menu-item border-primary border-0"
-             #charter
-             (mouseenter)="hover(charter, true)" (mouseleave)="hover(charter, false)"
-             routerLinkActive="active" [routerLink]="'charter'">Charter</a>
         </div>
       </div>
     </div>
@@ -112,11 +80,11 @@ import { SlideInOutAnimation } from '../animations';
       </div>
     </div>
   `,
-  styleUrls: ['nav.component.scss'],
+  styleUrls: ['covid-nav.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [SlideInOutAnimation]
 })
-export class NavComponent implements OnInit {
+export class CovidNavComponent implements OnInit {
 
   showMenu$ = new BehaviorSubject(false);
   showMore$ = new BehaviorSubject(false);

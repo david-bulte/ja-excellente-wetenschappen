@@ -25,6 +25,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CampagnePageComponent } from './campagne/campagne-page.component';
 import { InfoBoxComponent } from './components/info-box/info-box.component';
+import { CovidLinksPageComponent } from './covid/covid-links/covid-links-page.component';
+import { CovidFactsAndFiguresPageComponent } from './covid/facts-and-figures/covid-facts-and-figures-page.component';
+import { CovidHomePageComponent } from './covid/home/covid-home-page.component';
+import { CovidToolboxPageComponent } from './covid/toolbox/covid-toolbox-page.component';
 import { FactsAndFiguresPageComponent } from './facts-and-figures/facts-and-figures-page.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomePageComponent } from './home/home-page.component';
@@ -38,6 +42,11 @@ import { TestimonialFormComponent } from './testimonial/testimonial-form.compone
 import { TestimonialItemComponent } from './testimonial/testimonial-item.component';
 import { ToolboxPageComponent } from './toolbox/toolbox-page.component';
 import { ContactPageComponent } from './contact/contact-page.component';
+import { LandingComponent } from './landing/landing.component';
+import { CovidAppComponent } from './covid/covid-app/covid-app.component';
+import { CovidNavComponent } from './covid/covid-nav/covid-nav.component';
+import { OldAppComponent } from './old/old-app/old-app.component';
+import { CharterComponent } from './charter/charter.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +69,16 @@ import { ContactPageComponent } from './contact/contact-page.component';
     ActuaItemComponent,
     AdminPageComponent,
     TestimonialFormItemComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    LandingComponent,
+    CovidAppComponent,
+    CovidNavComponent,
+    OldAppComponent,
+    CovidFactsAndFiguresPageComponent,
+    CovidHomePageComponent,
+    CovidToolboxPageComponent,
+    CovidLinksPageComponent,
+    CharterComponent
   ],
   imports: [
     BrowserModule,
