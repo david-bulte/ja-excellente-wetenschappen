@@ -6,7 +6,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCaretLeft } from '@fortawesome/free-solid-svg-icons/faCaretLeft';
@@ -14,7 +14,7 @@ import { faCaretRight } from '@fortawesome/free-solid-svg-icons/faCaretRight';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons/faQuoteLeft';
 import { faQuoteRight } from '@fortawesome/free-solid-svg-icons/faQuoteRight';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
-import { ModalModule } from 'ngx-bootstrap';
+import { ModalModule } from 'ngx-bootstrap/modal';
 import { environment } from '../environments/environment';
 import { ActuaItemComponent } from './actua/actua-item/actua-item.component';
 import { ActuaPageComponent } from './actua/actua-page.component';
@@ -81,8 +81,8 @@ import { ContactPageComponent } from './contact/contact-page.component';
 })
 export class AppModule {
 
-  constructor() {
-    library.add(faCaretLeft, faCaretRight, faQuoteRight, faQuoteLeft);
+  constructor(library: FaIconLibrary) {
+    library.addIcons(faCaretLeft, faCaretRight, faQuoteRight, faQuoteLeft);
   }
 
 }

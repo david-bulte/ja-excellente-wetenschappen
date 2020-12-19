@@ -122,7 +122,7 @@ export class RecaptchaDirective implements OnInit, AfterViewInit, ControlValueAc
   }
 
   ngAfterViewInit() {
-    this.control = this.injector.get(NgControl).control;
+    this.control = this.injector.get(NgControl).control as FormControl;
     this.setValidators();
   }
 

@@ -9,30 +9,30 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
       <div class="position-absolute side-menu d-none d-lg-block" #sticky>
         <ul class="list-inline text-muted">
           <li>
-            <button class="btn btn-link text-muted" [ngx-scroll-to]="'#begrijp'">Begrijp bias door erover te lezen
+            <button class="btn btn-link text-muted" [ngxScrollTo]="'#begrijp'">Begrijp bias door erover te lezen
             </button>
           </li>
           <li>
-            <button class="btn btn-link text-muted" [ngx-scroll-to]="'#rekening'">Houd rekening met <i>implicit bias</i>
+            <button class="btn btn-link text-muted" [ngxScrollTo]="'#rekening'">Houd rekening met <i>implicit bias</i>
               tijdens beoordelingen
             </button>
           </li>
           <li>
-            <button class="btn btn-link text-muted" [ngx-scroll-to]="'#leguit'">Leg anderen uit dat <i>implicit bias</i>
+            <button class="btn btn-link text-muted" [ngxScrollTo]="'#leguit'">Leg anderen uit dat <i>implicit bias</i>
               bestaat
             </button>
           </li>
           <li>
-            <button class="btn btn-link text-muted" [ngx-scroll-to]="'#talenten'">Kom als vrouw uit voor je talenten
+            <button class="btn btn-link text-muted" [ngxScrollTo]="'#talenten'">Kom als vrouw uit voor je talenten
             </button>
           </li>
           <li>
-            <button class="btn btn-link text-muted" [ngx-scroll-to]="'#zichtbaar'">Stimuleer succesvolle vrouwen om
+            <button class="btn btn-link text-muted" [ngxScrollTo]="'#zichtbaar'">Stimuleer succesvolle vrouwen om
               zichtbaar te zijn
             </button>
           </li>
           <li>
-            <button class="btn btn-link text-muted" [ngx-scroll-to]="'#ondersteun'">Ondersteun een gezonde work-life
+            <button class="btn btn-link text-muted" [ngxScrollTo]="'#ondersteun'">Ondersteun een gezonde work-life
               balans
             </button>
           </li>
@@ -40,16 +40,16 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
       </div>
 
       <!--<div class="text-container mb-3">-->
-      <div class="text-container mb-3 d-flex flex-row mb-3 align-items-center flex-wrap toolbox-images 
+      <div class="text-container mb-3 d-flex flex-row mb-3 align-items-center flex-wrap toolbox-images
       justify-content-center justify-content-md-start">
         <!--<img src="assets/img/Infographic_Gender_bias_toolbox.png" class="w-75">-->
         <!--<img src="assets/img/Infographic_Gender_bias_toolbox.png" class="w-100">-->
-        <div><a [ngx-scroll-to]="'#begrijp'"><img src="assets/toolbox/1-lezen.png"></a></div>
-        <div><a [ngx-scroll-to]="'#rekening'"><img src="assets/toolbox/2-beoordelingen.png"></a></div>
-        <div><a [ngx-scroll-to]="'#leguit'"><img src="assets/toolbox/3-leg uit.png"></a></div>
-        <div><a [ngx-scroll-to]="'#talenten'"><img src="assets/toolbox/4-kom uit voor je talenten.png"></a></div>
-        <div><a [ngx-scroll-to]="'#zichtbaar'"><img src="assets/toolbox/5-zichtbaarheid.png"></a></div>
-        <div><a [ngx-scroll-to]="'#ondersteun'"><img src="assets/toolbox/6-work-life.png"></a></div>
+        <div><a [ngxScrollTo]="'#begrijp'"><img src="assets/toolbox/1-lezen.png"></a></div>
+        <div><a [ngxScrollTo]="'#rekening'"><img src="assets/toolbox/2-beoordelingen.png"></a></div>
+        <div><a [ngxScrollTo]="'#leguit'"><img src="assets/toolbox/3-leg uit.png"></a></div>
+        <div><a [ngxScrollTo]="'#talenten'"><img src="assets/toolbox/4-kom uit voor je talenten.png"></a></div>
+        <div><a [ngxScrollTo]="'#zichtbaar'"><img src="assets/toolbox/5-zichtbaarheid.png"></a></div>
+        <div><a [ngxScrollTo]="'#ondersteun'"><img src="assets/toolbox/6-work-life.png"></a></div>
       </div>
 
       <div class="text-container" id="begrijp">
@@ -88,12 +88,12 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
               href="https://www.youtube.com/watch?v=g978T58gELo&index=2&list=PLIRaTLZqki-CuOpGbTSp_CUgJvyBM_Btj&t=0s"
               target="_blank">Recruitment bias in Research institutes</a>, maar echt begrip van <i>implicit bias</i> vraagt goede trainingen voor de commissieleden.
           </li>
-          <li>Let op taalgebruik. Taal in vacatures en referentiebrieven bevat vaak woorden die we onbewust met een specifiek gender associëren. 
+          <li>Let op taalgebruik. Taal in vacatures en referentiebrieven bevat vaak woorden die we onbewust met een specifiek gender associëren.
             Via deze ‘gender bias calculator’, kan je een tekst scannen op woorden die als expliciet mannelijk of vrouwelijk worden gepercipieerd:
             <a href="https://www.tomforth.co.uk/genderbias/"
                target="_blank">https://www.tomforth.co.uk/genderbias/</a> of <a href="http://gender-decoder.katmatfield.com/"
                                                                                 target="_blank">http://gender-decoder.katmatfield.com/</a>.
-            
+
           </li>
         </ul>
 

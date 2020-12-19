@@ -9,19 +9,19 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
       <div class="position-absolute side-menu d-none d-lg-block" #sticky>
         <ul class="list-inline text-muted">
           <li>
-            <button class="btn btn-link text-muted" [ngx-scroll-to]="'#wat'">Wat is <i>implicit bias</i>?</button>
+            <button class="btn btn-link text-muted" [ngxScrollTo]="'#wat'">Wat is <i>implicit bias</i>?</button>
           </li>
           <li>
-            <button class="btn btn-link text-muted" [ngx-scroll-to]="'#waar'">Waar komt <i>implicit bias</i> vandaan?</button>
+            <button class="btn btn-link text-muted" [ngxScrollTo]="'#waar'">Waar komt <i>implicit bias</i> vandaan?</button>
           </li>
           <li>
-            <button class="btn btn-link text-muted" [ngx-scroll-to]="'#doen'">Wat kunnen we er aan doen?</button>
+            <button class="btn btn-link text-muted" [ngxScrollTo]="'#doen'">Wat kunnen we er aan doen?</button>
           </li>
           <li>
-            <button class="btn btn-link text-muted" [ngx-scroll-to]="'#minder'">Minder vrouwelijke professoren door <i>implicit bias</i></button>
+            <button class="btn btn-link text-muted" [ngxScrollTo]="'#minder'">Minder vrouwelijke professoren door <i>implicit bias</i></button>
           </li>
           <li>
-            <button class="btn btn-link text-muted" [ngx-scroll-to]="'#bias'">Bias ten opzichte van onderzoek naar gender bias</button>
+            <button class="btn btn-link text-muted" [ngxScrollTo]="'#bias'">Bias ten opzichte van onderzoek naar gender bias</button>
           </li>
         </ul>
 
@@ -91,7 +91,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
           maar ook in het toekennen van fondsen en het uitnodigen van sprekers voor congressen kunnen er maatregelen
           genomen worden om te voorkomen dat beslissingen onbedoeld beïnvloed worden door <i>implicit bias</i>.
         </p>
-        
+
         <p>
           <a [routerLink]="'/toolbox'">Bezoek de toolbox pagina voor tips over wat jij kan doen.</a>
         </p>
@@ -101,7 +101,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         <h2>
           Minder vrouwelijke professoren door <i>implicit bias</i>
         </h2>
-       
+
         <p>
           De meest alledaagse vorm waarin <i>implicit bias</i> zich toont, zijn subtiele verbale of gedragsmatige tussenkomsten. Denk maar aan vrouwelijke professoren die op een receptie de vraag krijgen van welke prof zij de echtgenote zijn, doctoraatsstudentes die na een lezing te eerder opmerkingen krijgen over hun stijl of uiterlijk dan over de inhoud of vrouwen die veel vaker dan mannen vragen krijgen over work-life balance. Deze uitingen zijn bijna altijd onbewust en bijna nooit slecht bedoeld.
 
@@ -119,9 +119,9 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         </h3>
 
         <p>
-          Taalgebruik in vacatures kan mannelijk of vrouwelijk gekleurd zijn. In beroepen waar het genderonevenwicht groot is, is het taalgebruik in de vacatures vaker 
-          <a href="https://psycnet.apa.org/record/2011-04642-001" target="_blank">gendergekleurd</a>. 
-          Het gebruik van genderneutraal taalgebruik heeft een 
+          Taalgebruik in vacatures kan mannelijk of vrouwelijk gekleurd zijn. In beroepen waar het genderonevenwicht groot is, is het taalgebruik in de vacatures vaker
+          <a href="https://psycnet.apa.org/record/2011-04642-001" target="_blank">gendergekleurd</a>.
+          Het gebruik van genderneutraal taalgebruik heeft een
           <a href="https://www.ncbi.nlm.nih.gov/pubmed/21058576" target="_blank">positief effect</a> op de kans dat vrouwen zich kandidaat stellen voor een functie en
           kan helpen genderonevenwichten aan te pakken.
         </p>
@@ -138,12 +138,12 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         </h3>
 
         <p>
-          <a href="https://journals.sagepub.com/doi/abs/10.1177/0957926503014002277" target="_blank">Aanbevelingsbrieven voor mannelijke kandidaten</a> zijn gemiddeld langer en verwijzen vaker naar talenten en excellentie, 
-          terwijl die voor vrouwelijke kandidaten het vaker hebben over onderwijservaring en er vaker negatieve taal in gebruikt wordt (Trix and Psenka, 2003). 
+          <a href="https://journals.sagepub.com/doi/abs/10.1177/0957926503014002277" target="_blank">Aanbevelingsbrieven voor mannelijke kandidaten</a> zijn gemiddeld langer en verwijzen vaker naar talenten en excellentie,
+          terwijl die voor vrouwelijke kandidaten het vaker hebben over onderwijservaring en er vaker negatieve taal in gebruikt wordt (Trix and Psenka, 2003).
           Aanbevelingsbrieven voor kandidaten, zowel mannelijke als vrouwelijke, zouden een diversiteit van talenten moeten benadrukken.
-          <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jasp.12179" target="_blank">Uit het werk van Morgan et al. </a> blijkt dat aanbevelingsbrieven inderdaad vaak <i>gender bias</i> bevatten, 
+          <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jasp.12179" target="_blank">Uit het werk van Morgan et al. </a> blijkt dat aanbevelingsbrieven inderdaad vaak <i>gender bias</i> bevatten,
           maar dat het overlopen van de brieven met de kandidaat helpt om deze bias tegen te gaan.
-          
+
 
         </p>
 
@@ -155,7 +155,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
           Uit een Amerikaanse dubbel-blind <a href="https://www.pnas.org/content/109/41/16474" target="_blank">gerandomiseerde studie</a> blijkt dat identieke cv’s voor een functie
           van labomanager die rondgestuurd werden met een vrouwennaam of een mannennaam verschillend beoordeeld
           werden. De mannelijke namen scoorden significant beter. Nederlands onderzoek laat zien dat <i>implicit bias</i> effect heeft op de procedures
-          omtrent aanwervingen en aanstellingen binnen de wetenschap en een 
+          omtrent aanwervingen en aanstellingen binnen de wetenschap en een
           <a href="https://journals.sagepub.com/doi/abs/10.1177/1350508411414293" target="_blank">negatief effect</a> hebben op de
           kansen van vrouwelijke kandidaten. Uit een <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4554714/" target="_blank">Amerikaans onderzoek</a> blijkt dat een minimum van 25% vrouwelijke kandidaten, de bias
           tegen vrouwelijke kandidaten drastisch kan verminderen.
@@ -186,7 +186,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         <p>
           Een <a href="https://www.nature.com/articles/387341a0" target="_blank">vroege studie</a> toont aan dat vrouwelijke wetenschappers in Zweden
           ruim twee keer meer moeten publiceren dan hun mannelijke collega’s om dezelfde score te
-          krijgen voor een fellowship bij de Medical Research Council. <a href="http://www.festa-europa.eu/public/swedish-report-gender-neutral-process-qualitative-study-evaluation-research-grant-application" target="_blank">Gelijkaardige</a> 
+          krijgen voor een fellowship bij de Medical Research Council. <a href="http://www.festa-europa.eu/public/swedish-report-gender-neutral-process-qualitative-study-evaluation-research-grant-application" target="_blank">Gelijkaardige</a>
           <a href="https://www.pnas.org/content/112/40/12349" target="_blank"> resultaten</a> zijn
           later herhaaldelijk teruggevonden bij andere funding agencies. Uit deze studies blijkt
           dat vrouwen vergelijkbare scores krijgen voor hun onderzoeksvoorstel maar een lagere score krijgen
@@ -209,8 +209,8 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
 
         <p>
           Bij <a href="https://www.ncbi.nlm.nih.gov/pubmed/23786459" target="_blank">een Europese organisatie van biologen</a> werd vastgesteld dat vrouwen ondervertegenwoordigd waren
-          op de sprekerslijsten. 
-          <a href="https://www.ncbi.nlm.nih.gov/pubmed/24399856" target="_blank">Verschillende </a> 
+          op de sprekerslijsten.
+          <a href="https://www.ncbi.nlm.nih.gov/pubmed/24399856" target="_blank">Verschillende </a>
           <a href="https://www.ncbi.nlm.nih.gov/pubmed/23185407" target="_blank">studies</a> tonen aan dat het verhogen
           van het aantal vrouwen in de organisatie of symposiumcommissie het aantal vrouwelijke sprekers
           verhoogt en het aantal panels met enkel mannen verlaagt.
@@ -221,7 +221,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         </h3>
 
         <p>
-          <a href="https://psycnet.apa.org/record/1988-02814-001" target="_blank">Verschillende </a> 
+          <a href="https://psycnet.apa.org/record/1988-02814-001" target="_blank">Verschillende </a>
           <a href="http://doi.org/10.1016/j.jpubeco.2016.11.006" target="_blank">onderzoeken </a>
           <a href="http://doi.org/10.1017/S104909651800001X" target="_blank">tonen </a><a href="https://www.tandfonline.com/doi/abs/10.1080/03634529109378821" target="_blank">aan</a> dat studenten vrouwelijke docenten lager evalueren op
           onderwijsevaluaties dan mannelijke docenten. In een klein  <a href="https://link.springer.com/article/10.1007/s10755-014-9313-4" target="_blank">
@@ -249,7 +249,7 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         </div>
 
       </div>
-      
+
       <div class="text-container" id="bias">
         <h2>
           Bias ten opzichte van onderzoek naar gender bias

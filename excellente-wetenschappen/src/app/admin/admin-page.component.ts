@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { BsModalRef, BsModalService } from 'ngx-bootstrap';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { BehaviorSubject, of } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 import { Testimonial, TestimonialService } from '../testimonial/testimonial.service';
@@ -18,7 +18,7 @@ import { TestimonialFormItemComponent } from './testimonial-form-item.component'
         <div class="text-danger" *ngIf="errorMsg$ | async">
           {{errorMsg$ | async}}
         </div>
-        
+
         <div [ngSwitch]="loggedIn$ | async">
           <form class="form-group" [formGroup]="loginForm" (ngSubmit)="login()" *ngSwitchCase="false">
             <label for="inputEmail">Email address</label>
@@ -40,7 +40,7 @@ import { TestimonialFormItemComponent } from './testimonial-form-item.component'
 
         <app-testimonial-item *ngFor="let t of testimonials$ | async; let index = index"
                               [testimonial]="t" [showMoreButton]="false"
-                              [editable]="true" 
+                              [editable]="true"
                               (saveTestimonial)="saveTestimonial($event)"
                               (deleteTestimonial)="deleteTestimonial($event)"></app-testimonial-item>
 
@@ -97,7 +97,7 @@ export class AdminPageComponent implements OnInit {
     this.errorMsg$.next(null);
     const email = this.loginForm.get('email').value;
     const password = this.loginForm.get('password').value;
-    this.fire.auth.signInWithEmailAndPassword(email, password)
+    this.fire.signInWithEmailAndPassword(email, password)
       .then(done => {
         console.log("done", done);
         this.loggedIn$.next(true);
@@ -109,7 +109,7 @@ export class AdminPageComponent implements OnInit {
   }
 
   logout() {
-    this.fire.auth.signOut()
+    this.fire.signOut()
       .then(done => {
         console.log("done", done);
         this.loggedIn$.next(false);

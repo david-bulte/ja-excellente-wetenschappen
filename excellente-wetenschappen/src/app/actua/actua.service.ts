@@ -21,9 +21,9 @@ export class ActuaService {
 
     this.http.get<ActuaItem[]>('/assets/actua.json').pipe(
       map(items => items.map(item => {
-        const when = startOfDay(addDays(parse(item.when), 1));
+        let when = startOfDay(addDays(parse(item.when as any, 'MM/dd/yyyy', new Date()), 1));
         const photo = item.photo ? `assets/img/${item.photo}` : defaultPhoto;
-        return {...item, when: item.when, past: isPast(when), photo};
+        return {...item, when, past: isPast(when), photo};
       })),
       map((items: ActuaItem[]) => {
         items.sort((x, y) => compareAsc(x.when, y.when));

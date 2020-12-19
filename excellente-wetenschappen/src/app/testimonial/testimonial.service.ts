@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
-import { parseDate } from 'ngx-bootstrap';
+import { parseDate } from 'ngx-bootstrap/chronos';
 import { throwError } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 
