@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
         align-items-center align-items-lg-start">
 
       <div class="col-4 mb-4 p-3 info-box-info align-self-stretch">
-        bla bla bla
+        Net zoals van vele mensen, heeft de COVID-19-crisis de afgelopen maanden ook van academici heel wat gevergd. Nog het hele verdere academiejaar zullen extra inspanningen van het academisch personeel noodzakelijk zijn om veilig onderwijs en onderzoek te kunnen garanderen. Helaas is de impact van de voorbije en komende periode niet voor iedereen gelijk: ze treft disproportioneel de academici (m, v, x) met zorgtaken en/of een hoge onderwijslast – zaken waarvan we weten dat ze vaker door vrouwen worden opgenomen. Daardoor dreigt de COVID-19-crisis de bestaande (gender)ongelijkheid in academia (net als in de bredere maatschappij) te vergroten.
       </div>
 
       <app-info-box [title]="'Facts and Figures'"
@@ -19,7 +19,8 @@ import { Component, OnInit } from '@angular/core';
           <img src="assets/undraw/growing.svg">
         </div>
         <div class="info-box__description">
-          De evolutie naar meer gendergelijkheid in academia gaat nog steeds traag. Wat zijn de cijfers?
+          Een overzicht van enkele feiten en figuren die de ongelijke impact van
+          de coronacrisis duidelijk weergeven.
         </div>
       </app-info-box>
 
@@ -29,7 +30,8 @@ import { Component, OnInit } from '@angular/core';
         <div class="info-box__cartoon">
           <img src="assets/undraw/teaching.svg"></div>
         <div class="info-box__description">
-          Wat kan je zelf doen om gender bias tegen te gaan?
+          Een concrete set van tools die aangeven hoe we dit probleem onder de
+          aandacht kunnen brengen en de negatieve impact ervan kunnen trachten te verkleinen.
         </div>
       </app-info-box>
 

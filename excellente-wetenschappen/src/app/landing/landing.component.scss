@@ -12,6 +12,19 @@ div app-news {
   background-color: #f2f2f2;
   margin: 1rem;
   border-radius: 15px;
+
+  &_title {
+    text-align: center;
+    color: green;
+    font-size: x-large;
+  }
+
+  &:hover {
+    filter: grayscale(0.5);
+    cursor: pointer;
+  }
+
+  outline: none;
 }
 
 .logo {
@@ -31,7 +44,15 @@ div app-news {
 
 }
 
-.container {
-  width: 700px !important;
-  max-width: 700px !important;
+@media (min-width: 768px) {
+  .container {
+    width: 700px !important;
+    max-width: 700px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: auto;
+  }
 }

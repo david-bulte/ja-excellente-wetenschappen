@@ -1,27 +1,29 @@
-.toolbox-images img {
+.toolbox-images {
 
-  margin: 1rem;
+  img {
 
-  &.toolbox-4 {
-    margin-top: 0 !important;
+    margin: 1rem;
+
+    &.toolbox-4 {
+      margin-top: 0 !important;
+    }
+
+    &.toolbox-5 {
+      margin-top: 0 !important;
+    }
+
+    filter: grayscale(0.1);
+
+    &:hover {
+      filter: grayscale(0.5);
+      cursor: pointer;
+    }
   }
-  &.toolbox-5 {
-    margin-top: 0 !important;
-  }
 
-  filter: grayscale(0.1);
-
-  //@media (min-width: 768px) {
-  //  width: 200px;
-  //}
-  //
-  //@media (max-width: 769px) {
-  //  width: 150px;
-  //}
-
-  &:hover {
-    filter: grayscale(0.5);
-    cursor: pointer;
+  &--small img {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 1rem;
   }
 }
 

@@ -9,26 +9,23 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
       <div class="position-absolute side-menu d-none d-lg-block" #sticky>
         <ul class="list-inline text-muted">
           <li>
-            <button class="btn btn-link text-muted" [ngxScrollTo]="'#begrijp'">Begrijp bias door erover te lezen
+            <button class="btn btn-link text-muted" [ngxScrollTo]="'#begrijp'">Begrijp corona-impact door erover te
+              lezen
             </button>
           </li>
           <li>
-            <button class="btn btn-link text-muted" [ngxScrollTo]="'#rekening'">Houd rekening met <i>implicit bias</i>
-              tijdens beoordelingen
+            <button class="btn btn-link text-muted" [ngxScrollTo]="'#communiceer'">Communiceer over de impact van de
+              coronacrisis op jouw werk tijdens beoordelingen
             </button>
           </li>
           <li>
-            <button class="btn btn-link text-muted" [ngxScrollTo]="'#leguit'">Leg anderen uit dat <i>implicit bias</i>
-              bestaat
+            <button class="btn btn-link text-muted" [ngxScrollTo]="'#bewust'"> Maak anderen bewust van de ongelijke
+              impact van de coronacrisis
             </button>
           </li>
           <li>
-            <button class="btn btn-link text-muted" [ngxScrollTo]="'#talenten'">Kom als vrouw uit voor je talenten
-            </button>
-          </li>
-          <li>
-            <button class="btn btn-link text-muted" [ngxScrollTo]="'#zichtbaar'">Stimuleer succesvolle vrouwen om
-              zichtbaar te zijn
+            <button class="btn btn-link text-muted" [ngxScrollTo]="'#rekening'">Houd rekening met corona-impact bij
+              beoordelingen
             </button>
           </li>
           <li>
@@ -39,247 +36,159 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
         </ul>
       </div>
 
-      <!--<div class="text-container mb-3">-->
-<!--      <div class="text-container mb-3 d-flex flex-row mb-3 align-items-center flex-wrap toolbox-images-->
-<!--      justify-content-center justify-content-md-start">-->
-<!--        &lt;!&ndash;<img src="assets/img/Infographic_Gender_bias_toolbox.png" class="w-75">&ndash;&gt;-->
-<!--        &lt;!&ndash;<img src="assets/img/Infographic_Gender_bias_toolbox.png" class="w-100">&ndash;&gt;-->
-<!--        <div><a [ngxScrollTo]="'#begrijp'"><img src="assets/covid/toolbox-1.png"></a></div>-->
-<!--        <div><a [ngxScrollTo]="'#begrijp'"><img src="assets/covid/toolbox-2.png"></a></div>-->
-<!--        <div><a [ngxScrollTo]="'#begrijp'"><img src="assets/covid/toolbox-3.png"></a></div>-->
-<!--        <div><a [ngxScrollTo]="'#begrijp'"><img src="assets/covid/toolbox-4.png"></a></div>-->
-<!--        <div><a [ngxScrollTo]="'#begrijp'"><img src="assets/covid/toolbox-5.png"></a></div>-->
-<!--      </div>-->
+      <div class="d-none d-md-block">
+        <div class="text-container d-flex flex-row align-items-stretch toolbox-images">
+          <div><a [ngxScrollTo]="'#begrijp'"><img src="assets/covid/toolbox-1.png"></a></div>
+          <div class="d-flex flex-column toolbox-images--right">
+            <div class="d-flex flex-row">
+              <div><a [ngxScrollTo]="'#communiceer'"><img src="assets/covid/toolbox-2.png"></a></div>
+              <div><a [ngxScrollTo]="'#bewust'"><img src="assets/covid/toolbox-3.png"></a></div>
+            </div>
+            <div class="d-flex flex-row">
+              <div><a [ngxScrollTo]="'#rekening'"><img class="toolbox-4" src="assets/covid/toolbox-4.png"></a></div>
+              <div><a [ngxScrollTo]="'#ondersteun'"><img class="toolbox-5" src="assets/covid/toolbox-5.png"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <div class="text-container d-flex flex-row align-items-stretch toolbox-images">
-        <div><a [ngxScrollTo]="'#begrijp'"><img src="assets/covid/toolbox-1.png"></a></div>
-        <div class="d-flex flex-column toolbox-images--right">
-          <div class="d-flex flex-row">
-            <div><a [ngxScrollTo]="'#begrijp'"><img src="assets/covid/toolbox-2.png"></a></div>
-            <div><a [ngxScrollTo]="'#begrijp'"><img src="assets/covid/toolbox-3.png"></a></div>
-          </div>
-          <div class="d-flex flex-row">
-            <div><a [ngxScrollTo]="'#begrijp'"><img class="toolbox-4" src="assets/covid/toolbox-4.png"></a></div>
-            <div><a [ngxScrollTo]="'#begrijp'"><img class="toolbox-5" src="assets/covid/toolbox-5.png"></a></div>
-          </div>
+      <div class="d-block d-md-none">
+        <div class="text-container d-flex flex-column align-items-stretch toolbox-images toolbox-images--small">
+          <div><a [ngxScrollTo]="'#begrijp'"><img src="assets/covid/toolbox-1.png"></a></div>
+          <div><a [ngxScrollTo]="'#communiceer'"><img src="assets/covid/toolbox-2.png"></a></div>
+          <div><a [ngxScrollTo]="'#bewust'"><img src="assets/covid/toolbox-3.png"></a></div>
+          <div><a [ngxScrollTo]="'#rekening'"><img class="toolbox-4" src="assets/covid/toolbox-4.png"></a></div>
+          <div><a [ngxScrollTo]="'#ondersteun'"><img class="toolbox-5" src="assets/covid/toolbox-5.png"></a></div>
         </div>
       </div>
 
       <div class="text-container" id="begrijp">
         <h2>
-          Begrijp bias door erover te lezen
+          Begrijp corona-impact door erover te lezen
         </h2>
 
         <ul class="pl-4">
           <li>
-            Check je eigen bias: <a href="https://implicit.harvard.edu/implicit/takeatest.html" target="_blank">
-            Harvard toolkit implicit bias.</a>
+            <a [routerLink]="'/covid/facts-and-figures'">Lees over de ongelijke impact van corona op wetenschappers (m,
+              v, x) met zorgtaken of een zware onderwijslast.</a>
           </li>
           <li>
-            <a [routerLink]="'/implicit-bias'">Lees over <i>implicit bias.</i></a>
+            <a [routerLink]="'/covid/facts-and-figures'">Informeer je aan de hand van de handige factsheet.</a>
           </li>
-          <li>Volg een gender bias training.</li>
+          <li><a [routerLink]="'/covid/facts-and-figures'">Lees enkele van de artikels in de referenties bij de feiten
+            figuren.</a></li>
         </ul>
       </div>
 
-      <div class="text-container" id="rekening">
+      <div class="text-container" id="communiceer">
         <h2>
-          Houd rekening met <i>implicit bias</i> tijdens beoordelingen
-        </h2>
-
-        <h3>
-          1. Vooraf
-        </h3>
-
-        <ul class="pl-4">
-          <li>Bij vacatures, zorg voor een voldoende wijde verspreiding van de vacature waardoor verschillende netwerken worden aangesproken.
-
-          </li>
-          <li>Stel gender/diversiteitsspitsen aan die getraind zijn om vooringenomenheid te erkennen en betrek hen bij elke stap van het beoordelingsproces.
-          </li>
-          <li>Informeer commissieleden over <i>implicit bias</i>. Informeer commissieleden over implicit bias. Dit kan door een korte uitleg van de voorzitter van de selectiecommissie of door het bekijken van een instructievideo, zoals deze <a
-              href="https://www.youtube.com/watch?v=g978T58gELo&index=2&list=PLIRaTLZqki-CuOpGbTSp_CUgJvyBM_Btj&t=0s"
-              target="_blank">Recruitment bias in Research institutes</a>, maar echt begrip van <i>implicit bias</i> vraagt goede trainingen voor de commissieleden.
-          </li>
-          <li>Let op taalgebruik. Taal in vacatures en referentiebrieven bevat vaak woorden die we onbewust met een specifiek gender associëren.
-            Via deze ‘gender bias calculator’, kan je een tekst scannen op woorden die als expliciet mannelijk of vrouwelijk worden gepercipieerd:
-            <a href="https://www.tomforth.co.uk/genderbias/"
-               target="_blank">https://www.tomforth.co.uk/genderbias/</a> of <a href="http://gender-decoder.katmatfield.com/"
-                                                                                target="_blank">http://gender-decoder.katmatfield.com/</a>.
-
-          </li>
-        </ul>
-
-        <h3>
-          2. Selectiecriteria
-        </h3>
-
-        <ul class="pl-4">
-          <li>Maak selectiecriteria duidelijk en verwijder ‘standaardzinnen’ waardoor weinig relevante criteria mee geëvalueerd zouden worden.
-
-          </li>
-          <li>Leg minimumvereisten vast. Zo kan voor publicatie-output een drempel vastgelegd worden. Wanneer de kandidaten deze drempel bereiken, wordt dit criterium niet verder besproken.
-
-          </li>
-          <li>
-          Als er veel selectiecriteria zijn bespreek dan van tevoren wat “must haves”en “nice to haves” zijn.
-          </li>
-          <li>Vóór commissieleden dossiers bekijken, moeten ze duidelijk gebrieft worden over de criteria, wat ze betekenen en hoe ze worden geëvalueerd. Bijvoorbeeld: wat bedoelen we met excellent en hoe gaan we daar naar vragen.
-          </li>
-        </ul>
-
-        <h3>
-          3. Beoordelen van dossiers
-        </h3>
-
-        <ul class="pl-4">
-          <li>Werk met een evaluatietabel waarbij de namen van de kandidaten in de kolommen worden vermeld en elk criterium dat meetelt in de beoordeling in een rij wordt geplaatst. Dit helpt de commissieleden om alle dossiers op eenzelfde manier te analyseren.
-          </li>
-          <li>Voorzitters in selectiecommissies hebben een belangrijke rol. Zij zorgen ervoor dat alle leden van de commissie aan het woord komen, dat er per kandidaat evenveel tijd wordt besteed, dat er vermeden wordt enkel over de voorkeurskandidaat te praten, dat de aannames van de commissieleden over welke criteria belangrijk zijn en hoe die worden geëvalueerd correct zijn.
-
-          </li>
-          <li>Vermijd het afleiden van familieverplichtingen uit het CV van een kandidaat en tel geen ‘gaten in een cv’ als automatisch negatief. Geef kandidaten de gelegenheid om hiaten te verklaren door er tijdens de interviewfase direct naar te vragen.
-          </li>
-          <li>
-            Bereken de effectieve onderzoekstijd (de tijd die er besteed is aan de academische loopbaan met aftrek van verloven en werk buiten de academische werksfeer) en vermeld deze vooraan in het dossier van elke kandidaat.Houd geen rekening met informele informatie.
-          </li>
-          <li>Houd geen rekening met informele informatie.</li>
-        </ul>
-
-        <h3>
-          4. Interviews
-        </h3>
-
-        <ul class="pl-4">
-          <li>Zorg ervoor dat alle gesprekken met kandidaten op eenzelfde manier verlopen. Werk met een interviewschema en stel aan alle kandidaten dezelfde vragen.
-
-          </li>
-          <li>Geef de score tijdens de gesprekken en niet pas nadat alle kandidaten werden gezien. Een mogelijkheid is om elke beoordelaar een specifiek criterium toe te wijzen. Hierdoor wordt het makkelijker om de kandidaten rechtstreeks, op basis van de vooraf opgestelde criteria, te vergelijken.
-
-          </li>
-          <li>
-          Als er twijfels zijn over de ambitie of motivatie van een kandidaat, vraag hiernaar in het gesprek of bel hier desnoods nog over na. Vul dit niet voor de kandidaat in.
-          </li>
-          <li>Eindevaluaties waarbij de kandidaten vergeleken worden, verlopen best per criterium.</li>
-          <li>Neem geen finale beslissingen op de dag van de gesprekken zelf, maar laat er een paar dagen tijd overgaan, vooraleer de finale scores van alle commissieleden moeten ingediend en bekeken worden.
-          </li>
-          <li>Reageer als je <i>implicit bias</i> herkent.</li>
-        </ul>
-
-        <h3>
-          5. Feedback
-        </h3>
-
-        <ul class="pl-4">
-          <li>Geef eerlijke feedback aan iedereen die is geëvalueerd. Zo krijgt elke kandidaat inzicht in zijn/haar
-            dossier en beoordeling en hangt dit niet af van informele netwerken.
-          </li>
-        </ul>
-
-        <p class="text-muted small">
-          Geïnspireerd op: Claartje Vinkenburg, Keynote voor HeforShe campagne, Ghent, 10 november 2016 en
-          Zie ook: <a href="https://www.academia.edu/471474/Hoogleraarbenoemingen_in_Nederland_m_v_._Mythen_feiten_en_aanbevelingen" target="_blank">het rapport van Marieke v/d Brink</a> en <a
-          href="https://biasinterrupters.org/#tools" target="_blank">https://biasinterrupters.org/#tools</a>
-
-        </p>
-
-      </div>
-
-      <div class="text-container" id="leguit">
-        <h2>
-          Leg anderen uit dat <i>implicit bias</i> bestaat
+          Communiceer over de impact van de coronacrisis op jouw werk
         </h2>
 
         <ul class="pl-4">
-          <li>Reageer als je <i>implicit bias</i> herkent op de werkvloer. Houd er wel rekening mee dat dit doorgaans
-            onbewust
-            en
-            onbedoeld gebeurt.
+          <li>Communiceer open over de positieve én negatieve impact van de coronacrisis op jouw werk.</li>
+          <li>Maak officieel melding van de impact van de coronacrisis op jouw werk
+            (bijvoorbeeld door enquêtes in te vullen, door melding te maken bij officiële instanties, etc.)
           </li>
-          <li>Overtuig anderen van het belang aan (gender)diversiteit. Onderzoek toont aan dat (gender)diverse groepen beter presteren en meer betrokken, innovatief en loyaal zijn. Zij hebben een betere collectieve intelligentie waardoor de prestaties van de groep en haar leden verbeteren en overwegen een breder scala aan alternatieven, waardoor er betere beslissingen worden genomen en het probleemoplossend vermogen van de groep omhoog gaat.
-
-            (<a href="https://biasinterrupters.org/wp-content/uploads/Talking-Points-for-your-CEO.pdf" target="_blank">https://biasinterrupters.org/wp-content/uploads/Talking-Points-for-your-CEO.pdf</a>)
+          <li>Beschrijf duidelijk je persoonlijke situatie (bijvoorbeeld in motivatiebrieven, personal statements,
+            ruimte voor carrière onderbrekingen, etc.).
+            Duid aan welk percentage van je tijd je normaal kan besteden aan onderzoek, onderwijs en dienstverlening
+            en hoe dit is veranderd tijdens de coronacrisis
+            (door bijvoorbeeld extra onderwijsbelasting, zorgtaken, fysieke of mentale problemen, etc.)
           </li>
-          <li>
-            <a [routerLink]="'/campagne'">Download en print een van onze posters</a>, hang ze uit, en ondersteun zo mee de campagne ‘wetenschap =
-            M+V+X’.
+          <li>Geef duidelijk aan welke (onderzoeks)doelstellingen wel en niet behaald zijn.
+            Indien doelstellingen niet behaald zijn, leg uit waarom
+            (bijvoorbeeld door een heroriëntering van het onderzoek, door extra onderwijsbelasting, zorgtaken,
+            sluiting archieven en labo’s, etc.).
           </li>
-          <li>Deel informatie op sociale media met de hashtag #wetenschapismvx.</li>
-          <li>Organiseer een debat over gender bias in je vakgroep of nodig een expert over om hierover te spreken
-            (eventueel in samenwerking met de diversiteits- of gendermedewerker van je universiteit).
+          <li>Geef aan welke andere, niet-vooropgestelde (onderzoeks)doelstellingen er eventueel behaald zijn.</li>
+          <li>Geef aan welke extra taken je hebt opgenomen tijdens de coronacrisis:
+            onderwijs, leiderschap, mentorschap, vrijwilligerswerk, etc.
           </li>
-          <li>
-            Meld grensoverschrijdend gedrag, weet waar anderen terecht kunnen met meldingen en bespreek ongepaste opmerkingen met de persoon die deze maakt, juist ook als deze niet aan jou zelf zijn gericht. Mannen kunnen een zeer belangrijke rol spelen in het helpen creëren van een werksfeer vrij van bias door voor hun collega's op te komen.
-          </li>
-        </ul>
-
-      </div>
-
-      <div class="text-container" id="talenten">
-        <h2>
-          Kom als vrouw uit voor je talenten
-        </h2>
-
-        <ul class="pl-4">
-          <li>Vaak hebben vrouwen (maar ook mannen) last van het <i>imposter syndrome of oplichterssyndroom</i>. Ook al hebben ze duidelijk bewijs geleverd van hun competentie, toch blijven mensen met dit syndroom ervan overtuigd dat ze hun succes niet verdienen. Ze schrijven hun succes toe aan geluk, toevallige timing of het ongewild misleiden van anderen die daardoor denken dat ze competenter en intelligenter zijn dan ze zelf geloven. Dit is op zich een normaal psychologisch mechanisme, maar het kan mensen ook beletten om hun talenten ten volle te tonen of te benutten.
-
-          </li>
-          <li>Ga in op uitnodigingen om spreker te zijn op conferenties, of als expert duiding te geven in de pers.
+          <li>Geef aan welke nieuwe vaardigheden je hebt ontwikkeld tijdens de coronacrisis:
+            bijvoorbeeld online teaching, leiderschap, mentorschap, etc.
           </li>
         </ul>
 
+
+        <div class="text-container" id="bewust">
+          <h2>
+            Maak anderen bewust van de ongelijke impact van de coronacrisis
+          </h2>
+
+          <ul class="pl-4">
+            <li><a [routerLink]="'/covid/facts-and-figures'">Deel de handige factsheet.</a></li>
+            <li>Deel informatie over corona-impact via sociale media.</li>
+            <li>Praat over de impact van de coronacrisis op jouw werk. Die kan zowel positief als negatief zijn.</li>
+            <li>Geef zelf de impact van de coronacrisis aan in aanvragen, interviews, enz. ook als er niet naar gevraagd
+              wordt.
+            </li>
+            <li>Maak officieel melding van de impact van de coronacrisis op jouw werk (bijvoorbeeld door enquêtes in te
+              vullen,
+              door melding te maken bij officiële instanties, etc.) ook als er niet naar gevraagd wordt.
+            </li>
+            <li>Wees eerlijk over jouw situatie,
+              ook als je jouw doelstellingen net beter hebt kunnen behalen door de coronacrisis.
+            </li>
+            <li>Voeg een Corona-impact statement toe aan je email-handtekening.
+              Maak anderen bewust van het feit dat je bv. meer onderwijs opneemt en/of ouderschapsverlof
+              en dat je daardoor minder snel emails kan opvolgen.
+            </li>
+            <li>Stel een out-of office in op de dagen dat je niet werkt door (corona)ouderschapsverlof.</li>
+
+          </ul>
+
+        </div>
+
+        <div class="text-container" id="rekening">
+          <h2>
+            Houd rekening met corona-impact bij beoordelingen
+          </h2>
+
+          <ul class="pl-4">
+            <li>Informeer (mede-)commissieleden over de (ongelijke) impact van corona op het dossier van kandidaten.
+              Voorzitters kunnen commissieleden informeren <a [routerLink]="'/covid/facts-and-figures'">
+                aan de hand van de handige factsheet.</a></li>
+            <li>Voorzie ruimte voor kandidaten om de impact van de coronacrisis toe te lichten
+              (bijvoorbeeld in een aparte rubriek, bij de personal statement of
+              biosketch, in reflectieverslagen of inpassingsteksten en tijdens interviews).
+            </li>
+            <li>Houd rekening met de context van de individuele onderzoeker.
+              Onderzoek toont aan dat de impact van de coronacrisis niet gelijk is:
+              alhoewel 70% een negatieve impact ervaarde, was deze voor 30% neutraal of zelfs positief
+              (bv. meer tijd om te schrijven). Stel verwachtingen daarom niet zomaar (naar beneden)
+              bij voor iedereen maar houd rekening met de persoonlijke context,
+              zoals beschreven door de onderzoeker zelf (bijvoorbeeld in een personal statement of biosketch).
+            <li>Maak geen assumpties op basis van het CV of gender van een kandidaat,
+              maar laat kandidaten zelf de persoonlijke situatie toelichten
+            </li>
+            (bijvoorbeeld in een bijzondere rubriek of tijdens een interview).
+            Dit vermijdt <a [routerLink]="'/implicit-gender'">implicit bias.</a>
+            <li>Spreek af op welke manier er rekening wordt gehouden met de context van de individuele onderzoeker
+              en communiceer dit transparant naar de kandidaten.
+              Wordt er bijvoorbeeld rekening gehouden met de effectieve onderzoekstijd,
+              vraag dan vooraf aan de kandidaten om de effectieve onderzoekstijd mee te delen in het dossier
+              (inclusief de effectieve onderzoekstijd tijdens de coronacrisis).
+            </li>
+            <li>Valoriseer een brede waaier aan relevante academische taken
+              (onderwijs, onderzoek, dienstverlening, mentorschap, leiderschap, etc.).
+            <li>Laat kandidaten zelf hun belangrijkste verwezenlijkingen opsommen en toelichten.</li>
+            <li>Kijk wat er wel behaald is (in plaats van wat er niet behaald is).
+              Misschien zijn bepaalde doelstellingen op een andere manier behaald? Of zijn er bijkomende doelstellingen
+              behaald?
+            </li>
+            <li>Houd rekening met de langetermijneffecten van de coronacrisis.
+              Onderzoekers kunnen doelstellingen niet zomaar later inhalen.
+              Het inhalen kost namelijk ook tijd en energie, wat dan weer een impact heeft op andere doelstellingen of
+              op een gezonde work-life balans (zie onder).
+            </li>
+
+          </ul>
+
+        </div>
+
+
       </div>
-
-      <div class="text-container" id="zichtbaar">
-        <h2>
-          Stimuleer succesvolle vrouwen om zichtbaar te zijn
-        </h2>
-
-        <ul class="pl-4">
-          <li>Nodig vrouwelijke sprekers binnen je vakgebied uit als keynote bij het organiseren van symposia, conferenties of debatten. Denk ook aan dit gender evenwicht bij het samenstellen van doctoraatscommissies.
-          </li>
-          <li><a href="https://www.gopetition.com/petitions/commitment-to-gender-equity-at-scholarly-conferences.html" target="_blank">Onderteken de petitie “Commitment to gender equity at scholarly conferences” </a>en weiger te spreken op conferenties als er geen goede genderbalans is. Deze actie is zowel door mannen als vrouwen toe te passen en zorgt voor bewustwording bij organisatiecommissies van congressen. </li>
-          <li>Stimuleer goede vrouwelijke wetenschappers om te kandideren voor belangrijke posities, beurzen, en prijzen
-            …. of nomineer ze indien mogelijk.
-          </li>
-          <li>Let erop dat standpunten van vrouwen in debatten of vergaderingen niet ondergesneeuwd worden door
-            wetenschappers die graag het woord voeren.
-          </li>
-          <li>Vraag ‘stille’ collega’s expliciet naar hun mening (zeker wanneer ze expertise hebben in een bepaald
-            gebied)
-            en waardeer verschillende meningen.
-            <li>
-          Kijk uit met het omschrijven van vrouwelijke leiders als hard, koud of moeilijk. Vraag aan anderen altijd waar ze dit oordeel vandaan halen en of ze bij mannen dezelfde omschrijving zouden gebruiken bij vergelijkbaar gedrag.
-        </li>
-          <li>Let op voor het ‘<i>queen-bee-syndroom</i>’. Hierbij zal een vrouw die een autoriteitspositie bereikt heeft soms kritischer zijn ten opzichte van ondergeschikte vrouwen, dan mannen. Hierdoor maakt ze het moeilijker voor andere vrouwen om door te groeien tot hetzelfde niveau als zijzelf.
-
-          </li>
-          <li>Let op een goede taakverdeling tussen verschillende medewerkers en laat taken roteren: vaak geeft men taken die onzichtbaarheid in de hand werken (vergaderingen vastleggen, notities maken, …) onbedoeld aan vrouwen. Laat dit werk ook niet afhangen van vrijwilligers: vrouwen zullen zich vaker als vrijwilliger opgeven.
-
-          </li>
-        </ul>
-
-      </div>
-
-      <div class="text-container" id="ondersteun">
-        <h2>
-          Ondersteun een gezonde work-life balans
-        </h2>
-
-        <ul class="pl-4">
-          <li>Plan vergaderingen binnen de reguliere kantooruren.</li>
-          <li>Faciliteer ouderschapsverlof voor M+V+X.</li>
-          <li>Faciliteer thuiswerken/telewerken (indien mogelijk).</li>
-          <li>Houd in selectie- en bevorderingsprocedures rekening met de effectief gepresteerde onderzoekstijd van
-            kandidaten die niet voltijds werken, of werkonderbrekingen gehad hebben.
-          </li>
-          <li>Wees een goed rolmodel met betrekking tot work-life balans door geregeld vakantiedagen op te nemen,
-            out-of-office berichten in te stellen, deel te nemen aan sociale activiteiten, …
-          </li>
-        </ul>
-
-      </div>
-
     </div>
   `,
   styleUrls: ['covid-toolbox-page.component.scss']
