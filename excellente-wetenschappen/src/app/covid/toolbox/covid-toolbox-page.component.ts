@@ -186,7 +186,29 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
           </ul>
 
         </div>
+        <div class="text-container" id="ondersteun">
+          <h2>
+            Ondersteun een gezonde work-life balans
+          </h2>
 
+          <ul class="pl-4">
+            <li>Vermijd om te (over)compenseren op minder drukke momenten. Gun jezelf de adempauze die je nodig hebt.</li>
+            <li>Bewaak een gezond werkritme. Meer is niet altijd beter.</li>
+            <li>Wees mild voor jezelf en voor anderen.</li>
+            <li>Neem (corona-)ouderschapsverlof of andere verlofdagen op en communiceer hierover via verschillende kanalen
+                (op je CV, in je email-handtekening, etc).</li>
+            <li>Laat je contract in percentage verminderen wanneer zorgtaken niet langer te combineren zijn met je werk
+              en communiceer hierover via verschillende kanalen (op je CV, in je email-handtekening, etc).</li>
+            <li>(Indien van toepassing), pleit voor een pro-rata-verlenging van je contract met de duur van het verlof.</li>
+            <li>Voor leidinggevenden: Faciliteer het opnemen van (corona)ouderschapsverlof door mee na te denken
+              over wie welke taken kan overnemen en door te waarborgen dat tijdelijke contracten pro-rata-verlengd worden.</li>
+            <li>Voor leidinggevenden: Houd in selectie- en bevorderingsprocedures rekening met
+              de effectieve onderzoekstijd van kandidaten die niet voltijds werken of werkonderbrekingen hebben gehad.</li>
+            <li>Wees een goed rolmodel met betrekking tot work-life balans door geregeld vakantiedagen op te nemen,
+              out-of-office berichten in te stellen, deel te nemen aan sociale activiteiten die coronaproof zijn, …</li>
+          </ul>
+
+        </div>
 
       </div>
     </div>

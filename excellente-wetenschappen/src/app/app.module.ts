@@ -7,10 +7,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
-import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCaretLeft } from '@fortawesome/free-solid-svg-icons/faCaretLeft';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons/faCaretRight';
+import { faCloudDownloadAlt } from '@fortawesome/free-solid-svg-icons/faCloudDownloadAlt';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons/faQuoteLeft';
 import { faQuoteRight } from '@fortawesome/free-solid-svg-icons/faQuoteRight';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
@@ -24,8 +23,12 @@ import { TestimonialFormItemComponent } from './admin/testimonial-form-item.comp
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CampagnePageComponent } from './campagne/campagne-page.component';
+import { CharterComponent } from './charter/charter.component';
 import { InfoBoxComponent } from './components/info-box/info-box.component';
+import { ContactPageComponent } from './contact/contact-page.component';
+import { CovidAppComponent } from './covid/covid-app/covid-app.component';
 import { CovidLinksPageComponent } from './covid/covid-links/covid-links-page.component';
+import { CovidNavComponent } from './covid/covid-nav/covid-nav.component';
 import { CovidFactsAndFiguresPageComponent } from './covid/facts-and-figures/covid-facts-and-figures-page.component';
 import { CovidHomePageComponent } from './covid/home/covid-home-page.component';
 import { CovidToolboxPageComponent } from './covid/toolbox/covid-toolbox-page.component';
@@ -33,20 +36,16 @@ import { FactsAndFiguresPageComponent } from './facts-and-figures/facts-and-figu
 import { FooterComponent } from './footer/footer.component';
 import { HomePageComponent } from './home/home-page.component';
 import { ImplicitBiasPageComponent } from './implicit-bias/implicit-bias-page.component';
+import { LandingComponent } from './landing/landing.component';
 import { LinksPageComponent } from './links/links-page.component';
 import { LogoComponent } from './logo/logo.component';
 import { NavComponent } from './nav/nav.component';
+import { OldAppComponent } from './old/old-app/old-app.component';
 import { BiasPageComponent } from './testimonial/bias-page.component';
 import { RECAPTCHA_URL, RecaptchaDirective } from './testimonial/recaptcha.directive';
 import { TestimonialFormComponent } from './testimonial/testimonial-form.component';
 import { TestimonialItemComponent } from './testimonial/testimonial-item.component';
 import { ToolboxPageComponent } from './toolbox/toolbox-page.component';
-import { ContactPageComponent } from './contact/contact-page.component';
-import { LandingComponent } from './landing/landing.component';
-import { CovidAppComponent } from './covid/covid-app/covid-app.component';
-import { CovidNavComponent } from './covid/covid-nav/covid-nav.component';
-import { OldAppComponent } from './old/old-app/old-app.component';
-import { CharterComponent } from './charter/charter.component';
 
 @NgModule({
   declarations: [
@@ -100,7 +99,7 @@ import { CharterComponent } from './charter/charter.component';
 export class AppModule {
 
   constructor(library: FaIconLibrary) {
-    library.addIcons(faCaretLeft, faCaretRight, faQuoteRight, faQuoteLeft);
+    library.addIcons(faCaretLeft, faCaretRight, faQuoteRight, faQuoteLeft, faCloudDownloadAlt);
   }
 
 }
