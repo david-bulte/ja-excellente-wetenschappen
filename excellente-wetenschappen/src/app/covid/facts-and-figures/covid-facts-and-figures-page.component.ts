@@ -6,20 +6,22 @@ import { Component, OnInit } from '@angular/core';
     <div class="d-flex flex-column align-items-center w-100 position-relative">
 
       <div class="download d-none d-md-block">
-        <a href="assets/covid/covid-factsheet.pdf" target="_blank">
-          <div class="animate__animated animate__pulse">
+        <div class="animate__animated animate__pulse">
+          <a href="assets/covid/covid-factsheet.pdf" target="_blank">
             <fa-icon [icon]="'cloud-download-alt'" [size]="'sm'"></fa-icon>
-            Download the factsheet
-          </div>
-        </a>
+            Download de factsheet
+          </a>
+          (<a href="assets/covid/covid-factsheet-en.pdf" target="_blank">en</a>)
+        </div>
       </div>
       <div class="d-block d-md-none mb-2">
-        <a href="assets/covid/covid-factsheet.pdf" target="_blank">
-          <div class="animate__animated animate__pulse">
+        <div class="animate__animated animate__pulse">
+          <a href="assets/covid/covid-factsheet.pdf" target="_blank">
             <fa-icon [icon]="'cloud-download-alt'" [size]="'sm'"></fa-icon>
-            Download the factsheet
-          </div>
-        </a>
+            Download de factsheet
+          </a>
+          (<a href="assets/covid/covid-factsheet-en.pdf" target="_blank">en</a>)
+        </div>
       </div>
 
       <div class="text-container mb-3 mt-3">
