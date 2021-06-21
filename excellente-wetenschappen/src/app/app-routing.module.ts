@@ -9,7 +9,9 @@ import { CovidAppComponent } from './covid/covid-app/covid-app.component';
 import { CovidLinksPageComponent } from './covid/covid-links/covid-links-page.component';
 import { CovidFactsAndFiguresPageComponent } from './covid/facts-and-figures/covid-facts-and-figures-page.component';
 import { CovidHomePageComponent } from './covid/home/covid-home-page.component';
+import { SummaryInEnglishComponent } from './covid/summary-in-english/summary-in-english.component';
 import { CovidToolboxPageComponent } from './covid/toolbox/covid-toolbox-page.component';
+import { VlaamseUniversiteitenComponent } from './covid/vlaamse-universiteiten/vlaamse-universiteiten.component';
 import { FactsAndFiguresPageComponent } from './facts-and-figures/facts-and-figures-page.component';
 import { HomePageComponent } from './home/home-page.component';
 import { ImplicitBiasPageComponent } from './implicit-bias/implicit-bias-page.component';
@@ -103,6 +105,14 @@ const routes: Routes = [
       {
         path: 'contact',
         component: ContactPageComponent
+      },
+      {
+        path: 'vlaamse-universiteiten',
+        component: VlaamseUniversiteitenComponent
+      },
+      {
+        path: 'summary-in-english',
+        component: SummaryInEnglishComponent
       },
       {
         path: 'home',

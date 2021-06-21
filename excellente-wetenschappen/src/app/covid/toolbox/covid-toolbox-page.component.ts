@@ -77,7 +77,9 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
           </li>
           <li><a [routerLink]="'/covid/facts-and-figures'">Lees enkele van de artikels in de referenties bij de feiten
             figuren.</a></li>
-        </ul>
+          <li><a [routerLink]="'/covid/vlaamse-universiteiten'">Bekijk de specifieke maatregelen die genomen worden aan de Vlaamse universiteiten
+            figuren.</a></li>
+           </ul>
       </div>
 
       <div class="text-container" id="communiceer">

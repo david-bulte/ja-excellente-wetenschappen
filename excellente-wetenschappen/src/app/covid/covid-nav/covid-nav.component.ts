@@ -25,6 +25,14 @@ import { SlideInOutAnimation } from '../../animations';
          #toolbox
          (mouseenter)="hover(toolbox, true)" (mouseleave)="hover(toolbox, false)"
          routerLinkActive="active" [routerLink]="'toolbox'">Toolbox</a>
+      <a class="p-2 text-dark menu-item"
+         #vlaamse
+         (mouseenter)="hover(vlaamse, true)" (mouseleave)="hover(vlaamse, false)"
+         routerLinkActive="active" [routerLink]="'vlaamse-universiteiten'">Vlaamse universiteiten</a>
+      <a class="p-2 text-dark menu-item"
+         #english
+         (mouseenter)="hover(english, true)" (mouseleave)="hover(english, false)"
+         routerLinkActive="active" [routerLink]="'summary-in-english'">Summary in English</a>
       <a class="p-2 text-dark menu-item" *ngIf="showMore$ | async"
          #links
          (mouseenter)="hover(links, true)" (mouseleave)="hover(links, false)"
@@ -69,6 +77,14 @@ import { SlideInOutAnimation } from '../../animations';
              #toolbox
              (mouseenter)="hover(toolbox, true)" (mouseleave)="hover(toolbox, false)"
              routerLinkActive="active" [routerLink]="'toolbox'">Toolbox</a>
+          <a class="p-2 text-dark menu-item border-primary border-0"
+             #vlaamse
+             (mouseenter)="hover(vlaamse, true)" (mouseleave)="hover(vlaamse, false)"
+             routerLinkActive="active" [routerLink]="'vlaamse-universiteiten'">Vlaamse universiteiten</a>
+          <a class="p-2 text-dark menu-item border-primary border-0"
+             #english
+             (mouseenter)="hover(english, true)" (mouseleave)="hover(english, false)"
+             routerLinkActive="active" [routerLink]="'summary-in-english'">Summary in English</a>
         </div>
       </div>
     </div>

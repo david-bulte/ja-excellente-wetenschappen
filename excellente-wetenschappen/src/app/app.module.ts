@@ -46,6 +46,8 @@ import { RECAPTCHA_URL, RecaptchaDirective } from './testimonial/recaptcha.direc
 import { TestimonialFormComponent } from './testimonial/testimonial-form.component';
 import { TestimonialItemComponent } from './testimonial/testimonial-item.component';
 import { ToolboxPageComponent } from './toolbox/toolbox-page.component';
+import { SummaryInEnglishComponent } from './covid/summary-in-english/summary-in-english.component';
+import { VlaamseUniversiteitenComponent } from './covid/vlaamse-universiteiten/vlaamse-universiteiten.component';
 
 @NgModule({
   declarations: [
@@ -77,7 +79,9 @@ import { ToolboxPageComponent } from './toolbox/toolbox-page.component';
     CovidHomePageComponent,
     CovidToolboxPageComponent,
     CovidLinksPageComponent,
-    CharterComponent
+    CharterComponent,
+    SummaryInEnglishComponent,
+    VlaamseUniversiteitenComponent
   ],
   imports: [
     BrowserModule,
